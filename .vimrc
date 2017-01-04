@@ -64,6 +64,59 @@ if v:version >= 704
 endif
 
 Plug 'honza/vim-snippets'
+"*****************************************************************************************************************
+"***************         Vundle plugins
+"************************************************************************************************
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+Plugin 'ascenator/L9', {'name': 'newL9'}
+let g:ycm_confirm_extra_conf = 0
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"************************************************************************************************
+"********************* Vundle Plugins END
+"****************************************************************************************************************
 
 "" Color
 Plug 'tomasr/molokai'
@@ -387,6 +440,7 @@ if executable('ag')
 	let g:ctrlp_use_caching = 0
 endif
 
+nnoremap <C-P> :CtrlP<CR>
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 noremap <leader>b :CtrlPBuffer<CR>
 let g:ctrlp_map = '<leader>e'
@@ -407,6 +461,7 @@ let g:syntastic_style_error_symbol = '✗'
 let g:syntastic_style_warning_symbol = '⚠'
 let g:syntastic_auto_loc_list=1
 let g:syntastic_aggregate_errors = 1
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
@@ -467,8 +522,8 @@ nnoremap <Leader>o :.Gbrowse<CR>
 "*****************************************************************************
 
 " c
-autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
-autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType c setlocal tabstop=4 shiftwidth=4
+autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 
 
 
 " html
@@ -618,6 +673,7 @@ endif
 "noremap <C-p> :bprevious<CR>
 inoremap jj <Esc>
 nnoremap <leader>rs :source ~/.vimrc<CR>
+"cicle trhough buffers
 nnoremap <leader>a :bp<CR>
 nnoremap <leader>d :bn<CR>
 "meudeus
@@ -629,6 +685,10 @@ function! NumberToggle()
 		set relativenumber
 	endif
 endfunc
-
+"toggle relative numbers
 noremap <C-n> :call NumberToggle()<cr>
+"replace word in cursor in the entire dicument
 nnoremap <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+"make tags command
+command! MakeTags !ctags -R .
