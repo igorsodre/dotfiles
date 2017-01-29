@@ -21,3 +21,5 @@ deb http://httpredir.debian.org/debian jessie-updates main contrib non-free
 deb-src http://httpredir.debian.org/debian jessie-updates main contrib non-free
 
 deb http://ftp.debian.org/debian jessie-backports main contrib non-free
+
+deb http://www.debian-multimedia.org etch main

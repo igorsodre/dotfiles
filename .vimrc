@@ -95,7 +95,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
-Plugin 'ascenator/L9', {'name': 'newL9'}
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 let g:ycm_confirm_extra_conf = 0
 Plugin 'Valloric/YouCompleteMe'
 
@@ -117,7 +117,19 @@ filetype plugin indent on    " required
 "************************************************************************************************
 "********************* Vundle Plugins END
 "****************************************************************************************************************
+"
+"
+"
+"
+"
+""***************************************************************************************************
+"*************************************  pathogen.vim
+"**************************************************************************************************
+execute pathogen#infect()
 
+
+"************************************** Pathogem  END
+"**************************************************************************************************
 "" Color
 Plug 'tomasr/molokai'
 
@@ -448,8 +460,8 @@ let g:ctrlp_open_new_file = 'r'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 
 " snippets
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<C-space>"
+let g:UltiSnipsJumpForwardTrigger="<C-space>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 
@@ -556,16 +568,16 @@ augroup vimrc-python
 				\ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
 
-" jedi-vim
-let g:jedi#popup_on_dot = 0
-let g:jedi#goto_assignments_command = "<leader>g"
-let g:jedi#goto_definitions_command = "<leader>d"
-let g:jedi#documentation_command = "K"
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#rename_command = "<leader>r"
-let g:jedi#show_call_signatures = "0"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#smart_auto_mappings = 0
+" " jedi-vim
+" let g:jedi#popup_on_dot = 0
+" let g:jedi#goto_assignments_command = "<leader>g"
+" let g:jedi#goto_definitions_command = "<leader>d"
+" let g:jedi#documentation_command = "K"
+" let g:jedi#usages_command = "<leader>n"
+" let g:jedi#rename_command = "<leader>r"
+" let g:jedi#show_call_signatures = "0"
+" let g:jedi#completions_command = "<C-Space>"
+" let g:jedi#smart_auto_mappings = 0
 
 " syntastic
 let g:syntastic_python_checkers=['python', 'flake8']
@@ -672,12 +684,20 @@ endif
 "noremap <C-n> :bnext<CR>
 "noremap <C-p> :bprevious<CR>
 inoremap jj <Esc>
+" resource vimrc file
 nnoremap <leader>rs :source ~/.vimrc<CR>
+" insert ruby tag
+nnoremap \rbt i<%%><left><left>
+inoremap \rbt <%%><left><left>
+" select all document
+nnoremap <C-a> ggVG
+nnoremap <C-S-i> gg=G<S-m>
+inoremap <S-CR> <CR><Esc>0<backspace>a
+set guifont=Monospace\ 11
 "cicle trhough buffers
 nnoremap <leader>a :bp<CR>
 nnoremap <leader>d :bn<CR>
-"meudeus
-"putamerdj
+" funcao que faz os linhas seren relativas
 function! NumberToggle()
 	if(&relativenumber == 1)
 		set norelativenumber
