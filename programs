@@ -1,6 +1,10 @@
+vim-gnome { não copie e cole a pasta ".vim" e instale separadamente os pacotes pathogen, vundle, surround}
 python 3
 gcc
 g++
+ruby and rails
+mysql
+google-chrome
 spotify
 fire-dev
 
