@@ -44,6 +44,8 @@ Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/ReplaceWithRegister'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -85,6 +87,11 @@ Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
+" Theme onehalf
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+
+" Theme one
+Plug 'rakr/vim-one'
 
 "*****************************************************************************
 "*****************************************************************************
@@ -152,7 +159,14 @@ set ruler
 set number
 
 let no_buffers_menu=1
-silent! colorscheme molokai
+
+" silent! colorscheme molokai
+silent! colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+" colorscheme one
+" let g:airline_theme='one'
+" set background=dark
+
 
 set mousemodel=popup
 set t_Co=256
@@ -217,7 +231,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'powerlineish'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -452,7 +466,6 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 
 " typescript
 let g:yats_host_keyword = 1
-
 
 
 "*****************************************************************************
