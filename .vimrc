@@ -102,6 +102,9 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Theme one
 Plug 'rakr/vim-one'
 
+" Theme Material
+Plug 'kaicataldo/material.vim'
+
 "*****************************************************************************
 "*****************************************************************************
 
@@ -168,13 +171,6 @@ set ruler
 set number
 
 let no_buffers_menu=1
-
-" silent! colorscheme molokai
-" silent! colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
-colorscheme one
-" let g:airline_theme='one'
-" set background=dark
 
 
 set mousemodel=popup
@@ -544,6 +540,25 @@ nmap <F6> :Prettier<CR>
 "*****************************************************************************
 "" Custom changes (Igor Sodre)
 "*****************************************************************************
+if (has('nvim'))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+endif
+if (has('termguicolors'))
+  set termguicolors
+endif
+" Theme configutation
+" silent! colorscheme molokai
+" silent! colorscheme onehalfdark
+" let g:airline_theme='onehalfdark'
+
+" colorscheme one
+" let g:airline_theme='one'
+" set background=dark
+
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'default'
+colorscheme material
+" endTheme configuration
 
 " Adding another way to enter normal mode
 inoremap jj <Esc>
