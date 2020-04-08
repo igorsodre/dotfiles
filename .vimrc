@@ -49,6 +49,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'christoomey/vim-system-copy'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -169,9 +170,9 @@ set number
 let no_buffers_menu=1
 
 " silent! colorscheme molokai
-silent! colorscheme onehalfdark
+" silent! colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
-" colorscheme one
+colorscheme one
 " let g:airline_theme='one'
 " set background=dark
 
@@ -269,6 +270,9 @@ let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F4> :NERDTreeFind<CR>
 inoremap <silent> <F4> <Esc>:NERDTreeFind<CR><C-w>li
