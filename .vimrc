@@ -48,6 +48,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'christoomey/vim-system-copy'
 Plug 'ryanoasis/vim-devicons'
+Plug 'ludovicchabant/vim-gutentags'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -88,6 +89,11 @@ Plug 'mattn/emmet-vim'
 " typescript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+" Remove bellow if doesn't work
+Plug 'Quramy/tsuquyomi'
 
 " Theme onehalf
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
@@ -264,8 +270,8 @@ let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-inoremap <silent> <F2> <Esc>:NERDTreeFind<CR><C-w>li
+nnoremap <silent> <F4> :NERDTreeFind<CR>
+inoremap <silent> <F4> <Esc>:NERDTreeFind<CR><C-w>li
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 " grep.vim
@@ -361,7 +367,7 @@ noremap <Leader>gr :Gremove<CR>
 noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Opens a tab edit command with the path of the currently edited file filled
-noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+" noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 "" fzf.vim
 set wildmode=list:longest,list:full
@@ -395,6 +401,7 @@ nmap <leader>y :History:<CR>
 
 " ale
 let g:ale_linters = {}
+let b:ale_fixers = ['prettier', 'eslint']
 
 " Tagbar
 " nmap <silent> <F4> :TagbarToggle<CR>
@@ -519,12 +526,25 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
+
+"*****************************************************************************
+"" Typescript support
+"*****************************************************************************
+" nnoremap <silent> <F2> :TsuRenameSymbolC
+autocmd FileType typescript nmap <buffer> <F2> <Plug>(TsuquyomiRenameSymbol)
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+
+nmap <F12> <C-]>
+nmap <S-F12> <C-t>
+nmap <F6> :Prettier<CR>
 "*****************************************************************************
 "" Custom changes (Igor Sodre)
 "*****************************************************************************
 
 " Adding another way to enter normal mode
 inoremap jj <Esc>
+
+nnoremap <Tab> $
 
 " select all document
 nnoremap <C-a> ggVG
@@ -549,7 +569,7 @@ endfunc
 noremap <C-n> :call NumberToggle()<cr>
 
 " replace word in cursor in the entire dicument
-nnoremap <C-S-k> :%s/\<<C-r><C-w>\>//g<Left><Left>
+nmap <C-S-k> :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " make tags command
 command! MakeTags !ctags -R .
