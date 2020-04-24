@@ -102,7 +102,7 @@ alias openbash='vim ~/.bashrc'
 alias openzsh='vim ~/.zshrc'
 alias openvim='vim ~/.vimrc'
 alias openphone='emulator @Nexus5'
-alias doupgrade='sudo apt-get update && sudo apt-get upgrade -y'
+alias doupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
 alias makecpp='g++ -std=c++14'
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
@@ -126,6 +126,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
