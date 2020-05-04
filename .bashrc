@@ -89,6 +89,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # some more ls aliases
 alias LS='colorls --sd --gs --sf'
+alias LST='colorls --sd --gs --sf --tree=2'
 alias LL='colorls --sd --gs --sf -alf'
 alias LA='colorls --sd --gs --sf -A'
 alias L='colorls --sd --gs --sf -CF'
@@ -99,8 +100,10 @@ alias glog=!"git --no-pager log --all --color=always --graph --abbrev-commit --d
 
 alias rebash='source ~/.zshrc'
 alias openbash='vim ~/.bashrc'
+alias openprofile='vim ~/.profile'
 alias openzsh='vim ~/.zshrc'
 alias openvim='vim ~/.vimrc'
+alias openenvironment='sudo vim /etc/environment'
 alias openphone='emulator @Nexus5'
 alias doupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
 alias makecpp='g++ -std=c++14'
@@ -112,7 +115,15 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
-source ~/.local/share/fonts/*sh
+# source ~/.local/share/fonts/*sh
+find() {
+    if [ $# = 1 ];
+    then
+        command find . -iname "*$@*"
+    else
+        command find "$@"
+    fi
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -142,14 +153,14 @@ export EDITOR="$VISUAL"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/sodre/bin/anacond3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/sodre/bin/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/sodre/bin/anacond3/etc/profile.d/conda.sh" ]; then
-        . "/home/sodre/bin/anacond3/etc/profile.d/conda.sh"
+    if [ -f "/home/sodre/bin/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sodre/bin/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/sodre/bin/anacond3/bin:$PATH"
+        export PATH="/home/sodre/bin/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -167,4 +178,5 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 source $(dirname $(gem which colorls))/tab_complete.sh
