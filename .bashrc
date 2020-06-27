@@ -99,14 +99,16 @@ alias top='htop'
 alias glog=!"git --no-pager log --all --color=always --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' | less -r -X +/[^/]HEAD"
 
 alias rebash='source ~/.zshrc'
+alias xopen='xdg-open'
 alias openbash='vim ~/.bashrc'
 alias openprofile='vim ~/.profile'
 alias openzsh='vim ~/.zshrc'
 alias openvim='vim ~/.vimrc'
 alias openenvironment='sudo vim /etc/environment'
 alias openphone='emulator @Nexus5'
-alias doupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
+alias doupgrade='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias makecpp='g++ -std=c++14'
+alias openhere='xdg-open .'
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
