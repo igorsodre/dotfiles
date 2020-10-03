@@ -107,7 +107,7 @@ alias openvim='vim ~/.vimrc'
 alias openenvironment='sudo vim /etc/environment'
 alias openphone='emulator @Nexus5'
 # alias doupgrade='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
-alias doupgrade='sudo pacman -Syu'
+alias doupgrade='sudo pacman -Syu; sudo pacman -Qtdq && sudo pacman -Rs $(sudo pacman -Qtdq)';
 alias makecpp='g++ -std=c++14'
 alias openhere='xdg-open .'
 
