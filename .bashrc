@@ -72,6 +72,10 @@ xterm*|rxvt*)
     ;;
 esac
 
+# if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+#         source /etc/profile.d/vte.sh
+# fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -87,30 +91,7 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias LS='colorls --sd --gs --sf'
-alias LST='colorls --sd --gs --sf --tree=2'
-alias LL='colorls --sd --gs --sf -alf'
-alias LA='colorls --sd --gs --sf -A'
-alias L='colorls --sd --gs --sf -CF'
-alias lf='du -sh * | sort -h'
-alias diff='diff --color=auto'
-alias top='htop'
-alias glog=!"git --no-pager log --all --color=always --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' | less -r -X +/[^/]HEAD"
-
-alias rebash='source ~/.zshrc'
-alias xopen='xdg-open'
-alias openbash='vim ~/.bashrc'
-alias openprofile='vim ~/.profile'
-alias openzsh='vim ~/.zshrc'
-alias openvim='vim ~/.vimrc'
-alias openenvironment='sudo vim /etc/environment'
-alias openphone='emulator @Nexus5'
-# alias doupgrade='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
-alias doupgrade='sudo pacman -Syu; sudo pacman -Qtdq && sudo pacman -Rs $(sudo pacman -Qtdq)';
-alias makecpp='g++ -std=c++14'
-alias openhere='xdg-open .'
-
+# man colors
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
 export LESS_TERMCAP_me=$'\e[0m'
@@ -118,7 +99,7 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
-# source ~/.local/share/fonts/*sh
+
 find() {
     if [ $# = 1 ];
     then
@@ -127,7 +108,6 @@ find() {
         command find "$@"
     fi
 }
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -140,6 +120,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
@@ -153,6 +134,17 @@ export EDITOR="$VISUAL"
 #     . /etc/bash_completion
 #   fi
 # fi
+# export M2_HOME=/home/sodre/bin/apache-maven-3.6.3
+#export M2_HOME=/kdi/apache-maven-3.0.5
+#export MAVEN_HOME=/kdi/apache-maven-3.0.5
+#export M2="$M2_HOME/bin"
+# export M2=~/bin/kdi-linux-2.1/kdi/apache-maven-3.0.5/bin
+#export MAVEN_OPTS='-Xms256m -Xmx512m'
+#export JAVA_HOME="$HOME/bin/jdk1.8.0_221"
+# export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+#export PATH="$JAVA_HOME/bin:$M2:$PATH"
+#export ANDROID_HOME=$HOME/Android/Sdk
+#export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -169,17 +161,41 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 source $(dirname $(gem which colorls))/tab_complete.sh
+
+# some more ls aliases
+alias ll='ls -alF'
+    alias la='ls -A'
+alias l='ls -CF'
+alias LS='colorls --sd --gs --sf'
+alias LST='colorls --sd --gs --sf --tree=2'
+alias LL='colorls --sd --gs --sf -alf'
+alias LA='colorls --sd --gs --sf -A'
+alias LAT='colorls --sd --gs --sf -A --tree=2'
+alias L='colorls --sd --gs --sf -CF'
+alias lf='du -sh * | sort -h'
+alias top='htop'
+
+alias supercode='sudo code --user-data-dir="/tmp"'
+alias xopen='xdg-open'
+alias openbash='vim ~/.bashrc'
+alias openprofile='vim ~/.profile'
+alias opennpm='vim ~/.npmrc'
+alias openenvironment='sudoedit /etc/environment'
+alias openhosts='sudoedit /etc/hosts'
+alias openzsh='vim ~/.zshrc'
+alias openvim='vim ~/.vimrc'
+alias openhere='xdg-open . &> /dev/null'
+alias nvm8='nvm alias default 8.17.0'
+alias nvm13='nvm alias default 13.11.0'
+alias nvm12='nvm alias default 12'
+alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
+alias openphone="$ANDROID_HOME/emulator/emulator @Nexus5 -noaudio &> /dev/null & disown"
+alias resetapache='sudo service apache2 restart'
+

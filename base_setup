@@ -1,0 +1,78 @@
+#! /bin/sh
+
+################################################################  PROGRAMAS GERAIS ##############################
+sudo apt update -y; sudo apt upgrade -y;
+
+sudo apt install build-essential -y;
+
+sudo apt install git -y;
+
+sudo apt install copyq -y;
+
+sudo apt install xclip -y;
+
+sudo apt install xsel -y;
+
+# install node with nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+nvm install --lts
+nvm alias default 12
+
+sudo apt install vim -y;
+
+# install flameshot and change print shortcut
+sudo apt install flameshot -y;
+
+sudo apt install openjdk-8-jdk -y;
+
+sudo apt install konsole -y;
+
+sudo apt install vlc -y;
+
+# baixar nerd fonts e instalar (firacode e hack) (versões completas, pra não faltar nenhum icone pro terminal)
+# baixar e instalar powerlne fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# login to firefox
+
+# install vscode
+
+
+# install ruby
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev # mint 18.04
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev # mint 20
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+type rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+rbenv install -l
+rbenv install 2.7.2
+rbenv global 2.7.2
+
+gem install lscolors
+
+# ZSH
+sudo apt install zsh -y
+chsh -s $(which zsh) # reinicia o PC
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# instala e roda o powelevel10k
+
+
+# install anaconda
+apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+# baixa e instala
+
+
+# instalar android studio
+sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils ia32-libs-multiarch
+
+#instala o rubymine
