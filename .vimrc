@@ -48,7 +48,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'christoomey/vim-system-copy'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 if isdirectory('/usr/local/opt/fzf')
@@ -591,5 +591,4 @@ noremap <C-n> :call NumberToggle()<cr>
 nmap <C-S-k> :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " make tags command
-command! MakeTags !ctags -R .
-
+" command! MakeTags !ctags -R .
