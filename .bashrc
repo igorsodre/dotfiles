@@ -171,7 +171,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 # some more ls aliases
 alias ll='ls -alF'
-    alias la='ls -A'
+alias la='ls -A'
 alias l='ls -CF'
 alias LS='colorls --sd --gs --sf'
 alias LST='colorls --sd --gs --sf --tree=2'
@@ -182,6 +182,7 @@ alias L='colorls --sd --gs --sf -CF'
 alias lf='du -sh * | sort -h'
 alias top='htop'
 
+alias rebash='source ~/.bashrc'
 alias supercode='sudo code --user-data-dir="/tmp"'
 alias xopen='xdg-open'
 alias openbash='vim ~/.bashrc'
