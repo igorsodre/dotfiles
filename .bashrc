@@ -182,6 +182,7 @@ alias L='colorls --sd --gs --sf -CF'
 alias lf='du -sh * | sort -h'
 alias top='htop'
 
+alias open-projects='cd ~/Documents/Projects'
 alias rebash='source ~/.bashrc'
 alias supercode='sudo code --user-data-dir="/tmp"'
 alias xopen='xdg-open'
@@ -201,3 +202,8 @@ alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
 alias openphone="$ANDROID_HOME/emulator/emulator @Nexus5 -noaudio &> /dev/null & disown"
 alias resetapache='sudo service apache2 restart'
 
+
+# Docker
+alias up-containers="docker-compose up -d"
+alias stop-containers="docker-compose stop"
+alias remove-containers="docker-compose down"
