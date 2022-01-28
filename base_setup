@@ -10,14 +10,26 @@ sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silv
 # adiciona na startup apps e o shortcut para o copyq
 
 # change print shortcut to use flameshot
+# login to firefox
 
-# install node with nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-nvm install --lts
-source ~/.bashrc
-nvm alias default 16
-npm install yarn -g
+# install vscode
 
+# Set up git
+ssh-keygen -t rsa -b 4096 -C "csodreigor@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+
+git config --global user.email "csodreigor@gmail.com"
+git config --global user.name "Igor Sodré"
+
+
+# install node with nvm - deprecated
+# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+# nvm install --lts
+# source ~/.bashrc
+# nvm alias default 16
+# npm install yarn -g
 
 
 # baixar nerd fonts e instalar (firacode e hack) (versões completas, pra não faltar nenhum icone pro terminal)
@@ -29,28 +41,6 @@ cd ..
 rm -rf fonts
 # extrair o fira code zip e instalar as fontes
 
-# login to firefox
-
-# install vscode
-
-
-# install ruby
-# sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev # mint 18.04
-sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev # mint 20
-
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
-type rbenv
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install -l
-rbenv install 2.7.4
-rbenv global 2.7.4
-
-# gem install lscolors
-gem install colorls
-
 # ZSH
 sudo apt install zsh -y
 chsh -s $(which zsh) # reinicia o PC
@@ -60,7 +50,53 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # instala e roda o powelevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 # copia e cola o .bashrc pro home
+cp ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
 # copia o .zshrc pro home
+cp ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
+
+
+# ASDF
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
+rebash
+
+## asdf node
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf list all nodejs
+asdf install nodejs lts
+asdf global nodejs lts
+
+## asdf dotnet core
+asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.git
+. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
+
+asdf list all dotnet-core
+asdf install dotnet-core 6.0.101
+asdf global dotnet-core 6.0.101
+asdf reshim
+
+## asdf ruby
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf list all ruby
+asdf install ruby 3.1.0
+# asdf install ruby 2.7.5
+asdf global ruby 3.1.0
+
+# install ruby - depricated
+# sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev # mint 18.04
+# sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev # mint 20
+
+# git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+# echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+# source ~/.bashrc
+# type rbenv
+# git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+# rbenv install -l
+# rbenv install 2.7.4
+# rbenv global 2.7.4
+
+# gem install lscolors
+gem install colorls
 
 
 # install anaconda
@@ -96,20 +132,12 @@ snap install Spotify
 snap install discord
 
 
-# Set up git
-ssh-keygen -t rsa -b 4096 -C "csodreigor@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/id_rsa
-
-git config --global user.email "csodreigor@gmail.com"
-git config --global user.name "Igor Sodré"
-
 # docker & docker-compose
-$ sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"
-$ sudo apt update
-$ sudo apt install docker-ce -y
-$ sudo usermod -aG docker $USER
-$ newgrp docker
-$ sudo apt install docker-compose -y
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"
+sudo apt update
+sudo apt install docker-ce -y
+sudo usermod -aG docker $USER
+newgrp docker
+sudo apt install docker-compose -y
