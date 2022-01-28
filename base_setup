@@ -81,6 +81,14 @@ asdf install ruby 3.1.0
 # asdf install ruby 2.7.5
 asdf global ruby 3.1.0
 
+
+## asdf java
+asdf plugin-add java https://github.com/halcyon/asdf-java.git
+asdf list all java
+asdf install java openjdk-17
+asdf global java openjdk-17
+# add this to .zshrc . ~/.asdf/plugins/java/set-java-home.zs
+
 # install ruby - depricated
 # sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev # mint 18.04
 # sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev # mint 20

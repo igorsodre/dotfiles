@@ -6,6 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 . $HOME/.asdf/asdf.sh
+. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
+. ~/.asdf/plugins/java/set-java-home.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [ -f ~/.profile ]; then
