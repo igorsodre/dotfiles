@@ -67,7 +67,7 @@ asdf global nodejs lts
 
 ## asdf dotnet core
 asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.git
-. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
+# add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
 asdf install dotnet-core 6.0.101
@@ -77,6 +77,7 @@ asdf reshim
 ## asdf ruby
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf list all ruby
+sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
 asdf install ruby 3.1.0
 # asdf install ruby 2.7.5
 asdf global ruby 3.1.0
