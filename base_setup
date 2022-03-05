@@ -3,7 +3,7 @@
 ################################################################  PROGRAMAS GERAIS ##############################
 sudo apt update -y; sudo apt upgrade -y;
 
-sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silversearcher-ag fontconfig vlc flameshot konsole default-jdk -y;
+sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silversearcher-ag fontconfig vlc flameshot konsole default-jdk fonts-powerline -y;
 
 # take a look at asdf to manage all your programing languages
 
@@ -39,6 +39,7 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
+
 # extrair o fira code zip e instalar as fontes
 
 # ZSH
