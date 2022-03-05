@@ -70,17 +70,18 @@ asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.gi
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 6.0.101
-asdf global dotnet-core 6.0.101
+asdf install dotnet-core 6.0.200
+asdf install dotnet-core 5.0.405
+asdf global dotnet-core 6.0.200
 asdf reshim
 
 ## asdf ruby
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf list all ruby
 sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
-asdf install ruby 3.1.0
+asdf install ruby 3.1.1
 # asdf install ruby 2.7.5
-asdf global ruby 3.1.0
+asdf global ruby 3.1.1
 
 
 ## asdf java
@@ -89,6 +90,17 @@ asdf list all java
 asdf install java openjdk-17
 asdf global java openjdk-17
 # add this to .zshrc . ~/.asdf/plugins/java/set-java-home.zs
+
+
+## asdf golang
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf list all golang
+asdf install golang 1.17.7
+asdf global golang 1.17.7
+
+asdf plugin add go-sdk
+asdf list-all go-sdk
+asdf install go-sdk 1.17.7
 
 # install ruby - depricated
 # sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev # mint 18.04
