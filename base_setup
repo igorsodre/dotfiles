@@ -61,13 +61,13 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
 rebash
 
 ## asdf node
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin add nodejs
 asdf list all nodejs
 asdf install nodejs lts
 asdf global nodejs lts
 
 ## asdf dotnet core
-asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.git
+asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
@@ -77,7 +77,7 @@ asdf global dotnet-core 6.0.200
 asdf reshim
 
 ## asdf ruby
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin add ruby
 asdf list all ruby
 sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
 asdf install ruby 3.1.1
@@ -86,7 +86,7 @@ asdf global ruby 3.1.1
 
 
 ## asdf java
-asdf plugin-add java https://github.com/halcyon/asdf-java.git
+asdf plugin add java
 asdf list all java
 asdf install java openjdk-17
 asdf global java openjdk-17
@@ -94,7 +94,7 @@ asdf global java openjdk-17
 
 
 ## asdf golang
-asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin add golang
 asdf list all golang
 asdf install golang 1.17.7
 asdf global golang 1.17.7
