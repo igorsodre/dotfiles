@@ -1,0 +1,107 @@
+#! /bin/sh
+
+sudo pacman -Syyu;
+sudo pacman -S yay;
+
+sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole --noconfirm
+
+sudo yay -S snapd --noconfirm
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+
+# install firefox through the graphical interface
+
+
+sudo mkdir /usr/share/fonts/custom
+sudo cp ~/Documents/Projects/dotfiles/f/3270NerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/JetBrainsNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/HackNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/UbuntuNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/FiraCode/* /usr/share/fonts/custom
+cd /tmp
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+git config --global user.email "csodreigor@gmail.com"
+git config --global user.name "Igor Sodré"
+
+
+sudo yay -Syu zsh --noconfirm
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# copia e cola o .bashrc pro home
+cp ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
+# copia o .zshrc pro home
+cp ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
+# restart
+
+
+
+git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
+. /opt/asdf-vm/asdf.sh
+
+
+## asdf node
+asdf plugin add nodejs
+asdf list all nodejs
+asdf install nodejs lts
+asdf global nodejs lts
+
+## asdf dotnet core
+asdf plugin add dotnet-core
+# add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
+
+asdf list all dotnet-core
+asdf install dotnet-core 6.0.201
+asdf install dotnet-core 5.0.406
+asdf global dotnet-core 6.0.201
+asdf reshim
+
+## asdf ruby
+asdf plugin add ruby
+asdf list all ruby
+sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
+asdf install ruby 3.1.1
+# asdf install ruby 2.7.5
+asdf global ruby 3.1.1
+
+
+## asdf java
+asdf plugin add java
+asdf list all java
+asdf install java openjdk-17
+asdf global java openjdk-17
+# add this to .zshrc . ~/.asdf/plugins/java/set-java-home.zs
+
+
+## asdf golang
+asdf plugin add golang
+asdf list all golang
+asdf install golang 1.17.8
+asdf global golang 1.17.8
+
+# gem install lscolors
+gem install colorls
+
+# install discord through the graphical interface
+
+yay -S brave-browser
+
+
+yay -S docker
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+sudo usermod -aG docker $USER
+newgrp docker
+yay -S docker-compose
+
+
+Spotify
+
+
+# kde-konsole-themes
+cd /tmp
+git clone git@github.com:nareshv/kde-konsole-colorschemes.git && git clone https://gitlab.com/protesilaos/modus-themes.git && git clone https://github.com/EliverLara/Sweet.git && git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git && git clone https://github.com/EliverLara/Nordic.git
+
+cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.local/share/konsole -r && cp Sweet/* ~/.local/share/konsole -r && cp materia-kde/* ~/.local/share/konsole -r && cp Nordic/kde/konsole/* ~/.local/share/konsole -r

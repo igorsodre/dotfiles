@@ -34,6 +34,7 @@ git config --global user.name "Igor Sodré"
 
 # baixar nerd fonts e instalar (firacode e hack) (versões completas, pra não faltar nenhum icone pro terminal)
 # baixar e instalar powerlne fonts
+cd /tmp
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
@@ -71,9 +72,9 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 6.0.200
-asdf install dotnet-core 5.0.405
-asdf global dotnet-core 6.0.200
+asdf install dotnet-core 6.0.201
+asdf install dotnet-core 5.0.406
+asdf global dotnet-core 6.0.201
 asdf reshim
 
 ## asdf ruby
@@ -96,8 +97,8 @@ asdf global java openjdk-17
 ## asdf golang
 asdf plugin add golang
 asdf list all golang
-asdf install golang 1.17.7
-asdf global golang 1.17.7
+asdf install golang 1.17.8
+asdf global golang 1.17.8
 
 asdf plugin add go-sdk
 asdf list-all go-sdk

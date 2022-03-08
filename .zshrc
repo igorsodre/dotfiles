@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 . $HOME/.asdf/asdf.sh
+# . /opt/asdf-vm/asdf.sh
 . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 . ~/.asdf/plugins/java/set-java-home.zsh
 
