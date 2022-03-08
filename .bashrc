@@ -188,11 +188,9 @@ alias openhosts='sudoedit /etc/hosts'
 alias openzsh='vim ~/.zshrc'
 alias openvim='vim ~/.vimrc'
 alias openhere='xdg-open . &> /dev/null'
-alias nvm8='nvm alias default 8.17.0'
-alias nvm13='nvm alias default 13.11.0'
-alias nvm12='nvm alias default 12'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
+# alias doupgrade='sudo pacman -Syu; sudo pacman -Qtdq && sudo pacman -Rs $(sudo pacman -Qtdq)';
 alias openphone="$ANDROID_HOME/emulator/emulator @Nexus5 -noaudio &> /dev/null & disown"
 alias resetapache='sudo service apache2 restart'
 
