@@ -115,3 +115,8 @@ cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.
 # lunar vim
 sudo yay -S neovim
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+
+
+# cargo tools
+cargo install bat
+asdf reshim
