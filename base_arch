@@ -81,6 +81,12 @@ asdf list all golang
 asdf install golang 1.17.8
 asdf global golang 1.17.8
 
+## asdf rust
+asdf plugin-add rust
+asdf list all rust
+asdf install rust 1.59.0
+asdf global rust 1.59.0
+
 # gem install lscolors
 gem install colorls
 
@@ -105,3 +111,7 @@ cd /tmp
 git clone git@github.com:nareshv/kde-konsole-colorschemes.git && git clone https://gitlab.com/protesilaos/modus-themes.git && git clone https://github.com/EliverLara/Sweet.git && git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git && git clone https://github.com/EliverLara/Nordic.git
 
 cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.local/share/konsole -r && cp Sweet/* ~/.local/share/konsole -r && cp materia-kde/* ~/.local/share/konsole -r && cp Nordic/kde/konsole/* ~/.local/share/konsole -r
+
+# lunar vim
+sudo yay -S neovim
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
