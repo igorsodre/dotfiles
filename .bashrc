@@ -190,9 +190,7 @@ alias openvim='vim ~/.vimrc'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
-# alias doupgrade='sudo pacman -Syu; sudo pacman -Qtdq && sudo pacman -Rs $(sudo pacman -Qtdq)';
-alias openphone="$ANDROID_HOME/emulator/emulator @Nexus5 -noaudio &> /dev/null & disown"
-alias resetapache='sudo service apache2 restart'
+# alias doupgrade='sudo pacman -Syu --noconfirm; sudo pacman -Qtdq --noconfirm && sudo pacman --noconfirm -Rs $(sudo pacman -Qtdq)';
 
 
 # Docker
