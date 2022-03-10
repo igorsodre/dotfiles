@@ -122,6 +122,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export VISUAL=vim
+# export VISUAL=lvim
 export EDITOR="$VISUAL"
 
 # enable programmable completion features (you don't need to enable
