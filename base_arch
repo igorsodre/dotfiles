@@ -111,6 +111,7 @@ cd /tmp
 git clone git@github.com:nareshv/kde-konsole-colorschemes.git && git clone https://gitlab.com/protesilaos/modus-themes.git && git clone https://github.com/EliverLara/Sweet.git && git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git && git clone https://github.com/EliverLara/Nordic.git
 
 cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.local/share/konsole -r && cp Sweet/* ~/.local/share/konsole -r && cp materia-kde/* ~/.local/share/konsole -r && cp Nordic/kde/konsole/* ~/.local/share/konsole -r
+cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
 
 # lunar vim
 sudo yay -S neovim
