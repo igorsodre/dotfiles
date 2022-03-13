@@ -1,5 +1,6 @@
 #! /bin/sh
 
+
 sudo pacman -Syyu;
 sudo pacman -S yay;
 
@@ -95,6 +96,7 @@ gem install colorls
 yay -S brave-browser
 
 
+# docker
 yay -S docker
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
@@ -103,8 +105,6 @@ newgrp docker
 yay -S docker-compose
 
 
-Spotify
-
 
 # kde-konsole-themes
 cd /tmp
@@ -112,6 +112,10 @@ git clone git@github.com:nareshv/kde-konsole-colorschemes.git && git clone https
 
 cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.local/share/konsole -r && cp Sweet/* ~/.local/share/konsole -r && cp materia-kde/* ~/.local/share/konsole -r && cp Nordic/kde/konsole/* ~/.local/share/konsole -r
 cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
+
+
+# flat-remix themes
+yay -S flat-remix
 
 # lunar vim
 sudo yay -S neovim
@@ -127,3 +131,22 @@ asdf reshim
 yay -S slack-desktop
 
 yay -S spotify
+
+
+# pacman cheat-sheet:
+# pacman -S program-name  # installs a package
+# pacman -Q name          # search locally for programs  # installs a package
+# pacman -R name          # remove program, don't run it without extra options
+# pacman -Sy              # update local repositories, equivalent of apt update
+# pacman -Syu             # update local repositories AND download and install the updated versions. Equivalent of apt update && apt upgrade
+# pacman -Ss name         # search programs online. name can be ^name
+# pacman -Rns name        # remove program with all its dependecies and config files
+# pacman -Sc              # remove obsolete packages from cache
+
+# pacman -Q               # list all programs installed and all their dependencies
+# pacman -Qe               # list all programs installed without their dependencies
+
+# add the command below on the conf file. They have to be under the section # Misc Options
+sudoedit /etc/pacman.conf
+Color
+ILoveCandy
