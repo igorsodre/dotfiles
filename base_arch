@@ -133,6 +133,9 @@ yay -S slack-desktop
 yay -S spotify
 
 
+# custom wallpapers on login screen
+sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
+
 # pacman cheat-sheet:
 # pacman -S program-name  # installs a package
 # pacman -Q name          # search locally for programs  # installs a package
