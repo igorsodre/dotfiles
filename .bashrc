@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 # shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=2000
+HISTFILESIZE=4000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -191,7 +191,7 @@ alias openvim='vim ~/.vimrc'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
-# alias doupgrade='sudo pacman -Syu --noconfirm; sudo pacman -Qtdq --noconfirm && sudo pacman --noconfirm -Rs $(sudo pacman -Qtdq)';
+# alias doupgrade='sudo yay -Syu --noconfirm; sudo yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(sudo yay -Qtdq)';
 
 
 # Docker

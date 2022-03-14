@@ -132,6 +132,12 @@ yay -S slack-desktop
 
 yay -S spotify
 
+# windows bootable usb
+yay -S woeusb
+cd folder_of_my_windows_iso
+lsblk #to check wich sd the flashdrive is
+sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose
+
 
 # custom wallpapers on login screen
 sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
