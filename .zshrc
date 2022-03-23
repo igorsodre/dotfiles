@@ -13,6 +13,10 @@ alias vim='lvim'
 . ~/.asdf/plugins/java/set-java-home.zsh
 export PATH="$PATH:/home/sodre/.dotnet/tools"
 
+# set the gopath if go is installed
+# export GOPATH=$(go env GOPATH)
+# export GOROOT=$(go env GOROOT)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [ -f ~/.profile ]; then

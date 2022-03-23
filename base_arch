@@ -21,6 +21,8 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
+yay -S nerd-fonts-hack
+yay -S nerd-fonts-fira-code
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
@@ -142,18 +144,18 @@ sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose
 # custom wallpapers on login screen
 sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
 
-# pacman cheat-sheet:
-# pacman -S program-name  # installs a package
-# pacman -Q name          # search locally for programs  # installs a package
-# pacman -R name          # remove program, don't run it without extra options
-# pacman -Sy              # update local repositories, equivalent of apt update
-# pacman -Syu             # update local repositories AND download and install the updated versions. Equivalent of apt update && apt upgrade
-# pacman -Ss name         # search programs online. name can be ^name
-# pacman -Rns name        # remove program with all its dependecies and config files
-# pacman -Sc              # remove obsolete packages from cache
+# yay cheat-sheet:
+# yay -S program-name  # installs a package
+# yay -Q name          # search locally for programs  # installs a package
+# yay -R name          # remove program, don't run it without extra options
+# yay -Sy              # update local repositories, equivalent of apt update
+# yay -Syu             # update local repositories AND download and install the updated versions. Equivalent of apt update && apt upgrade
+# yay -Ss name         # search programs online. name can be ^name
+# yay -Rns name        # remove program with all its dependecies and config files
+# yay -Sc              # remove obsolete packages from cache
 
-# pacman -Q               # list all programs installed and all their dependencies
-# pacman -Qe               # list all programs installed without their dependencies
+# yay -Q               # list all programs installed and all their dependencies
+# yay -Qe               # list all programs installed without their dependencies
 
 # add the command below on the conf file. They have to be under the section # Misc Options
 sudoedit /etc/pacman.conf
