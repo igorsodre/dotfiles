@@ -162,7 +162,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-source $(dirname $(gem which colorls))/tab_complete.sh
+if command -v gem -h >/dev/null 2>&1 ; then
+  if gem list -i "^colorls$"; then
+    read varnamesource $(dirname $(gem which colorls))/tab_complete.sh
+  fi
+fi
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -173,7 +177,6 @@ alias LST='colorls --sd --gs --sf --tree=2'
 alias LL='colorls --sd --gs --sf -alf'
 alias LA='colorls --sd --gs --sf -A'
 alias LAT='colorls --sd --gs --sf -A --tree=2'
-alias L='colorls --sd --gs --sf -CF'
 alias lf='du -sh * | sort -h'
 alias top='htop'
 
@@ -190,8 +193,8 @@ alias openzsh='vim ~/.zshrc'
 alias openvim='vim ~/.vimrc'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
-alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
-# alias doupgrade='sudo yay -Syu --noconfirm; sudo yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(sudo yay -Qtdq)';
+# alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
+# alias doupgrade='yay -Syu --noconfirm; yay -Qtdq --noconfirm && yay --noconfirm -Rs $(sudo yay -Qtdq)';
 
 
 # Docker
