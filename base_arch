@@ -82,6 +82,7 @@ asdf global java openjdk-17
 asdf plugin add golang
 asdf list all golang
 asdf install golang 1.17.8
+asdf install golang 1.18
 asdf global golang 1.17.8
 
 ## asdf rust
