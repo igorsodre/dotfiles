@@ -137,9 +137,10 @@ yay -S spotify
 
 # windows bootable usb
 yay -S woeusb
+# on the program disks, unmount the flashdrive
 cd folder_of_my_windows_iso
 lsblk #to check wich sd the flashdrive is
-sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose
+sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose # this will take a long time. More than 40 minutes
 
 
 # custom wallpapers on login screen

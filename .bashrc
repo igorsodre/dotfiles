@@ -164,7 +164,7 @@ unset __conda_setup
 
 if command -v gem -h >/dev/null 2>&1 ; then
   if gem list -i "^colorls$"; then
-    read varnamesource $(dirname $(gem which colorls))/tab_complete.sh
+    source $(dirname $(gem which colorls))/tab_complete.sh
   fi
 fi
 
