@@ -5,7 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# alias vim='lvim'
+export PATH="$PATH:$HOME/.local/bin/"
+alias vim='lvim'
 
 # . $HOME/.asdf/asdf.sh
 
