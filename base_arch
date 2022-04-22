@@ -126,7 +126,7 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 
 
 # cargo tools
-cargo install bat
+yay -S bat
 asdf reshim
 
 
@@ -135,6 +135,10 @@ yay -S slack-desktop
 
 yay -S spotify
 
+
+# increase sudo timeout
+sudo visudo
+Defaults:sodre timestamp_timeout=560
 # windows bootable usb
 yay -S woeusb
 # on the program disks, unmount the flashdrive
