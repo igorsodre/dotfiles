@@ -1,8 +1,16 @@
 #! /bin/sh
+# add the command below on the conf file. They have to be under the section # Misc Options
+sudoedit /etc/pacman.conf
+Color
+ILoveCandy
+ParallelDownloads = 5
 
+# increase sudo timeout
+sudo visudo
+Defaults:sodre timestamp_timeout=560
 
-sudo pacman -Syyu;
-sudo pacman -S yay;
+sudo pacman -Syyu --noconfirm;
+sudo pacman -S yay --noconfirm;
 
 sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole --noconfirm
 
@@ -135,10 +143,6 @@ yay -S slack-desktop
 
 yay -S spotify
 
-
-# increase sudo timeout
-sudo visudo
-Defaults:sodre timestamp_timeout=560
 # windows bootable usb
 yay -S woeusb
 # on the program disks, unmount the flashdrive
@@ -162,8 +166,3 @@ sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/cus
 
 # yay -Q               # list all programs installed and all their dependencies
 # yay -Qe               # list all programs installed without their dependencies
-
-# add the command below on the conf file. They have to be under the section # Misc Options
-sudoedit /etc/pacman.conf
-Color
-ILoveCandy
