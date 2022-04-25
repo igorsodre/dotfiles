@@ -164,3 +164,6 @@ sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/cus
 
 # yay -Q               # list all programs installed and all their dependencies
 # yay -Qe               # list all programs installed without their dependencies
+
+
+# configure applet Grouped window list
