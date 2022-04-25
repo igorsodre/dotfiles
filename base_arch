@@ -12,11 +12,11 @@ Defaults:sodre timestamp_timeout=560
 sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
-sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole --noconfirm
+sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole spotify --noconfirm
 
-sudo yay -S snapd --noconfirm
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
+# sudo yay -S snapd --noconfirm
+# sudo systemctl enable --now snapd.socket
+# sudo ln -s /var/lib/snapd/snap /snap
 
 # install firefox through the graphical interface
 
@@ -29,8 +29,7 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
-yay -S nerd-fonts-hack
-yay -S nerd-fonts-fira-code
+yay -S nerd-fonts-hack nerd-fonts-fira-code --noconfirm
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
@@ -64,9 +63,9 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 6.0.201
+asdf install dotnet-core 6.0.202
 asdf install dotnet-core 5.0.406
-asdf global dotnet-core 6.0.201
+asdf global dotnet-core 6.0.202
 asdf reshim
 
 ## asdf ruby
@@ -80,40 +79,40 @@ asdf global ruby 3.1.1
 
 ## asdf java
 asdf plugin add java
-asdf list all java
-asdf install java openjdk-17
-asdf global java openjdk-17
+asdf list all java | grep openjdk
+asdf install java openjdk-18.0.1
+asdf global java openjdk-18.0.1
 # add this to .zshrc . ~/.asdf/plugins/java/set-java-home.zs
 
 
 ## asdf golang
 asdf plugin add golang
 asdf list all golang
-asdf install golang 1.17.8
-asdf install golang 1.18
-asdf global golang 1.17.8
+asdf install golang 1.17.9
+asdf install golang 1.18.1
+asdf global golang 1.17.9
 
 ## asdf rust
-asdf plugin-add rust
+asdf plugin add rust
 asdf list all rust
-asdf install rust 1.59.0
-asdf global rust 1.59.0
+asdf install rust 1.60.0
+asdf global rust 1.60.0
 
 # gem install lscolors
 gem install colorls
 
 # install discord through the graphical interface
 
-yay -S brave-browser
+yay -S brave-browser --noconfirm
 
 
 # docker
-yay -S docker
+yay -S docker --noconfirm
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker $USER
 newgrp docker
-yay -S docker-compose
+yay -S docker-compose --noconfirm
 
 
 
@@ -130,6 +129,7 @@ yay -S flat-remix
 
 # lunar vim
 sudo yay -S neovim
+npm install -g yarn
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 
@@ -140,8 +140,6 @@ asdf reshim
 
 # slack-desktop
 yay -S slack-desktop
-
-yay -S spotify
 
 # windows bootable usb
 yay -S woeusb
