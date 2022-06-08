@@ -149,6 +149,10 @@ lsblk #to check wich sd the flashdrive is
 sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose # this will take a long time. More than 40 minutes
 
 
+# how to mount a disk for read and write
+sudo mkdir /media/mount-point
+sudo mount -o rw /dev/sda3 /media/mount-point
+
 # custom wallpapers on login screen
 sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
 

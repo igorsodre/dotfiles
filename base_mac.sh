@@ -2,6 +2,8 @@ brew install asdf
 
 brew install neovim
 
+# Para mover monitores -> Shift it
+
 brew install bat
 # nerd fonts
 brew tap homebrew/cask-fonts && brew install --cask font-3270-nerd-font
