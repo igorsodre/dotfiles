@@ -4,19 +4,16 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
 alias vim='lvim'
-
-. $HOME/.asdf/asdf.sh
-# . /opt/asdf-vm/asdf.sh
+# . $HOME/.asdf/asdf.sh
+. /opt/asdf-vm/asdf.sh
 . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
+export PATH="$PATH:$HOME/.dotnet/tools/"
 . ~/.asdf/plugins/java/set-java-home.zsh
-export PATH="$PATH:/home/sodre/.dotnet/tools"
 
 # set the gopath if go is installed
-# export GOPATH=$(go env GOPATH)
-# export GOROOT=$(go env GOROOT)
-
+export GOPATH=$(go env GOPATH)
+export GOROOT=$(go env GOROOT)
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [ -f ~/.profile ]; then
@@ -129,3 +126,8 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Tribal specific setup
+export GOPRIVATE=github.com/tribal-credit/*,gitlab.com/tribal-credit/*
+alias teleport-login='tsh login --proxy=tribal.teleport.sh --auth=Okta_saml_connector'
+alias tsh-dev='tsh kube login tribal-dev'

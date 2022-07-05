@@ -181,7 +181,8 @@ alias lf='du -sh * | sort -h'
 alias top='htop'
 
 alias open-projects='cd ~/Documents/Projects'
-alias rebash='source ~/.bashrc'
+alias open-dot='cd ~/Documents/Projects/dotfiles'
+alias rebash='source ~/.zshrc'
 alias supercode='sudo code --user-data-dir="/tmp"'
 alias xopen='xdg-open'
 alias openbash='vim ~/.bashrc'
@@ -194,7 +195,7 @@ alias openvim='vim ~/.vimrc'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 # alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
-# alias doupgrade='yay -Syu --noconfirm; yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(yay -Qtdq)';
+alias doupgrade='yay -Syu --noconfirm; yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(yay -Qtdq)';
 
 
 # Docker

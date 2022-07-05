@@ -9,3 +9,8 @@ docker run -p 8080:80 -p 443:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPN
 
 ############### PRO TIPS
 # always search for bitnami images when using containers for development
+
+
+
+# after you install dotnet on your machine
+dotnet new --install "Amazon.Lambda.Templates"
