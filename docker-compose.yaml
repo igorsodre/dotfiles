@@ -153,15 +153,22 @@ services:
 volumes:
   postgresql_data:
     driver: local
+    # name: postgresql_data
   redis_data:
     driver: local
+    # name: redis_data
   rabbitmq_data:
     driver: local
+    # name: rabbitmq_data
   shard0_data:
     driver: local
+    # name: shard0_data
   cfg_data:
     driver: local
+    # name: cfg_data
   zookeeper_data:
     driver: local
+    # name: zookeeper_data
   kafka_data:
     driver: local
+    # name: kafka_data
