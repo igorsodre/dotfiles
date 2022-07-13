@@ -12,7 +12,7 @@ Defaults:sodre timestamp_timeout=560
 sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
-sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole spotify --noconfirm
+sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole spotify autojump ranger highlight mediainfo ueberzug tldr --noconfirm
 
 # sudo yay -S snapd --noconfirm
 # sudo systemctl enable --now snapd.socket
@@ -107,12 +107,11 @@ yay -S brave-browser --noconfirm
 
 
 # docker
-yay -S docker --noconfirm
+yay -S docker docker-compose --noconfirm
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker $USER
 newgrp docker
-yay -S docker-compose --noconfirm
 
 
 
