@@ -1,4 +1,15 @@
+wsl --install
+
+wsl --list --online
+
+wsl --install -d Ubuntu-20.04
+
 winget install JanDeDobbeleer.OhMyPosh
+Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+
+# after you already installed git
+Install-Module posh-git -Scope CurrentUser -Force
+Install-Module git-aliases -Scope CurrentUser -AllowClobber
 
 code $PROFILE
 

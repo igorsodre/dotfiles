@@ -691,3 +691,8 @@ Set-PSReadLineKeyHandler -Key Ctrl+Shift+t `
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet test")
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
+
+
+Set-Alias -Name grep -Value Select-String
+Import-Module posh-git
+Import-Module git-aliases -DisableNameChecking

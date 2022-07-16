@@ -83,9 +83,9 @@ asdf reshim
 asdf plugin add ruby
 asdf list all ruby
 sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
-asdf install ruby 3.1.1
+asdf install ruby 3.1.2
 # asdf install ruby 2.7.5
-asdf global ruby 3.1.1
+asdf global ruby 3.1.2
 
 
 ## asdf java
@@ -158,11 +158,14 @@ snap install discord
 
 
 # docker & docker-compose
-sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"
+sudo apt install ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+
 sudo apt update
-sudo apt install docker-ce -y
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
 sudo usermod -aG docker $USER
 newgrp docker
-sudo apt install docker-compose -y
