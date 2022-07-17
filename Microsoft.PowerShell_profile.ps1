@@ -700,3 +700,4 @@ Set-PSReadLineKeyHandler -Key Ctrl+Shift+t `
 Set-Alias -Name grep -Value Select-String
 Import-Module posh-git
 Import-Module git-aliases -DisableNameChecking
+Register-ProfileAliasInProfile

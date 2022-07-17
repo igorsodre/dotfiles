@@ -17,6 +17,10 @@ oh-my-posh init pwsh | Invoke-Expression
 
 Get-PoshThemes
 
+Install-Module HackF5.ProfileAlias #https://github.com/hackf5/powershell-profile-alias
+# Install-Module -Name Microsoft.PowerShell.UnixCompleters
+
+
 # cola no arquivo do profile
 oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/sonicboom_dark.omp.json | Invoke-Expression
 
