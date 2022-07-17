@@ -10,7 +10,11 @@ Import-Module -Name Terminal-Icons
 
 
 # oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/sonicboom_dark.omp.json | Invoke-Expression
-oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/cloud-native-azure.omp.json | Invoke-Expression
+# oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/cloud-native-azure.omp.json | Invoke-Expression
+# oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/sonicboom_light.omp.json | Invoke-Expression
+# oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/powerlevel10k_classic.omp.json | Invoke-Expression
+# oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/ blue-owl.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/takuya.omp.json | Invoke-Expression
 Import-Module -Name Terminal-Icons
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
