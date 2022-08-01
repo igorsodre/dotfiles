@@ -130,3 +130,46 @@ source $ZSH/oh-my-zsh.sh
 
 # autojump setup
 [[ -s /home/sodre/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh ]] && source /home/sodre/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh
+
+# colors ls autocomplete setup
+if command -v gem -h >/dev/null 2>&1 ; then
+  if gem list -i "^colorls$"; then
+    source $(dirname $(gem which colorls))/tab_complete.sh
+  fi
+fi
+
+# aliases
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias LS='colorls --sd --gs --sf'
+alias LST='colorls --sd --gs --sf --tree=2'
+alias LL='colorls --sd --gs --sf -alf'
+alias LA='colorls --sd --gs --sf -A'
+alias LAT='colorls --sd --gs --sf -A --tree=2'
+alias lf='du -sh * | sort -h'
+alias top='htop'
+
+alias open-projects='cd ~/Documents/Projects'
+alias open-dot='cd ~/Documents/Projects/dotfiles'
+alias rebash='source ~/.zshrc'
+alias supercode='sudo code --user-data-dir="/tmp"'
+alias xopen='xdg-open'
+alias openbash='vim ~/.bashrc'
+alias openprofile='vim ~/.profile'
+alias opennpm='vim ~/.npmrc'
+alias openenvironment='sudoedit /etc/environment'
+alias openhosts='sudoedit /etc/hosts'
+alias openzsh='vim ~/.zshrc'
+alias openvim='vim ~/.vimrc'
+alias openhere='xdg-open . &> /dev/null'
+alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
+# alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
+alias doupgrade='yay -Syu --noconfirm; yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(yay -Qtdq)';
+
+
+# Docker
+alias up-containers="docker-compose up -d"
+alias stop-containers="docker-compose stop"
+alias remove-containers="docker-compose down"

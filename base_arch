@@ -12,7 +12,7 @@ Defaults:sodre timestamp_timeout=560
 sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
-sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole spotify autojump ranger highlight mediainfo ueberzug tldr --noconfirm
+sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim --noconfirm
 
 # sudo yay -S snapd --noconfirm
 # sudo systemctl enable --now snapd.socket
@@ -44,8 +44,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 cp ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
 # copia o .zshrc pro home
 cp ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
-# restart
 
+# vimrc
+cp ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
+# restart
 
 
 git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
