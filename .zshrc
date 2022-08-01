@@ -128,7 +128,5 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Tribal specific setup
-export GOPRIVATE=github.com/tribal-credit/*,gitlab.com/tribal-credit/*
-alias teleport-login='tsh login --proxy=tribal.teleport.sh --auth=Okta_saml_connector'
-alias tsh-dev='tsh kube login tribal-dev'
+# autojump setup
+[[ -s /home/sodre/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh ]] && source /home/sodre/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh

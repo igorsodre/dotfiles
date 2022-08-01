@@ -26,6 +26,17 @@ sudo vim /etc/libvirt/libvirtd.conf
 
 sudo usermod -a -G libvirt $USER
 
+#### enable gpu passthrough
+
+# on your bios, find the setting IOMMU and enable it
+
+sudoedit /etc/default/grub
+
+# find the gpu device id with
+lspci -nn | grep "Radeon" # get the ids for the vga and audio
+# on the line GRUB_CMDLINE_LINUX_DEFAULT="*****" add => amd_iommu=on vfio-pci.ids=[id-video],[id-audio]
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 #######################
 # :: iptables-nft and iptables are in conflict. Remove iptables? [y/N] y
 # :: exfatprogs and exfat-utils are in conflict. Remove exfat-utils? [y/N] y
