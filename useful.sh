@@ -14,7 +14,7 @@ cat /sys/module/kvm_amd/parameters/nested
 
 sudo echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf
 
-sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs
+sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs ovmf swtpm
 
 sudo systemctl enable --now libvirtd
 
