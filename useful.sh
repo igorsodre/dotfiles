@@ -5,6 +5,8 @@ docker volume prune
 docker rm -f $(docker ps -a -q)
 docker volume rm $(docker volume ls -q)
 
+# grep
+grep -r "my_search_string" . --exclude-dir=/path/to/directory
 
 # Enable nested virtualization
 
