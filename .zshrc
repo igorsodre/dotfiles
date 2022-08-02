@@ -12,8 +12,9 @@ export PATH="$PATH:$HOME/.dotnet/tools/"
 . ~/.asdf/plugins/java/set-java-home.zsh
 
 # set the gopath if go is installed
-export GOPATH=$(go env GOPATH)
-export GOROOT=$(go env GOROOT)
+# export GOPATH=$(go env GOPATH)
+# export GOROOT=$(go env GOROOT)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [ -f ~/.profile ]; then
@@ -129,7 +130,12 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # autojump setup
-[[ -s /home/sodre/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh ]] && source /home/sodre/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+# angular autocompletion
+if command -v ng -v >/dev/null 2>&1; then
+  source <(ng completion script)
+fi
 
 # colors ls autocomplete setup
 if command -v gem -h >/dev/null 2>&1 ; then
@@ -163,6 +169,7 @@ alias openenvironment='sudoedit /etc/environment'
 alias openhosts='sudoedit /etc/hosts'
 alias openzsh='vim ~/.zshrc'
 alias openvim='vim ~/.vimrc'
+alias openneovim='vim ~/.config/nvim/init.vim'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 # alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'

@@ -45,7 +45,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tpope/vim-surround'
-Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'vim-scripts/ReplaceWithRegister' "go replace
 Plug 'christoomey/vim-system-copy'
 Plug 'ryanoasis/vim-devicons'
 " Plug 'ludovicchabant/vim-gutentags'

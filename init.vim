@@ -36,6 +36,8 @@ call plug#begin(expand('~/./plugged'))
 "*****************************************************************************
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -49,9 +51,11 @@ Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+Plug 'tpope/vim-surround'
+Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'kaicataldo/material.vim'
-
+Plug 'lunarvim/colorschemes'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -162,7 +166,8 @@ set ruler
 set number
 
 let no_buffers_menu=1
-colorscheme dracula
+" colorscheme dracula
+colorscheme onedarker
 
 " let g:material_terminal_italics = 1
 " let g:material_theme_style = 'default'
