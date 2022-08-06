@@ -125,39 +125,3 @@ export VISUAL=vim
 # export VISUAL=lvim
 export EDITOR="$VISUAL"
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-# if ! shopt -oq posix; then
-#   if [ -f /usr/share/bash-completion/bash_completion ]; then
-#     . /usr/share/bash-completion/bash_completion
-#   elif [ -f /etc/bash_completion ]; then
-#     . /etc/bash_completion
-#   fi
-# fi
-# export M2_HOME=/home/sodre/bin/apache-maven-3.6.3
-#export M2_HOME=/kdi/apache-maven-3.0.5
-#export MAVEN_HOME=/kdi/apache-maven-3.0.5
-#export M2="$M2_HOME/bin"
-# export M2=~/bin/kdi-linux-2.1/kdi/apache-maven-3.0.5/bin
-#export MAVEN_OPTS='-Xms256m -Xmx512m'
-#export JAVA_HOME="$HOME/bin/jdk1.8.0_221"
-# export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-#export PATH="$JAVA_HOME/bin:$M2:$PATH"
-#export ANDROID_HOME=$HOME/Android/Sdk
-#export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/sodre/bin/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/sodre/bin/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/sodre/bin/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/sodre/bin/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
