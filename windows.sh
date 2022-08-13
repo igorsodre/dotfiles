@@ -1,8 +1,17 @@
+# go to: https://github.com/microsoft/winget-cli   > releases latest > download the .msixbundle file and install it
+
+# enable hyper-v, linux subsystem on features
+
 wsl --install
 
 wsl --list --online
 
 wsl --install -d Ubuntu-20.04
+
+
+# powetshell 7
+winget install --id Microsoft.Powershell --source winget
+winget install Microsoft.WindowsTerminal
 
 winget install JanDeDobbeleer.OhMyPosh
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
