@@ -72,3 +72,7 @@ winget install -e --id Python.Python.3
 winget install -e --id JetBrains.Rider # download and install rider if it does not work
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+winget install -e --id Discord.Discord
+
+winget install -e --id DelugeTeam.Deluge
