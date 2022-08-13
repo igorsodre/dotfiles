@@ -5,7 +5,7 @@
 
 sudo apt update -y; sudo apt upgrade -y;
 
-sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silversearcher-ag fontconfig vlc flameshot konsole default-jdk fonts-powerline -y;
+sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim neovim silversearcher-ag fontconfig vlc flameshot konsole default-jdk fonts-powerline autojump ranger highlight mediainfo tldr -y;
 
 # take a look at asdf to manage all your programing languages
 
@@ -87,6 +87,11 @@ asdf install ruby 3.1.2
 # asdf install ruby 2.7.5
 asdf global ruby 3.1.2
 
+## asdf rust
+asdf plugin add rust
+asdf list all rust
+asdf install rust 1.63.0
+asdf global rust 1.63.0
 
 ## asdf java
 asdf plugin add java
@@ -97,28 +102,15 @@ asdf global java openjdk-17
 
 
 ## asdf golang
-asdf plugin add golang
-asdf list all golang
-asdf install golang 1.17.8
-asdf global golang 1.17.8
+# asdf plugin add golang
+# asdf list all golang
+# asdf install golang 1.17.8
+# asdf global golang 1.17.8
 
-asdf plugin add go-sdk
-asdf list-all go-sdk
-asdf install go-sdk 1.17.7
+# asdf plugin add go-sdk
+# asdf list-all go-sdk
+# asdf install go-sdk 1.17.7
 
-# install ruby - depricated
-# sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev # mint 18.04
-# sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev # mint 20
-
-# git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-# echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-# source ~/.bashrc
-# type rbenv
-# git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-# rbenv install -l
-# rbenv install 2.7.4
-# rbenv global 2.7.4
 
 # gem install lscolors
 gem install colorls
@@ -158,14 +150,15 @@ snap install discord
 
 
 # docker & docker-compose
-sudo apt install ca-certificates curl gnupg lsb-release
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# sudo apt install ca-certificates curl gnupg lsb-release
+# sudo mkdir -p /etc/apt/keyrings
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+# echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 
-sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+# sudo apt update
+# sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
+sudo apt install docker docker-compose
 sudo usermod -aG docker $USER
 newgrp docker
