@@ -8,8 +8,8 @@ docker volume rm $(docker volume ls -q)
 # grep
 grep -r "my_search_string" . --exclude-dir=/path/to/directory
 
-# Enable nested virtualization
-
+# Enable nested virtualization: https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/
+# check if it is enabled: cat /sys/module/kvm_amd/parameters/nested
 sudo modprobe -r kvm_amd
 sudo modprobe kvm_amd nested=1
 cat /sys/module/kvm_amd/parameters/nested
