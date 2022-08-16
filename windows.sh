@@ -56,6 +56,8 @@ Install-Module z -AllowClobber
 ###########################
 winget install -e --id BraveSoftware.BraveBrowser
 
+winget install -e --id 7zip.7zip
+
 winget install -e --id Docker.DockerDesktop
 
 winget install -e --id VideoLAN.VLC # if it does not work, download and install it
