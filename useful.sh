@@ -43,3 +43,43 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 # :: iptables-nft and iptables are in conflict. Remove iptables? [y/N] y
 # :: exfatprogs and exfat-utils are in conflict. Remove exfat-utils? [y/N] y
 ######################
+
+# samba client
+# on the server: https://techviewleo.com/configure-samba-share-on-arch-manjaro-garuda/
+yay -S samba smbclient
+sudo vim /etc/samba/smb.conf
+
+# Global parameters: pate it in the file just opened
+[global]
+	dns proxy = No
+	log file = /var/log/samba/%m.log
+	max log size = 50
+	server role = standalone server
+	server string = Samba Server
+	workgroup = MYGROUP
+	idmap config * : backend = tdb
+
+[homes]
+   comment = Home Directories
+   browseable = no
+   writable = yes
+
+[LinuxHost]
+  comment = Host Share
+  path = /home/sodre/Theorem/Shared
+  valid users = sodre
+  public = no
+  writable = yes
+  printable = no
+
+
+yay -S cifs-utils smbclient
+smbclient //192.168.0.30/LinuxHost -U sodre
+
+# mount permanently
+sudo mkdir -p /mnt/shares
+sudo mount -t cifs -o username=sodre //192.168.0.30/LinuxHost /mnt/shares
+
+//192.168.0.30/LinuxHost  /mnt/shared cifs credentials=/.sambacreds 0 0
+//192.168.0.30/LinuxHost  /mnt/shared cifs username=sodre,password=mypassword,noperm 0 0
+alias opensamba='sudo mount -a'

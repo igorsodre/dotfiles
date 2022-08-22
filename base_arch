@@ -12,13 +12,12 @@ Defaults:sodre timestamp_timeout=560
 sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
-sudo yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim --noconfirm
+# enable AUR on sofware center
+yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition brave-browser --noconfirm
 
 # sudo yay -S snapd --noconfirm
 # sudo systemctl enable --now snapd.socket
 # sudo ln -s /var/lib/snapd/snap /snap
-
-# install firefox through the graphical interface
 
 
 sudo mkdir /usr/share/fonts/custom
@@ -47,9 +46,16 @@ cp ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
 
 # vimrc
 cp ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
+
+mkdir -p ~/.config/nvim/
+cp ~/Documents/Projects/dotfiles/init.vim ~/.config/nvim/
+
+mkdir -p ~/.config/lvim/
+cp ~/Documents/Projects/dotfiles/config.lua ~/.config/lvim/config.lua
+
 # restart
 
-
+cd /tmp
 git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
 . /opt/asdf-vm/asdf.sh
 
@@ -65,9 +71,9 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 6.0.202
+asdf install dotnet-core 6.0.400
 asdf install dotnet-core 5.0.406
-asdf global dotnet-core 6.0.202
+asdf global dotnet-core 6.0.400
 asdf reshim
 
 ## asdf ruby
@@ -86,27 +92,16 @@ asdf install java openjdk-18.0.1
 asdf global java openjdk-18.0.1
 # add this to .zshrc . ~/.asdf/plugins/java/set-java-home.zs
 
-
-## asdf golang
-asdf plugin add golang
-asdf list all golang
-asdf install golang 1.17.9
-asdf install golang 1.18.1
-asdf global golang 1.17.9
-
 ## asdf rust
 asdf plugin add rust
 asdf list all rust
-asdf install rust 1.60.0
-asdf global rust 1.60.0
+asdf install rust 1.63.0
+asdf global rust 1.63.0
 
 # gem install lscolors
 gem install colorls
 
 # install discord through the graphical interface
-
-yay -S brave-browser --noconfirm
-
 
 # docker
 yay -S docker docker-compose --noconfirm
@@ -114,7 +109,6 @@ sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker $USER
 newgrp docker
-
 
 
 # kde-konsole-themes
@@ -129,14 +123,8 @@ cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
 yay -S flat-remix
 
 # lunar vim
-sudo yay -S neovim
 npm install -g yarn
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-
-
-# cargo tools
-yay -S bat
-asdf reshim
 
 
 # slack-desktop
