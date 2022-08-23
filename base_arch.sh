@@ -160,3 +160,10 @@ sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/cus
 
 
 # configure applet Grouped window list
+
+#themes
+cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-theme; ./install.sh;
+
+cd /tmp; git clone https://github.com/vinceliuice/Fluent-gtk-theme.git ; cd Fluent-gtk-theme; ./install.sh;
+
+cd /tmp; git clone https://github.com/vinceliuice/Fluent-icon-theme.git ; cd Fluent-icon-theme; ./install.sh;
