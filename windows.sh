@@ -17,7 +17,15 @@ wsl --set-default-version 2
 
 # powetshell 7
 winget install --id Microsoft.Powershell --source winget
+
+# git
+winget install -e --id Git.Git
+
+# terminal
 winget install Microsoft.WindowsTerminal
+
+# vscode
+winget install -e --id Microsoft.VisualStudioCode
 
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 
@@ -26,6 +34,8 @@ Install-Module posh-git -Scope CurrentUser -Force
 Install-Module oh-my-posh -Scope CurrentUser
 winget install JanDeDobbeleer.OhMyPosh
 Install-Module git-aliases -Scope CurrentUser -AllowClobber
+Install-Module -Name Terminal-Icons -Repository PSGallery
+winget install GitHub.cli
 
 code $PROFILE
 
@@ -37,23 +47,9 @@ Install-Module HackF5.ProfileAlias #https://github.com/hackf5/powershell-profile
 # Install-Module -Name Microsoft.PowerShell.UnixCompleters
 
 
-# cola no arquivo do profile
-oh-my-posh init pwsh --config C:\Users\sodre\AppData\Local\Programs\oh-my-posh\themes/sonicboom_dark.omp.json | Invoke-Expression
+# paste the contents of the PowerShell_profile.ps1 file on this folder to the system's profile file
 
-winget install GitHub.cli
-
-Install-Module -Name Terminal-Icons -Repository PSGallery
-
-# paste in your profile
-Import-Module -Name Terminal-Icons
-
-Install-Module PSReadLine -force
-
-Set-PSReadLineOption -PredictionSource History
-
-Install-Module z -AllowClobber
-
-###########################
+########################### useful software
 winget install -e --id BraveSoftware.BraveBrowser
 
 winget install -e --id 7zip.7zip
@@ -72,9 +68,12 @@ npm install -g yarn
 winget install -e --id Python.Python.3
 
 winget install -e --id JetBrains.Rider # download and install rider if it does not work
+winget install -e --id JetBrains.DataGrip
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 winget install -e --id Discord.Discord
 
 winget install -e --id DelugeTeam.Deluge
+
+winget install -e --id Postman.Postman

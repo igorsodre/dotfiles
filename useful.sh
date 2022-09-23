@@ -49,7 +49,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 yay -S samba smbclient
 sudo vim /etc/samba/smb.conf
 
-# Global parameters: pate it in the file just opened
+# Global parameters: paste it in the file just opened
 [global]
 	dns proxy = No
 	log file = /var/log/samba/%m.log
