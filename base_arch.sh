@@ -13,7 +13,13 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake git visual-studio-code-bin imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition brave-browser --noconfirm
+yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition brave gnome-keyring libsecret libgnome-keyring --noconfirm
+
+# vscode
+cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
+
+# brave
+cd /tmp; git clone https://aur.archlinux.org/brave.git; cd brave; makepkg -si;
 
 # sudo yay -S snapd --noconfirm
 # sudo systemctl enable --now snapd.socket
