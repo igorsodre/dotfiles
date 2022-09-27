@@ -13,7 +13,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition brave gnome-keyring libsecret libgnome-keyring --noconfirm
+yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring --noconfirm
 
 # vscode
 cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
@@ -61,10 +61,8 @@ cp ~/Documents/Projects/dotfiles/config.lua ~/.config/lvim/config.lua
 
 # restart
 
-cd /tmp
-git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
-. /opt/asdf-vm/asdf.sh
-
+# asdf
+cd /tmp; git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si; . /opt/asdf-vm/asdf.sh;
 
 ## asdf node
 asdf plugin add nodejs
@@ -107,14 +105,11 @@ asdf global rust 1.63.0
 # gem install lscolors
 gem install colorls
 
-# install discord through the graphical interface
+# discord
+yay -S discord_arch_electron
 
 # docker
-yay -S docker docker-compose --noconfirm
-sudo systemctl enable docker.service
-sudo systemctl start docker.service
-sudo usermod -aG docker $USER
-newgrp docker
+yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; sudo systemctl start docker.service; sudo usermod -aG docker $USER; newgrp docker;
 
 
 # kde-konsole-themes
@@ -129,7 +124,7 @@ cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
 yay -S flat-remix
 
 # lunar vim
-npm install -g yarn
+npm install -g yarn npm
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 

@@ -44,6 +44,21 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 # :: exfatprogs and exfat-utils are in conflict. Remove exfat-utils? [y/N] y
 ######################
 
+
+
+#### When installing a windows vm:
+After instaltion, download the spice-guest-tools-latest and install it
+download virtio drivers
+
+# vm config:
+# cpu: 1 socket, 6 cores, 2 threads
+# memory: 32768
+# create another sata cdrom, mount the virtio
+# virtual network: 'default': NAT, device model: e1000e
+# video: QXL
+
+
+
 # samba client
 # on the server: https://techviewleo.com/configure-samba-share-on-arch-manjaro-garuda/
 yay -S samba smbclient
