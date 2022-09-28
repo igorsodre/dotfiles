@@ -16,7 +16,7 @@ cat /sys/module/kvm_amd/parameters/nested
 
 sudo echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf
 
-sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs ovmf swtpm
+sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs ovmf swtpm iptables-nft exfatprogs
 
 sudo systemctl enable --now libvirtd
 
@@ -26,7 +26,7 @@ sudo systemctl status libvirtd
 # uncomment the option "unix_sock_rw_perms" and leave the permission as default "0770" => unix_sock_rw_perms = "0770"
 sudo vim /etc/libvirt/libvirtd.conf
 
-sudo usermod -a -G libvirt $USER
+sudo usermod -a -G libvirt $USER #restart after this
 
 #### enable gpu passthrough
 
@@ -98,3 +98,8 @@ sudo mount -t cifs -o username=sodre //192.168.0.30/LinuxHost /mnt/shares
 //192.168.0.30/LinuxHost  /mnt/shared cifs credentials=/.sambacreds 0 0
 //192.168.0.30/LinuxHost  /mnt/shared cifs username=sodre,password=mypassword,noperm 0 0
 alias opensamba='sudo mount -a'
+
+
+## Test ssd speed
+lsblk
+sudo hdparm -Tt /dev/nvme0n1
