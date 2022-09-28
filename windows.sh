@@ -12,6 +12,7 @@ wsl --list --online
 
 wsl --install -d Ubuntu-20.04 # change the start script for ubuntu to C:\Windows\system32\wsl.exe ~ -d Ubuntu-20.04
 
+# follow these instructions https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 # follow this link for enabling wsl2
 wsl --set-default-version 2
 
