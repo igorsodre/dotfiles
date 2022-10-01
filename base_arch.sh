@@ -118,7 +118,7 @@ git clone git@github.com:nareshv/kde-konsole-colorschemes.git && git clone https
 
 cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.local/share/konsole -r && cp Sweet/* ~/.local/share/konsole -r && cp materia-kde/* ~/.local/share/konsole -r && cp Nordic/kde/konsole/* ~/.local/share/konsole -r
 cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
-
+# Doing the above, also fixes konsole broken profiles
 
 # flat-remix themes
 yay -S flat-remix
