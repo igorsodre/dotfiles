@@ -81,9 +81,17 @@ $j::
 return
 ; END natural instinct ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+; Caroming
+$w::
+  SendEvent ^{d}^{d}{w}{w}
+  Sleep 1000
+  SendEvent {NumpadSub}{NumpadSub}{NumpadMult}{NumpadMult}
+return
+
 $+c::
   sendEvent {NumpadSub}
   sendEvent C
+  reload
 return
 
 ; adren bomb
