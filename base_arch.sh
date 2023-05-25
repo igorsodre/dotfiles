@@ -55,6 +55,7 @@ cp ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
 
 mkdir -p ~/.config/nvim/
 cp ~/Documents/Projects/dotfiles/init.vim ~/.config/nvim/
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir -p ~/.config/lvim/
 cp ~/Documents/Projects/dotfiles/config.lua ~/.config/lvim/config.lua

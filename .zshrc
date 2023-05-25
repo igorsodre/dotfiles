@@ -127,7 +127,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -177,7 +176,7 @@ alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 # alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
 alias doupgrade='yay -Syu --noconfirm; yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(yay -Qtdq)';
-alias update-keyring='sudo pacman -Sy archlinux-keyring && pacman -Su'
+alias update-keyring='sudo pacman -Sy archlinux-keyring && sudo pacman -Sy endeavouros-keyring && pacman -Su'
 
 
 # Docker
