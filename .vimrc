@@ -570,6 +570,7 @@ nnoremap <C-a> ggVG
 
 " Insert new line under de current line (only works for gvim)
 inoremap <S-CR> <CR><Esc>0<backspace>a
+nnoremap ds<space> F<space>xf<space>x
 
 "cicle trhough buffers
 nnoremap <leader>a :bp<CR>
