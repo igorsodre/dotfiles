@@ -1,6 +1,26 @@
-
 vim.g.mapleader = ","
+
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+vim.cmd.inoreabbrev({ "<buffer>", "W!", "w!", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "Q!", "q!", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "Qall!", "qall!", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "Wq", "wq", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "Wa", "wa", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "wQ", "wq", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "WQ", "wq", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "W", "w", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "Q", "q", })
+
+vim.cmd.inoreabbrev({ "<buffer>", "Qall", "qall", })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -22,10 +42,10 @@ end)
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -48,3 +68,9 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 -- vim.keymap.set("n", "<leader><leader>", function()
 --     vim.cmd("so")
 -- end)
+
+vim.keymap.set("n", "<C-a>", "ggVG", { silent = true })
+
+vim.keymap.set('n', 'ds<space>', 'F<space>xf<space>x')
+vim.keymap.set('n', '<leader>a', ':bp<CR>')
+vim.keymap.set('n', '<leader>d', ':bn<CR>')

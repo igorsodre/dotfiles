@@ -10,5 +10,5 @@ vim.g.NERDTreeExactMatchHighlightFullName = 1
 vim.g.NERDTreePatternMatchHighlightFullName = 1
 
 vim.keymap.set('n', '<C-e>', ':NERDTreeToggle<CR>', { desc = 'Open file explorer', silent = true })
-vim.keymap.set('n', 'A-e', ':NERDTreeFind<CR>', { desc = 'Open file explorer in current file', silent = true })
-vim.keymap.set('i', 'C-e', '<Esc>:NERDTreeFind<CR><C-w>li', { desc = 'Open file explorer in current file when in edit mode', silent = true })
+vim.keymap.set('n', '<A-e>', ':NERDTreeFind<CR>', { desc = 'Open file explorer in current file', silent = true })
+vim.keymap.set('i', '<C-e>', '<Esc>:NERDTreeFind<CR><C-w>li', { desc = 'Open file explorer in current file when in edit mode', silent = true })

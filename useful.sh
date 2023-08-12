@@ -103,3 +103,8 @@ alias opensamba='sudo mount -a'
 ## Test ssd speed
 lsblk
 sudo hdparm -Tt /dev/nvme0n1
+
+
+
+## on Konsole
+# edit current profile -> keyboard -> "Return+shift" = \r\E[H\E\x7fa
