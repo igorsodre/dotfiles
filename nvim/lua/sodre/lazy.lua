@@ -15,7 +15,7 @@ require('lazy').setup({
     { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
     'folke/trouble.nvim',
     'christoomey/vim-system-copy',
-
+    'mg979/vim-visual-multi',
     {
         -- Highlight, edit, and navigate code
         'nvim-treesitter/nvim-treesitter',
@@ -47,8 +47,8 @@ require('lazy').setup({
         branch = 'v2.x',
         dependencies = {
             -- LSP Support
-            { 'neovim/nvim-lspconfig' },     -- Required
-            { 'williamboman/mason.nvim' },   -- Optional
+            { 'neovim/nvim-lspconfig' },             -- Required
+            { 'williamboman/mason.nvim' },           -- Optional
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
@@ -56,7 +56,7 @@ require('lazy').setup({
             { 'hrsh7th/cmp-buffer' },
             { 'hrsh7th/cmp-path' },
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' }, -- Required
+            { 'L3MON4D3/LuaSnip' },     -- Required
             { 'rafamadriz/friendly-snippets' }
         }
     },
