@@ -58,6 +58,7 @@ inoremap <S-CR> <CR><Esc>0<backspace>a
 
 " Adding another way to enter normal mode
 inoremap <S-q> <Esc>
+vnoremap <S-q> <Esc>
 
 
 "" Vmap for maintain Visual Mode after shifting > and <
@@ -74,3 +75,4 @@ nmap u <Action>($Undo)
 
 sethandler <C-d> n:vim i-x:ide
 set ideajoin
+set scrolloff=8
