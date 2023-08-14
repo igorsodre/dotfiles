@@ -3,10 +3,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'vim-scripts/argtextobj.vim'
-
-
-
-
+Plug 'christoomey/vim-system-copy'
+" Plug 'mg979/vim-visual-multi'
 
 
 """"""""""""""""""""""""""""   keymaps  """""""""""""""""""""""""""""""""
@@ -20,7 +18,7 @@ set ignorecase
 set smartcase
 
 "" Enable hidden buffers
-set hidden
+" set hidden
 
 " Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
@@ -31,16 +29,16 @@ nnoremap N Nzzzv
 "" Abbreviations
 "*****************************************************************************
 "" no one is really happy until you have this shortcuts
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
-cnoreabbrev Wq wq
-cnoreabbrev Wa wa
-cnoreabbrev wQ wq
-cnoreabbrev WQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Qall qall
+" cnoreabbrev W! w!
+" cnoreabbrev Q! q!
+" cnoreabbrev Qall! qall!
+" cnoreabbrev Wq wq
+" cnoreabbrev Wa wa
+" cnoreabbrev wQ wq
+" cnoreabbrev WQ wq
+" cnoreabbrev W w
+" cnoreabbrev Q q
+" cnoreabbrev Qall qall
 
 "" Remember cursor position
 augroup vimrc-remember-cursor-position

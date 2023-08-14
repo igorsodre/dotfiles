@@ -15,7 +15,9 @@ require('lazy').setup({
     { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
     'folke/trouble.nvim',
     'christoomey/vim-system-copy',
+    'vim-scripts/argtextobj.vim',
     'mg979/vim-visual-multi',
+
     {
         -- Highlight, edit, and navigate code
         'nvim-treesitter/nvim-treesitter',
