@@ -39,6 +39,7 @@ nnoremap N Nzzzv
 " cnoreabbrev W w
 " cnoreabbrev Q q
 " cnoreabbrev Qall qall
+set relativenumber
 
 "" Remember cursor position
 augroup vimrc-remember-cursor-position

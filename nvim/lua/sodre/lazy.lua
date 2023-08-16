@@ -17,6 +17,12 @@ require('lazy').setup({
     'christoomey/vim-system-copy',
     'vim-scripts/argtextobj.vim',
     'mg979/vim-visual-multi',
+    'michaeljsmith/vim-indent-object',
+
+    'vim-airline/vim-airline',
+    'vim-airline/vim-airline-themes',
+    'xiyaowong/transparent.nvim',
+    'rmagatti/auto-session',
 
     {
         -- Highlight, edit, and navigate code
@@ -30,7 +36,7 @@ require('lazy').setup({
     'ThePrimeagen/refactoring.nvim',
     'mbbill/undotree',
 
-    'tpope/vim-fugitive',
+    -- 'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
     'jiangmiao/auto-pairs',
     'tpope/vim-surround',
@@ -97,19 +103,19 @@ require('lazy').setup({
         end,
     },
 
-    {
-        -- Set lualine as statusline
-        'nvim-lualine/lualine.nvim',
-        -- See `:help lualine.txt`
-        opts = {
-            options = {
-                icons_enabled = false,
-                theme = 'onedark',
-                component_separators = '|',
-                section_separators = '',
-            },
-        },
-    },
+    -- {
+    --     -- Set lualine as statusline
+    --     'nvim-lualine/lualine.nvim',
+    --     -- See `:help lualine.txt`
+    --     opts = {
+    --         options = {
+    --             icons_enabled = false,
+    --             theme = 'onedark',
+    --             component_separators = '|',
+    --             section_separators = '',
+    --         },
+    --     },
+    -- },
 
     {
         -- Add indentation guides even on blank lines
