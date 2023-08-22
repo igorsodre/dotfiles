@@ -5,7 +5,7 @@ if not vim.loop.fs_stat(lazypath) then
         'clone',
         '--filter=blob:none',
         'https://github.com/folke/lazy.nvim.git',
-        '--branch=stable', -- latest stable release
+        '--branch=stable',     -- latest stable release
         lazypath,
     }
 end
@@ -18,6 +18,7 @@ require('lazy').setup({
     'vim-scripts/argtextobj.vim',
     'mg979/vim-visual-multi',
     'michaeljsmith/vim-indent-object',
+    'tpope/vim-repeat',
 
     'vim-airline/vim-airline',
     'vim-airline/vim-airline-themes',
@@ -36,7 +37,6 @@ require('lazy').setup({
     'ThePrimeagen/refactoring.nvim',
     'mbbill/undotree',
 
-    -- 'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
     'jiangmiao/auto-pairs',
     'tpope/vim-surround',
@@ -83,14 +83,6 @@ require('lazy').setup({
                 topdelete = { text = '‾' },
                 changedelete = { text = '~' },
             },
-            on_attach = function(bufnr)
-                vim.keymap.set('n', '<leader>gp', require('gitsigns').prev_hunk,
-                    { buffer = bufnr, desc = '[G]o to [P]revious Hunk' })
-                vim.keymap.set('n', '<leader>gn', require('gitsigns').next_hunk,
-                    { buffer = bufnr, desc = '[G]o to [N]ext Hunk' })
-                vim.keymap.set('n', '<leader>ph', require('gitsigns').preview_hunk,
-                    { buffer = bufnr, desc = '[P]review [H]unk' })
-            end,
         },
     },
 
@@ -102,20 +94,6 @@ require('lazy').setup({
             vim.cmd.colorscheme 'onedark'
         end,
     },
-
-    -- {
-    --     -- Set lualine as statusline
-    --     'nvim-lualine/lualine.nvim',
-    --     -- See `:help lualine.txt`
-    --     opts = {
-    --         options = {
-    --             icons_enabled = false,
-    --             theme = 'onedark',
-    --             component_separators = '|',
-    --             section_separators = '',
-    --         },
-    --     },
-    -- },
 
     {
         -- Add indentation guides even on blank lines
@@ -141,8 +119,5 @@ require('lazy').setup({
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {} },
 
-    'folke/zen-mode.nvim',
-    'github/copilot.vim',
-    'eandrju/cellular-automaton.nvim',
-    'laytan/cloak.nvim',
+    -- 'github/copilot.vim',
 }, {})

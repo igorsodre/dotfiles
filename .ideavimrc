@@ -50,6 +50,7 @@ augroup END
 
 " delete surrounding space
 nnoremap ds<space> F<space>xf<space>x
+nnoremap <leader><space> :noh<CR>
 
 " Insert new line under de current line (only works for gvim)
 inoremap <S-CR> <CR><Esc>0<backspace>a
