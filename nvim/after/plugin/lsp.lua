@@ -48,8 +48,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
   vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
   vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
+  -- vim.keymap.set("n", "<CR>.", function() vim.lsp.buf.code_action() end, opts)
   vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-  vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+  -- vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
@@ -70,7 +71,7 @@ vim.diagnostic.config({
 -- tar -xvf omnisharp-linux-x64-net6.0.tar.gz
 
 local pid = vim.fn.getpid()
-local omnisharp_bin = "/home/sodre/.local/omnisharp/OmniSharp"
+local omnisharp_bin = vim.fn.expand("~/.local/omnisharp/OmniSharp")
 local util = require 'lspconfig/util'
 
 vim.g.OmniSharp_server_use_net6 = 1
@@ -116,7 +117,7 @@ local config = {
 
     -- Only run analyzers against open files when 'enableRoslynAnalyzers' is
     -- true
-  analyze_open_documents_only = false,
+  analyze_open_documents_only = true,
 
 
   default_config = {
