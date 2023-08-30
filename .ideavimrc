@@ -59,8 +59,9 @@ inoremap <S-CR> <CR><Esc>0<backspace>a
 " Adding another way to enter normal mode
 inoremap <S-q> <Esc>
 vnoremap <S-q> <Esc>
-inoremap <C-w> <End>
-inoremap <C-b> <Home>
+inoremap <C-w> <Esc><S-a>
+inoremap <C-b> <Esc><S-i>
+inoremap <C-o> <Esc>O
 
 
 "" Vmap for maintain Visual Mode after shifting > and <
@@ -73,7 +74,9 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 map <leader>f <Action>(ReformatCode)
-nmap u <Action>($Undo)
+nnoremap [m <Action>(MethodUp)
+nnoremap ]m <Action>(MethodUp)
+nnoremap u <Action>($Undo)
 
 sethandler <C-d> n:vim i-x:ide
 sethandler <C-w> i:vim n-x:ide
