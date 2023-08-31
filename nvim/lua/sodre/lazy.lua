@@ -70,8 +70,8 @@ require('lazy').setup({
             { 'rafamadriz/friendly-snippets' }
         }
     },
-    'OmniSharp/omnisharp-vim',
-    'Hoffs/omnisharp-extended-lsp.nvim',
+    -- 'OmniSharp/omnisharp-vim',
+    -- 'Hoffs/omnisharp-extended-lsp.nvim',
 
     {
         -- Adds git related signs to the gutter, as well as utilities for managing changes
