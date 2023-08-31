@@ -18,6 +18,8 @@ require('lazy').setup({
     'vim-scripts/argtextobj.vim',
     'mg979/vim-visual-multi',
     'michaeljsmith/vim-indent-object',
+    'D4KU/vim-textobj-chainmember',
+    'Julian/vim-textobj-variable-segment',
     'tpope/vim-repeat',
 
     'vim-airline/vim-airline',
