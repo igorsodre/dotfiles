@@ -13,7 +13,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep --noconfirm
+yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin --noconfirm
 
 # vscode
 cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
@@ -34,7 +34,7 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
-yay -S nerd-fonts-hack nerd-fonts-fira-code --noconfirm
+yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
@@ -53,9 +53,10 @@ cp ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
 # vimrc
 cp ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
 
-mkdir -p ~/.config/nvim/
-cp ~/Documents/Projects/dotfiles/init.vim ~/.config/nvim/
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ~/.config/
+# cp ~/Documents/Projects/dotfiles/init.vim ~/.config/nvim/
+ln -s ~/Documents/Projects/dotfiles/nvim ~/.config/nvim
+# curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir -p ~/.config/lvim/
 cp ~/Documents/Projects/dotfiles/config.lua ~/.config/lvim/config.lua
@@ -76,25 +77,25 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 6.0.400
-asdf install dotnet-core 5.0.406
-asdf global dotnet-core 6.0.400
+asdf install dotnet-core 7.0.400
+# asdf install dotnet-core 5.0.406
+asdf global dotnet-core 7.0.400
 asdf reshim
 
 ## asdf ruby
 asdf plugin add ruby
 asdf list all ruby
 sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
-asdf install ruby 3.1.1
+asdf install ruby 3.2.2
 # asdf install ruby 2.7.5
-asdf global ruby 3.1.1
+asdf global ruby 3.2.2
 
 
 ## asdf java
 asdf plugin add java
 asdf list all java | grep openjdk
-asdf install java openjdk-18.0.1
-asdf global java openjdk-18.0.1
+asdf install java openjdk-21
+asdf global java openjdk-21
 # add this to .zshrc . ~/.asdf/plugins/java/set-java-home.zs
 
 ## asdf rust
@@ -115,19 +116,14 @@ yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; 
 
 # kde-konsole-themes
 cd /tmp
-git clone git@github.com:nareshv/kde-konsole-colorschemes.git && git clone https://gitlab.com/protesilaos/modus-themes.git && git clone https://github.com/EliverLara/Sweet.git && git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git && git clone https://github.com/EliverLara/Nordic.git
+git clone git@github.com:nareshv/kde-konsole-colorschemes.git ; git clone https://gitlab.com/protesilaos/modus-themes.git ; git clone https://github.com/EliverLara/Sweet.git ; git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git ; git clone https://github.com/EliverLara/Nordic.git
 
-cp kde-konsole-colorschemes/* ~/.local/share/konsole -r && cp modus-themes/* ~/.local/share/konsole -r && cp Sweet/* ~/.local/share/konsole -r && cp materia-kde/* ~/.local/share/konsole -r && cp Nordic/kde/konsole/* ~/.local/share/konsole -r
+cp kde-konsole-colorschemes/* ~/.local/share/konsole -r ; cp modus-themes/* ~/.local/share/konsole -r ; cp Sweet/* ~/.local/share/konsole -r ; cp materia-kde/* ~/.local/share/konsole -r ; cp Nordic/kde/konsole/* ~/.local/share/konsole -r
 cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
 # Doing the above, also fixes konsole broken profiles
 
 # flat-remix themes
 yay -S flat-remix
-
-# lunar vim
-npm install -g yarn npm
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-
 
 # slack-desktop
 yay -S slack-desktop
@@ -145,6 +141,7 @@ sudo mkdir /media/mount-point
 sudo mount -o rw /dev/sda3 /media/mount-point
 
 # custom wallpapers on login screen
+sudo mkdir -p /usr/share/backgrounds/custom/
 sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
 
 # yay cheat-sheet:
