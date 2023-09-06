@@ -75,6 +75,11 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+nmap J mzJ`z
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+nmap Q <nop>
+
 map <leader>f <Action>(ReformatCode)
 nmap <C-[> <Action>(MethodUp)
 nmap <C-]> <Action>(MethodDown)
