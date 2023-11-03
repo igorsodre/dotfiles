@@ -6,13 +6,21 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH="$PATH:$HOME/.local/bin/"
-alias vim='lvim'
+alias vim='nvim'
 
 # . $HOME/.asdf/asdf.sh
 . /opt/asdf-vm/asdf.sh
-. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
-export PATH="$PATH:$HOME/.dotnet/tools/"
-. ~/.asdf/plugins/java/set-java-home.zsh
+
+if [ -f ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh ]; then
+  . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
+  export PATH="$PATH:$HOME/.dotnet/tools/"
+fi
+
+
+if [ -f ~/.asdf/plugins/java/set-java-home.zsh ]; then
+  . ~/.asdf/plugins/java/set-java-home.zsh
+fi
+
 
 # set the gopath if go is installed
 # export GOPATH=$(go env GOPATH)

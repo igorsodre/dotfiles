@@ -13,7 +13,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc flameshot bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin --noconfirm
+yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin ffmpegthumbs --noconfirm
 
 # vscode
 cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
@@ -58,8 +58,8 @@ mkdir -p ~/.config/
 ln -s ~/Documents/Projects/dotfiles/nvim ~/.config/nvim
 # curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-mkdir -p ~/.config/lvim/
-cp ~/Documents/Projects/dotfiles/config.lua ~/.config/lvim/config.lua
+#mkdir -p ~/.config/lvim/
+#cp ~/Documents/Projects/dotfiles/config.lua ~/.config/lvim/config.lua
 
 # restart
 
