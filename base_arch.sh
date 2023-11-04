@@ -15,9 +15,13 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick git copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin ffmpegthumbs --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs --noconfirm
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
+
+
+# to enable wayland
+yay -S plasma-wayland-session --noconfirm;
 
 # vscode
 # cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
@@ -45,7 +49,8 @@ git config --global user.name "Igor Sodré"
 
 
 sudo yay -Syu zsh --noconfirm
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; # reboot computer afer this
+
 
 # do this after the above, separetly
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -53,12 +58,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # copia e cola o .bashrc pro home
-cp ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
+ln -s ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
 # copia o .zshrc pro home
-cp ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
 
 # vimrc
-cp ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
+ln -s ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
 
 mkdir -p ~/.config/
 # cp ~/Documents/Projects/dotfiles/init.vim ~/.config/nvim/
@@ -71,7 +76,7 @@ ln -s ~/Documents/Projects/dotfiles/nvim ~/.config/nvim
 # restart
 
 # asdf
-cd /tmp; git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si; . /opt/asdf-vm/asdf.sh;
+cd /tmp && git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si && . /opt/asdf-vm/asdf.sh;
 
 ## asdf node
 asdf plugin add nodejs
@@ -84,9 +89,9 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 7.0.400
+asdf install dotnet-core 7.0.403
 # asdf install dotnet-core 5.0.406
-asdf global dotnet-core 7.0.400
+asdf global dotnet-core 7.0.403
 asdf reshim
 
 ## asdf ruby
@@ -108,8 +113,8 @@ asdf global java openjdk-21
 ## asdf rust
 asdf plugin add rust
 asdf list all rust
-asdf install rust 1.63.0
-asdf global rust 1.63.0
+asdf install rust 1.73.0
+asdf global rust 1.73.0
 
 # gem install lscolors
 gem install colorls
@@ -122,15 +127,11 @@ yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; 
 
 
 # kde-konsole-themes
-cd /tmp
-git clone https://gitlab.com/protesilaos/modus-themes.git ; git clone https://github.com/EliverLara/Sweet.git ; git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git ; git clone https://github.com/EliverLara/Nordic.git
-
-cp modus-themes/* ~/.local/share/konsole -r ; cp Sweet/* ~/.local/share/konsole -r ; cp materia-kde/* ~/.local/share/konsole -r ; cp Nordic/kde/konsole/* ~/.local/share/konsole -r;
-cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
+cd /tmp && git clone https://gitlab.com/protesilaos/modus-themes.git  && git clone https://github.com/EliverLara/Sweet.git  && git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git  && git clone https://github.com/EliverLara/Nordic.git && cp modus-themes/* ~/.local/share/konsole -r  && cp Sweet/* ~/.local/share/konsole -r  && cp materia-kde/* ~/.local/share/konsole -r  && cp Nordic/kde/konsole/* ~/.local/share/konsole -r && cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole;
 # Doing the above, also fixes konsole broken profiles
 
 # flat-remix themes
-yay -S flat-remix
+# yay -S flat-remix
 
 # slack-desktop
 yay -S slack-desktop
@@ -148,11 +149,11 @@ sudo mkdir /media/mount-point
 sudo mount -o rw /dev/sda3 /media/mount-point
 
 # custom wallpapers on login screen
-sudo mkdir -p /usr/share/backgrounds/custom/
-sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
+sudo mkdir -p /usr/share/backgrounds/custom/ && sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
 
 # yay cheat-sheet:
 # yay -S program-name  # installs a package
+# yay -Syy program-name  # installs a package but update the repos first
 # yay -Q name          # search locally for programs  # installs a package
 # yay -R name          # remove program, don't run it without extra options
 # yay -Sy              # update local repositories, equivalent of apt update
@@ -168,16 +169,12 @@ sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/cus
 # configure applet Grouped window list
 
 # kde themes
-git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git;
-cd Lightly && mkdir build && cd build;
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF ..
-make
-sudo make install
+git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git && cd Lightly && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF .. && make && sudo make install;
 
 
-cd /tmp; git clone https://github.com/yeyushengfan258/We10XOS-kde && cd ./We10XOS-kde  && ./install.sh;
-cd /tmp; git clone https://github.com/yeyushengfan258/Win11-icon-theme&& cd ./Win11-icon-theme && ./install.sh;
-cd /tmp; git clone https://github.com/yeyushengfan258/We10x-icon-theme&& cd ./We10x-icon-theme && ./install.sh;
+cd /tmp && git clone https://github.com/yeyushengfan258/We10XOS-kde && cd ./We10XOS-kde  && ./install.sh;
+cd /tmp && git clone https://github.com/yeyushengfan258/Win11-icon-theme && cd ./Win11-icon-theme && ./install.sh;
+cd /tmp && git clone https://github.com/yeyushengfan258/We10x-icon-theme && cd ./We10x-icon-theme && ./install.sh;
 
 cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-theme; ./install.sh;
 
