@@ -171,6 +171,7 @@ sudo mkdir -p /usr/share/backgrounds/custom/ && sudo cp -r ~/Documents/Projects/
 # kde themes
 git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git && cd Lightly && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF .. && make && sudo make install;
 
+# for window decorations search for willow and choose the dark version
 
 cd /tmp && git clone https://github.com/yeyushengfan258/We10XOS-kde && cd ./We10XOS-kde  && ./install.sh;
 cd /tmp && git clone https://github.com/yeyushengfan258/Win11-icon-theme && cd ./Win11-icon-theme && ./install.sh;
