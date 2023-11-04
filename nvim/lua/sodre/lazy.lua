@@ -35,7 +35,6 @@ require('lazy').setup({
     },
     'nvim-treesitter/nvim-treesitter-context',
     'nvim-treesitter/playground',
-    'ThePrimeagen/harpoon',
     'ThePrimeagen/refactoring.nvim',
     'mbbill/undotree',
 
