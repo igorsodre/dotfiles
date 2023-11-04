@@ -116,9 +116,9 @@ yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; 
 
 # kde-konsole-themes
 cd /tmp
-git clone git@github.com:nareshv/kde-konsole-colorschemes.git ; git clone https://gitlab.com/protesilaos/modus-themes.git ; git clone https://github.com/EliverLara/Sweet.git ; git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git ; git clone https://github.com/EliverLara/Nordic.git
+git clone https://gitlab.com/protesilaos/modus-themes.git ; git clone https://github.com/EliverLara/Sweet.git ; git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git ; git clone https://github.com/EliverLara/Nordic.git
 
-cp kde-konsole-colorschemes/* ~/.local/share/konsole -r ; cp modus-themes/* ~/.local/share/konsole -r ; cp Sweet/* ~/.local/share/konsole -r ; cp materia-kde/* ~/.local/share/konsole -r ; cp Nordic/kde/konsole/* ~/.local/share/konsole -r
+cp modus-themes/* ~/.local/share/konsole -r ; cp Sweet/* ~/.local/share/konsole -r ; cp materia-kde/* ~/.local/share/konsole -r ; cp Nordic/kde/konsole/* ~/.local/share/konsole -r;
 cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole
 # Doing the above, also fixes konsole broken profiles
 
@@ -134,27 +134,6 @@ yay -S woeusb
 cd folder_of_my_windows_iso
 lsblk #to check wich sd the flashdrive is
 sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose # this will take a long time. More than 40 minutes
-
-
-
-# kde themes
-   
-cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-theme; ./install.sh;
-
-cd /tmp; git clone https://github.com/vinceliuice/Fluent-gtk-theme.git ; cd Fluent-gtk-theme; ./install.sh;
-
-cd /tmp; git clone https://github.com/vinceliuice/Fluent-icon-theme.git ; cd Fluent-icon-theme; ./install.sh;
-git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git;
-cd Lightly && mkdir build && cd build;
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF ..
-make
-sudo make install
-
-cd /tmp;
-git clone https://github.com/yeyushengfan258/We10XOS-kde
-git clone https://github.com/yeyushengfan258/Win11-icon-theme
-git clone https://github.com/yeyushengfan258/We10x-icon-theme
-
 
 
 # how to mount a disk for read and write
@@ -181,7 +160,18 @@ sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/cus
 
 # configure applet Grouped window list
 
-#themes
+# kde themes   
+git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git;
+cd Lightly && mkdir build && cd build;
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF ..
+make
+sudo make install
+
+cd /tmp;
+git clone https://github.com/yeyushengfan258/We10XOS-kde
+git clone https://github.com/yeyushengfan258/Win11-icon-theme
+git clone https://github.com/yeyushengfan258/We10x-icon-theme
+
 cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-theme; ./install.sh;
 
 cd /tmp; git clone https://github.com/vinceliuice/Fluent-gtk-theme.git ; cd Fluent-gtk-theme; ./install.sh;
