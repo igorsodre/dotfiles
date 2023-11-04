@@ -17,7 +17,7 @@ sudo pacman -S yay --noconfirm;
 # enable AUR on sofware center
 yay -S base-devel cmake extra-cmake-modules git imagemagick git copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin ffmpegthumbs --noconfirm
 
-# search for application switcher on the kde store and install it
+cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 
 # vscode
 # cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
