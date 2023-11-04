@@ -136,6 +136,27 @@ lsblk #to check wich sd the flashdrive is
 sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose # this will take a long time. More than 40 minutes
 
 
+
+# kde themes
+   
+cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-theme; ./install.sh;
+
+cd /tmp; git clone https://github.com/vinceliuice/Fluent-gtk-theme.git ; cd Fluent-gtk-theme; ./install.sh;
+
+cd /tmp; git clone https://github.com/vinceliuice/Fluent-icon-theme.git ; cd Fluent-icon-theme; ./install.sh;
+git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git;
+cd Lightly && mkdir build && cd build;
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF ..
+make
+sudo make install
+
+cd /tmp;
+git clone https://github.com/yeyushengfan258/We10XOS-kde
+git clone https://github.com/yeyushengfan258/Win11-icon-theme
+git clone https://github.com/yeyushengfan258/We10x-icon-theme
+
+
+
 # how to mount a disk for read and write
 sudo mkdir /media/mount-point
 sudo mount -o rw /dev/sda3 /media/mount-point
