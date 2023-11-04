@@ -5,6 +5,8 @@ Color
 ILoveCandy
 ParallelDownloads = 5
 
+mkdir -p ~/Documents/Projects && cd ~/Documents/Projects && git clone https://github.com/igorsodre/dotfiles.git
+
 # increase sudo timeout
 sudo visudo
 Defaults:sodre timestamp_timeout=560
@@ -13,10 +15,10 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake git imagemagick git copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin ffmpegthumbs --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick git copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin ffmpegthumbs --noconfirm
 
 # vscode
-cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
+# cd /tmp; git clone https://aur.archlinux.org/visual-studio-code-bin.git; cd visual-studio-code-bin; makepkg -si;
 
 # brave
 cd /tmp; git clone https://aur.archlinux.org/brave.git; cd brave; makepkg -si;
@@ -41,10 +43,13 @@ git config --global user.name "Igor Sodré"
 
 
 sudo yay -Syu zsh --noconfirm
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+
+# do this after the above, separetly
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 # copia e cola o .bashrc pro home
 cp ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
 # copia o .zshrc pro home
@@ -160,17 +165,17 @@ sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/cus
 
 # configure applet Grouped window list
 
-# kde themes   
+# kde themes
 git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git;
 cd Lightly && mkdir build && cd build;
 cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF ..
 make
 sudo make install
 
-cd /tmp;
-git clone https://github.com/yeyushengfan258/We10XOS-kde
-git clone https://github.com/yeyushengfan258/Win11-icon-theme
-git clone https://github.com/yeyushengfan258/We10x-icon-theme
+
+cd /tmp; git clone https://github.com/yeyushengfan258/We10XOS-kde && cd ./We10XOS-kde  && ./install.sh;
+cd /tmp; git clone https://github.com/yeyushengfan258/Win11-icon-theme&& cd ./Win11-icon-theme && ./install.sh;
+cd /tmp; git clone https://github.com/yeyushengfan258/We10x-icon-theme&& cd ./We10x-icon-theme && ./install.sh;
 
 cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-theme; ./install.sh;
 
