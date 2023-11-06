@@ -10,11 +10,11 @@ grep -r "my_search_string" . --exclude-dir=/path/to/directory
 
 # Enable nested virtualization: https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/
 # check if it is enabled: cat /sys/module/kvm_amd/parameters/nested
-sudo modprobe -r kvm_amd
-sudo modprobe kvm_amd nested=1
-cat /sys/module/kvm_amd/parameters/nested
+sudo modprobe -r kvm_amd # sudo modprobe -r kvm_intel
+sudo modprobe kvm_amd nested=1 # sudo modprobe kvm_intel nested=1
+bat /sys/module/kvm_amd/parameters/nested # bat /sys/module/kvm_intel/parameters/nested
 
-sudo echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf
+sudo echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf # sudo echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm_intel.conf
 
 sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs ovmf swtpm iptables-nft exfatprogs
 
@@ -24,7 +24,7 @@ sudo systemctl status libvirtd
 
 # Uncomment the option "unix_sock_group" and enter the group name as "libvirt" => unix_sock_group = "libvirt"
 # uncomment the option "unix_sock_rw_perms" and leave the permission as default "0770" => unix_sock_rw_perms = "0770"
-sudo vim /etc/libvirt/libvirtd.conf
+sudoedit /etc/libvirt/libvirtd.conf
 
 sudo usermod -a -G libvirt $USER #restart after this
 

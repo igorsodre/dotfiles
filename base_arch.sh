@@ -65,6 +65,10 @@ ln -s ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
 # vimrc
 ln -s ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
 
+
+# jetbrains vim
+ln -s ~/Documents/Projects/dotfiles/.ideavimrc ~/.ideavimrc
+
 mkdir -p ~/.config/
 # cp ~/Documents/Projects/dotfiles/init.vim ~/.config/nvim/
 ln -s ~/Documents/Projects/dotfiles/nvim ~/.config/nvim
