@@ -15,7 +15,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent --noconfirm
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 
@@ -36,13 +36,9 @@ cd /tmp; git clone https://aur.archlinux.org/brave.git; cd brave; makepkg -si;
 
 sudo mkdir /usr/share/fonts/custom
 sudo cp ~/Documents/Projects/dotfiles/f/3270NerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/JetBrainsNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/HackNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/UbuntuNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/FiraCode/* /usr/share/fonts/custom
-cd /tmp
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
-yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
+
+cd /tmp && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh
+cd .. && rm -rf fonts && yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
@@ -58,9 +54,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # copia e cola o .bashrc pro home
-ln -s ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
+rm ~/.bashrc && ln -s ~/Documents/Projects/dotfiles/.bashrc ~/.bashrc
 # copia o .zshrc pro home
-ln -s ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
+rm ~/.zshrc && ln -s ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
 
 # vimrc
 ln -s ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
@@ -85,8 +81,8 @@ cd /tmp && git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && make
 ## asdf node
 asdf plugin add nodejs
 asdf list all nodejs
-asdf install nodejs lts
-asdf global nodejs lts
+asdf install nodejs 20.9.0
+asdf global nodejs 20.9.0
 
 ## asdf dotnet core
 asdf plugin add dotnet-core
@@ -176,6 +172,7 @@ sudo mkdir -p /usr/share/backgrounds/custom/ && sudo cp -r ~/Documents/Projects/
 git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git && cd Lightly && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF .. && make && sudo make install;
 
 # for window decorations search for willow and choose the dark version
+# set the GTK theme for Fluent-Dar-compact
 
 cd /tmp && git clone https://github.com/yeyushengfan258/We10XOS-kde && cd ./We10XOS-kde  && ./install.sh;
 cd /tmp && git clone https://github.com/yeyushengfan258/Win11-icon-theme && cd ./Win11-icon-theme && ./install.sh;
