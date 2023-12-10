@@ -16,7 +16,7 @@ bat /sys/module/kvm_amd/parameters/nested # bat /sys/module/kvm_intel/parameters
 
 sudo echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf # sudo echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm_intel.conf
 
-sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs ovmf swtpm iptables-nft exfatprogs
+sudo yay -S qemu virt-manager libvirt virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables libguestfs ovmf swtpm iptables-nft exfatprogs qemu-fullitor
 
 sudo systemctl enable --now libvirtd
 
@@ -28,16 +28,9 @@ sudoedit /etc/libvirt/libvirtd.conf
 
 sudo usermod -a -G libvirt $USER #restart after this
 
-#### enable gpu passthrough
-
-# on your bios, find the setting IOMMU and enable it
-
-sudoedit /etc/default/grub
-
-# find the gpu device id with
-lspci -nn | grep "Radeon" # get the ids for the vga and audio
-# on the line GRUB_CMDLINE_LINUX_DEFAULT="*****" add => amd_iommu=on vfio-pci.ids=[id-video],[id-audio]
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+### If you want to put windows 11 on a VM you need to enable TPM on KVM
+# follow instructions here: https://getlabsdone.com/how-to-install-windows-11-on-kvm/
+yay -S swtpm --noconfirm
 
 #######################
 # :: iptables-nft and iptables are in conflict. Remove iptables? [y/N] y
@@ -47,7 +40,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
 #### When installing a windows vm:
-After instaltion, download the spice-guest-tools-latest and install it
+After instaltion, download the spice-guest-tools-latest and install
+# https://spice-space.org/download/windows/spice-guest-tools/
 download virtio drivers
 
 # vm config:
