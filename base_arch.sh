@@ -144,6 +144,32 @@ lsblk #to check wich sd the flashdrive is
 sudo woeusb --device path_to_my_windows.iso /dev/sdc --tgt-fs NTFS --verbose # this will take a long time. More than 40 minutes
 
 
+############# configure ssh agent
+mkdir -p ~/.config/systemd/user
+
+#put the following code on the file ~/.config/systemd/user/ssh-agent.service
+[Unit]
+Description=SSH key agent
+
+[Service]
+Type=simple
+Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
+ExecStart=/usr/bin/ssh-agent -D -a $SSH_AUTH_SOCK
+
+[Install]
+WantedBy=default.target
+
+# enable it and start it
+systemctl --user enable ssh-agent
+systemctl --user start ssh-agent
+
+# create this config:
+mkdir -p ~/.ssh
+
+# put this code on the file  ~/.ssh/config
+AddKeysToAgent  yes
+#######################################
+
 # how to mount a disk for read and write
 sudo mkdir /media/mount-point
 sudo mount -o rw /dev/sda3 /media/mount-point

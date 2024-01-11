@@ -137,6 +137,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#
+
+
+[[ ! -f ~/.config/systemd/user/ssh-agent.service ]] || export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # autojump setup
