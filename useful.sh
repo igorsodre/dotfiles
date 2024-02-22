@@ -98,7 +98,8 @@ alias opensamba='sudo mount -a'
 lsblk
 sudo hdparm -Tt /dev/nvme0n1
 
-
+# ignore file only on your local repository
+git update-index --assume-unchanged relative/path/from/root/repo
 
 ## on Konsole
 # edit current profile -> keyboard -> "Return+shift" = \r\E[H\E\x7fa
