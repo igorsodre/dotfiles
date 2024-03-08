@@ -15,7 +15,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 
@@ -89,15 +89,15 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 7.0.403
+asdf install dotnet-core 8.0.201
 # asdf install dotnet-core 5.0.406
-asdf global dotnet-core 7.0.403
+asdf global dotnet-core 8.0.201
 asdf reshim
 
 ## asdf ruby
 asdf plugin add ruby
 asdf list all ruby
-sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
+# sudo apt install -y libssl-dev zlib1g-dev # this is required for version 3.x.x
 asdf install ruby 3.2.2
 # asdf install ruby 2.7.5
 asdf global ruby 3.2.2
@@ -113,14 +113,14 @@ asdf global java openjdk-21
 ## asdf rust
 asdf plugin add rust
 asdf list all rust
-asdf install rust 1.73.0
-asdf global rust 1.73.0
+asdf install rust 1.76.0
+asdf global rust 1.76.0
 
 # gem install lscolors
 gem install colorls
 
 # discord
-yay -S discord_arch_electron
+yay -S discord --noconfirm
 
 # docker
 yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; sudo systemctl start docker.service; sudo usermod -aG docker $USER; newgrp docker;
@@ -195,7 +195,7 @@ sudo mkdir -p /usr/share/backgrounds/custom/ && sudo cp -r ~/Documents/Projects/
 # configure applet Grouped window list
 
 # kde themes
-git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git && cd Lightly && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF .. && make && sudo make install;
+cd /tmp && git clone --single-branch --depth=1 https://github.com/Luwx/Lightly.git && cd Lightly && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF .. && make && sudo make install;
 
 # for window decorations search for willow and choose the dark version
 # set the GTK theme for Fluent-Dar-compact
