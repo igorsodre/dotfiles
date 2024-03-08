@@ -61,7 +61,6 @@ rm ~/.zshrc && ln -s ~/Documents/Projects/dotfiles/.zshrc ~/.zshrc
 # vimrc
 ln -s ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
 
-
 # jetbrains vim
 ln -s ~/Documents/Projects/dotfiles/.ideavimrc ~/.ideavimrc
 
@@ -77,6 +76,11 @@ ln -s ~/Documents/Projects/dotfiles/nvim ~/.config/nvim
 
 # asdf
 cd /tmp && git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si && . /opt/asdf-vm/asdf.sh;
+
+
+# Wallpapers
+ln -s ~/Documents/Projects/dotfiles/f/Wallpapers ~/Pictures/Wallpapers
+
 
 ## asdf node
 asdf plugin add nodejs
