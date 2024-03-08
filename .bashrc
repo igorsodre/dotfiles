@@ -121,7 +121,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export VISUAL=vim
+export VISUAL=nvim
 # export VISUAL=lvim
 export EDITOR="$VISUAL"
 
