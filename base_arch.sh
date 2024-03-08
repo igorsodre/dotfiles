@@ -15,7 +15,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 
