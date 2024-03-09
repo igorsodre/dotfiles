@@ -15,7 +15,7 @@ sudo pacman -Syyu --noconfirm;
 sudo pacman -S yay --noconfirm;
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 
@@ -133,6 +133,7 @@ yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; 
 # kde-konsole-themes
 cd /tmp && git clone https://gitlab.com/protesilaos/modus-themes.git  && git clone https://github.com/EliverLara/Sweet.git  && git clone https://github.com/PapirusDevelopmentTeam/materia-kde.git  && git clone https://github.com/EliverLara/Nordic.git && cp modus-themes/* ~/.local/share/konsole -r  && cp Sweet/* ~/.local/share/konsole -r  && cp materia-kde/* ~/.local/share/konsole -r  && cp Nordic/kde/konsole/* ~/.local/share/konsole -r && cp ~/Documents/Projects/dotfiles/f/konsole_themes/* ~/.local/share/konsole;
 # Doing the above, also fixes konsole broken profiles
+ln -s ~/Documents/Projects/dotfiles/f/Sodre.profile ~/.local/share/konsole/Sodre.profile
 
 # flat-remix themes
 # yay -S flat-remix

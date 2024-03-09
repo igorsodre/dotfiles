@@ -1,8 +1,8 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=Shadows-Konsole
-Font=Hack,13,-1,5,50,1,0,0,0,0,Italic
+ColorScheme=Shaman
+Font=FiraCode Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 LineSpacing=1
 UseFontLineChararacters=false
 
@@ -15,12 +15,13 @@ Name=Sodre
 Parent=FALLBACK/
 StartInCurrentSessionDir=true
 TerminalCenter=true
-TerminalColumns=120
-TerminalMargin=5
-TerminalRows=36
+TerminalColumns=140
+TerminalMargin=1
+TerminalRows=45
 
 [Interaction Options]
 MiddleClickPasteMode=1
 
 [Scrolling]
-HistorySize=8000
+HistorySize=15000
+ScrollBarPosition=2
