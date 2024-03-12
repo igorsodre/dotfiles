@@ -5,21 +5,21 @@ if not vim.loop.fs_stat(lazypath) then
         'clone',
         '--filter=blob:none',
         'https://github.com/folke/lazy.nvim.git',
-        '--branch=stable',     -- latest stable release
+        '--branch=stable', -- latest stable release
         lazypath,
     }
 end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
+    { 'nvim-telescope/telescope.nvim',       branch = '0.1.x',                        dependencies = { 'nvim-lua/plenary.nvim' } },
     'folke/trouble.nvim',
     'christoomey/vim-system-copy',
     'vim-scripts/argtextobj.vim',
     'mg979/vim-visual-multi',
     'michaeljsmith/vim-indent-object',
-    {'Julian/vim-textobj-variable-segment', dependencies = {'kana/vim-textobj-user'}},
-    {'D4KU/vim-textobj-chainmember', dependencies = {'kana/vim-textobj-user'}},
+    { 'Julian/vim-textobj-variable-segment', dependencies = { 'kana/vim-textobj-user' } },
+    { 'D4KU/vim-textobj-chainmember',        dependencies = { 'kana/vim-textobj-user' } },
     'tpope/vim-repeat',
 
     'vim-airline/vim-airline',
@@ -39,7 +39,13 @@ require('lazy').setup({
     'mbbill/undotree',
 
     'tpope/vim-rhubarb',
-    'jiangmiao/auto-pairs',
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equalent to setup({}) function
+    },
     'tpope/vim-surround',
     'vim-scripts/ReplaceWithRegister',
     'ryanoasis/vim-devicons',
@@ -48,7 +54,7 @@ require('lazy').setup({
     'tiagofumo/vim-nerdtree-syntax-highlight',
 
     -- Useful plugin to show you pending keybinds.
-    { 'folke/which-key.nvim',          opts = {} },
+    { 'folke/which-key.nvim',  opts = {} },
 
     -- LSP and Auto Completion
     {
