@@ -162,7 +162,7 @@ Environment=DISPLAY=:0
 Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
 ExecStart=/usr/bin/ssh-agent -D -a $SSH_AUTH_SOCK
 ExecStartPost=/bin/sleep 3
-ExecStartPost=/bin/sh -c '/usr/bin/ssh-add $HOME/.ssh/theorem-key'
+ExecStartPost=/bin/sh -c '/usr/bin/grep -slR "PRIVATE" $HOME/.ssh/ | /usr/bin/xargs /usr/bin/ssh-add'
 
 [Install]
 WantedBy=default.target
