@@ -158,11 +158,15 @@ Description=SSH key agent
 
 [Service]
 Type=simple
+Environment=DISPLAY=:0
 Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
 ExecStart=/usr/bin/ssh-agent -D -a $SSH_AUTH_SOCK
+ExecStartPost=/bin/sleep 3
+ExecStartPost=/bin/sh -c '/usr/bin/ssh-add $HOME/.ssh/theorem-key'
 
 [Install]
 WantedBy=default.target
+
 
 # enable it and start it
 systemctl --user enable ssh-agent
