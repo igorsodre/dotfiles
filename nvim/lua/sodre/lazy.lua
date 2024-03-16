@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    { 'nvim-telescope/telescope.nvim',       branch = '0.1.x',                        dependencies = { 'nvim-lua/plenary.nvim' } },
+    { 'nvim-telescope/telescope.nvim',       branch = '0.1.x',                          dependencies = { 'nvim-lua/plenary.nvim' } },
     'folke/trouble.nvim',
     'christoomey/vim-system-copy',
     'vim-scripts/argtextobj.vim',
@@ -37,6 +37,11 @@ require('lazy').setup({
     'nvim-treesitter/playground',
     'ThePrimeagen/refactoring.nvim',
     'mbbill/undotree',
+    {
+        "chrisgrieser/nvim-various-textobjs",
+        lazy = false,
+        opts = { useDefaultKeymaps = true },
+    },
 
     'tpope/vim-rhubarb',
     {
