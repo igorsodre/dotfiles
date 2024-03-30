@@ -91,3 +91,57 @@ sethandler <C-b> i:vim n-x:ide
 
 set ideajoin
 set scrolloff=8
+
+" dead keys remap for being able to set marks
+nmap à `a
+nmap Á 'A
+nmap À `A
+nmap ç 'c
+nmap Ç 'C
+nmap é 'e
+nmap è `e
+nmap É 'E
+nmap È `E
+nmap í 'i
+nmap ì `i
+nmap Í 'I
+nmap Ì `I
+nmap ó 'o
+nmap ò `o
+nmap Ó 'O
+nmap Ò `O
+nmap ú 'u
+nmap ù `u
+nmap Ú 'U
+nmap Ù `U
+
+" handlers
+sethandler <S-CR> a:vim
+sethandler <C-2> a:ide
+sethandler <C-S-2> a:ide
+sethandler <C-6> a:ide
+sethandler <C-S-6> a:ide
+sethandler <C-A> a:ide
+sethandler <C-C> a:ide
+sethandler <C-E> a:vim
+sethandler <C-F> a:ide
+sethandler <C-G> a:ide
+sethandler <C-H> a:ide
+sethandler <C-I> a:vim
+sethandler <C-J> a:ide
+sethandler <C-K> a:vim
+sethandler <C-L> a:vim
+sethandler <C-M> a:ide
+sethandler <C-N> a:vim
+sethandler <C-O> a:vim
+sethandler <C-P> a:vim
+sethandler <C-R> a:vim
+sethandler <C-S> a:ide
+sethandler <C-T> a:vim
+sethandler <C-U> a:vim
+sethandler <C-V> a:ide
+sethandler <C-X> a:ide
+sethandler <C-Y> a:ide
+sethandler <C-[> a:vim
+sethandler <C-\> a:vim
+sethandler <C-]> a:vim
