@@ -159,6 +159,9 @@ if command -v gem -h >/dev/null 2>&1 ; then
   fi
 fi
 
+export ANDROID_HOME=$HOME/Android/Sdk/
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+
 # aliases
 # some more ls aliases
 alias ll='ls -alF'
