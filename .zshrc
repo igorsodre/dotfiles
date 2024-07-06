@@ -145,7 +145,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # autojump setup
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+# [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
 # angular autocompletion
 if command -v ng -v >/dev/null 2>&1; then
