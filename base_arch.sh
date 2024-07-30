@@ -46,6 +46,7 @@ cd .. && rm -rf fonts && yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
+git config pull.rebase false
 
 
 sudo yay -Syu zsh --noconfirm
@@ -184,7 +185,7 @@ AddKeysToAgent  yes
 #######################################
 
 # how to mount a disk for read and write
-sudo mkdir /media/mount-point
+sudo mkdir -p /media/mount-point
 sudo mount -o rw /dev/sda3 /media/mount-point
 
 # custom wallpapers on login screen

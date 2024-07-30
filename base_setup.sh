@@ -41,6 +41,7 @@ cat ~/.ssh/id_rsa.pub
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
+git config pull.rebase false
 
 
 # install node with nvm - deprecated
