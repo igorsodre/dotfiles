@@ -180,7 +180,7 @@ AddKeysToAgent  yes
 #######################################
 
 # how to mount a disk for read and write
-sudo mkdir /media/mount-point
+sudo mkdir -p /media/mount-point
 sudo mount -o rw /dev/sda3 /media/mount-point
 
 # custom wallpapers on login screen
