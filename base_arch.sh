@@ -5,17 +5,21 @@ Color
 ILoveCandy
 ParallelDownloads = 5
 
+sudo pacman -Syyu --noconfirm;
+sudo pacman -S yay --noconfirm;
+
+yay -S git
+
 mkdir -p ~/Documents/Projects && cd ~/Documents/Projects && git clone https://github.com/igorsodre/dotfiles.git
 
 # increase sudo timeout
 sudo visudo
 Defaults:sodre timestamp_timeout=560
 
-sudo pacman -Syyu --noconfirm;
-sudo pacman -S yay --noconfirm;
+
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole spotify autojump ranger highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole spotify ranger highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 

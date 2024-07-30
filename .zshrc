@@ -8,8 +8,14 @@ fi
 export PATH="$PATH:$HOME/.local/bin/"
 alias vim='nvim'
 
-# . $HOME/.asdf/asdf.sh
-. /opt/asdf-vm/asdf.sh
+if [ -f $HOME/.asdf/asdf.sh  ]; then
+  . $HOME/.asdf/asdf.sh
+  # . "$HOME/.asdf/completions/asdf.bash"
+fi
+
+if [ -f /opt/asdf-vm/asdf.sh  ]; then
+  . /opt/asdf-vm/asdf.sh
+fi
 
 if [ -f ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh ]; then
   . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
@@ -106,7 +112,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions kubectl history sudo web-search copypath copyfile copybuffer dirhistory jsontools)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions kubectl history sudo web-search copypath copyfile copybuffer dirhistory jsontools asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -190,10 +196,15 @@ alias openvim='vim ~/.vimrc'
 alias openneovim='vim ~/.config/nvim/init.vim'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
-# alias doupgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;'
-alias doupgrade='yay -Syu --noconfirm; yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(yay -Qtdq)';
 alias update-keyring='sudo pacman -Sy archlinux-keyring && sudo pacman -Sy endeavouros-keyring && pacman -Su'
 
+doupgrade() {
+  if command -v apt >&2; then
+    sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;
+  else
+    yay -Syu --noconfirm; yay -Qtdq --noconfirm && sudo yay --noconfirm -Rs $(yay -Qtdq)
+  fi
+}
 
 # Docker
 alias up-containers="docker-compose up -d"
