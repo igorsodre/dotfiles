@@ -19,7 +19,10 @@ Defaults:sodre timestamp_timeout=560
 
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole spotify ranger highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp kpackage5 qt5-tools --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole kvantum spotify ranger gimp highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp --noconfirm
+
+# if needed
+yay -S kpackage5 qt5-tools
 
 cd /tmp; git clone https://github.com/nclarius/kwin-application-switcher.git && cd kwin-application-switcher && ./install.sh
 
@@ -38,15 +41,14 @@ cd /tmp; git clone https://aur.archlinux.org/brave.git; cd brave; makepkg -si;
 # sudo ln -s /var/lib/snapd/snap /snap
 
 
-sudo mkdir /usr/share/fonts/custom
+sudo mkdir -p /usr/share/fonts/custom
 sudo cp ~/Documents/Projects/dotfiles/f/3270NerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/JetBrainsNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/HackNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/UbuntuNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/FiraCode/* /usr/share/fonts/custom
 
-cd /tmp && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh
-cd .. && rm -rf fonts && yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
+cd /tmp && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd /tmp && yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
 
 git config --global user.email "csodreigor@gmail.com"
 git config --global user.name "Igor Sodré"
-git config pull.rebase false
+git config --global pull.rebase false
 
 
 sudo yay -Syu zsh --noconfirm
@@ -223,3 +225,16 @@ cd /tmp; git clone https://github.com/vinceliuice/Orchis-theme.git ; cd Orchis-t
 cd /tmp; git clone https://github.com/vinceliuice/Fluent-gtk-theme.git ; cd Fluent-gtk-theme; ./install.sh;
 
 cd /tmp; git clone https://github.com/vinceliuice/Fluent-icon-theme.git ; cd Fluent-icon-theme; ./install.sh;
+
+# kvantum themes
+# open the kvantum manager
+cd /tmp && git clone https://github.com/vinceliuice/Orchis-kde.git
+
+cd /tmp && git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git && cd Tela-circle-icon-theme && ./install.sh -a
+
+cd /tmp && git clone https://gitlab.com/jomada/otto.git && cd otto && chmod u+x install.sh && ./install.sh
+
+
+# neofetch customization
+cd /tmp && git clone https://github.com/Chick2D/neofetch-themes/
+cat neofetch-themes/normal/acenoster.conf > ~/.config/neofetch/config.conf
