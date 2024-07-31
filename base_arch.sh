@@ -100,9 +100,9 @@ asdf plugin add dotnet-core
 # add this to .zshrc . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 asdf list all dotnet-core
-asdf install dotnet-core 8.0.201
+asdf install dotnet-core 8.0.303
 # asdf install dotnet-core 5.0.406
-asdf global dotnet-core 8.0.201
+asdf global dotnet-core 8.0.303
 asdf reshim
 
 ## asdf ruby
@@ -124,8 +124,8 @@ asdf global java openjdk-21
 ## asdf rust
 asdf plugin add rust
 asdf list all rust
-asdf install rust 1.76.0
-asdf global rust 1.76.0
+asdf install rust 1.80.0
+asdf global rust 1.80.0
 
 # gem install lscolors
 gem install colorls
@@ -234,6 +234,7 @@ cd /tmp && git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git &
 
 cd /tmp && git clone https://gitlab.com/jomada/otto.git && cd otto && chmod u+x install.sh && ./install.sh
 
+cd /tmp && git clone https://github.com/L4ki/Magna-Plasma-Themes.git && cp -r  Magna-Plasma-Themes/Magna\ Icons\ Themes/*  ~/.local/share/icons/ && cp -r Magna-Plasma-Themes/Magna\ Plasma\ Themes/* ~/.local/share/themes/
 
 # neofetch customization
 cd /tmp && git clone https://github.com/Chick2D/neofetch-themes/
