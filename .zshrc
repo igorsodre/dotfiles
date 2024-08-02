@@ -27,6 +27,11 @@ if [ -f ~/.asdf/plugins/java/set-java-home.zsh ]; then
   . ~/.asdf/plugins/java/set-java-home.zsh
 fi
 
+if [ -f /etc/profile.d/apps-bin-path.sh ]; then
+    . /etc/profile.d/apps-bin-path.sh
+fi
+
+
 
 # set the gopath if go is installed
 # export GOPATH=$(go env GOPATH)
@@ -165,8 +170,10 @@ if command -v gem -h >/dev/null 2>&1 ; then
   fi
 fi
 
-export ANDROID_HOME=$HOME/Android/Sdk/
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+if [ -d "$HOME/Android/Sdk" ] ; then
+    export ANDROID_HOME=$HOME/Android/Sdk/
+    export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+fi
 
 # aliases
 # some more ls aliases

@@ -152,8 +152,9 @@ apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxc
 # baixa e instala
 
 
-# instalar android studio
-sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils ia32-libs-multiarch
+# instalar android studio, install below, then download and extract it into your bin folder
+sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
 
 #instala o rubymine
 
