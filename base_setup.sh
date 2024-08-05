@@ -201,3 +201,7 @@ sudo mkdir -p /usr/share/backgrounds/custom/ && sudo cp -r ~/Documents/Projects/
 
 # appearance
 sudo add-apt-repository ppa:papirus/papirus && sudo apt update && sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
+
+
+# window decorations for kde (Klassy)
+cd /tmp && sudo apt install git build-essential cmake kf6-extra-cmake-modules kf6-extra-cmake-modules kf6-frameworkintegration-dev kf6-kcmutils-dev kf6-kcolorscheme-dev kf6-kconfig-dev kf6-kconfigwidgets-dev kf6-kcoreaddons-dev kf6-kguiaddons-dev kf6-ki18n-dev kf6-kiconthemes-dev kf6-kirigami2-dev kf6-kpackage-dev kf6-kservice-dev kf6-kwindowsystem-dev kirigami2-dev kwayland-dev libx11-dev libkdecorations2-dev libkf5config-dev libkf5configwidgets-dev libkf5coreaddons-dev libkf5guiaddons-dev libkf5i18n-dev libkf5iconthemes-dev libkf5kcmutils-dev libkf5package-dev libkf5service-dev libkf5style-dev libkf5wayland-dev libkf5windowsystem-dev libplasma-dev libqt5x11extras5-dev qt6-base-dev qt6-declarative-dev qtbase5-dev qtdeclarative5-dev gettext qt6-svg-dev && git clone https://github.com/paulmcauley/klassy && cd klassy && git checkout 6.1.breeze6.0.3 && ./install.sh
