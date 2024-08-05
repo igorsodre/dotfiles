@@ -192,7 +192,7 @@ snap install discord
 # sudo apt update
 # sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-sudo apt install docker docker-compose && sudo usermod -aG docker $USER && newgrp docker
+sudo apt install docker docker-compose docker-buildx && sudo usermod -aG docker $USER && newgrp docker
 
 # custom wallpapers on login screen
 sudo mkdir -p /usr/share/backgrounds/custom/ && sudo cp -r ~/Documents/Projects/dotfiles/f/Wallpapers /usr/share/backgrounds/custom/
