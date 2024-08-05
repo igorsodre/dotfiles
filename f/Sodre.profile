@@ -22,6 +22,9 @@ TerminalRows=45
 [Interaction Options]
 MiddleClickPasteMode=1
 
+[Keyboard]
+KeyBindings=default
+
 [Scrolling]
 HistorySize=15000
 ScrollBarPosition=2
