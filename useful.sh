@@ -42,7 +42,7 @@ yay -S swtpm --noconfirm
 #### When installing a windows vm:
 After instaltion, download the spice-guest-tools-latest and install
 # https://spice-space.org/download/windows/spice-guest-tools/
-download virtio drivers
+# download virtio drivers
 
 # vm config:
 # cpu: 1 socket, 6 cores, 2 threads
