@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=MonaLisa
-Font=FiraCode Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Font=FiraCode Nerd Font,14,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Retina
 LineSpacing=1
 UseFontLineChararacters=false
 

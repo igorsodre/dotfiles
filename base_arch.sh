@@ -134,7 +134,7 @@ gem install colorls
 yay -S discord --noconfirm
 
 # docker
-yay -S docker docker-compose --noconfirm; sudo systemctl enable docker.service; sudo systemctl start docker.service; sudo usermod -aG docker $USER; newgrp docker;
+yay -S docker docker-compose docker-buildx --noconfirm; sudo systemctl enable docker.service; sudo systemctl start docker.service; sudo usermod -aG docker $USER; newgrp docker;
 
 
 # kde-konsole-themes
