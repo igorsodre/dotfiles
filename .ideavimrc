@@ -61,8 +61,8 @@ inoremap <S-q> <Esc>
 vnoremap <S-q> <Esc>
 
 "" moving cursor in insert mode
-inoremap <C-w> <Esc><S-a>
-inoremap <C-b> <Esc><S-i>
+inoremap <C-w> <Esc>ea
+inoremap <C-b> <Esc>bi
 inoremap <C-i> <Esc>O
 inoremap <C-o> <Esc>o
 
@@ -142,6 +142,6 @@ sethandler <C-U> a:vim
 sethandler <C-V> a:ide
 sethandler <C-X> a:ide
 sethandler <C-Y> a:ide
-sethandler <C-[> a:vim
+sethandler <C-[> a:ide
 sethandler <C-\> a:vim
-sethandler <C-]> a:vim
+sethandler <C-]> a:ide
