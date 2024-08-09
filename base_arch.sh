@@ -42,7 +42,7 @@ cd /tmp; git clone https://aur.archlinux.org/brave.git; cd brave; makepkg -si;
 
 
 sudo mkdir -p /usr/share/fonts/custom
-sudo cp ~/Documents/Projects/dotfiles/f/3270NerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/JetBrainsNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/HackNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/UbuntuNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/FiraCode/* /usr/share/fonts/custom
+sudo cp ~/Documents/Projects/dotfiles/f/3270NerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/JetBrainsNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/HackNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/UbuntuNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/FiraCode/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/FiraCodeNerdFont/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/JetBrainsMono/* /usr/share/fonts/custom && sudo cp ~/Documents/Projects/dotfiles/f/Hack/* /usr/share/fonts/custom
 
 cd /tmp && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd /tmp && yay -S ttf-hack-nerd ttf-firacode-nerd --noconfirm
 
