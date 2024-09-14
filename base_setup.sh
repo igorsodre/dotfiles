@@ -9,7 +9,7 @@ sudo apt install git;
 mkdir -p ~/Documents/Projects && cd ~/Documents/Projects && git clone https://github.com/igorsodre/dotfiles.git
 
 ##  ueberzug gnome-keyring libsecret libgnome-keyring ripgrep vdhcoapp
-sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silversearcher-ag gimp fontconfig vlc wl-clipboard flameshot konsole neofetch default-jdk libffi-dev libssl-dev zlib1g-dev fonts-powerline ranger highlight mediainfo bat apt-transport-https tldr -y;
+sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silversearcher-ag gimp fontconfig vlc wl-clipboard flameshot konsole neofetch default-jdk libffi-dev libssl-dev zlib1g-dev fonts-powerline ranger highlight mediainfo bat apt-transport-https simplescreenrecorder tldr -y;
 
 # installing vscode
 cd /tmp; wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg && sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg && echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null && sudo apt update && sudo apt install code
