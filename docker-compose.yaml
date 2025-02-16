@@ -16,6 +16,8 @@ services:
       MSSQL_SA_PASSWORD: yourStrong(@@Password12
     networks:
       - development
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
 
   # postgres
   # connection string:"User ID=development;Password=password123;Host=localhost;Port=5432;Database=development;Pooling=true;"
@@ -25,11 +27,13 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - 'postgresql_data:/bitnami/postgresql'
+      - './.data/postgresql:/bitnami/postgresql'
     environment:
       - POSTGRESQL_USERNAME=development
       - POSTGRESQL_PASSWORD=password123
       - POSTGRESQL_DATABASE=development
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
   # redis
@@ -42,7 +46,9 @@ services:
     ports:
       - '6379:6379'
     volumes:
-      - 'redis_data:/bitnami/redis/data'
+      - './.data/redis:/bitnami/redis/data'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
 
@@ -63,7 +69,9 @@ services:
       - RABBITMQ_USERNAME=user
       - RABBITMQ_PASSWORD=password
     volumes:
-      - 'rabbitmq_data:/bitnami/rabbitmq/mnesia'
+      - './.data/rabbitmq:/bitnami/rabbitmq/mnesia'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
 
@@ -74,9 +82,11 @@ services:
     ports:
       - "2181:2181"
     volumes:
-      - "zookeeper_data:/bitnami"
+      - "./.data/zookeeper:/bitnami"
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
   kafka:
@@ -85,7 +95,7 @@ services:
     ports:
       - "9092:9092"
     volumes:
-      - "kafka_data:/bitnami"
+      - "./.data/kafka:/bitnami"
     environment:
       - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
       - ALLOW_PLAINTEXT_LISTENER=yes
@@ -95,6 +105,8 @@ services:
       - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
       - KAFKA_INTER_BROKER_USER=user
       - KAFKA_INTER_BROKER_PASSWORD=password
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
     depends_on:
@@ -114,6 +126,8 @@ services:
       - MONGODB_ROOT_PASSWORD=password
     ports:
       - "27017:27017"
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
 
@@ -129,7 +143,9 @@ services:
       - MONGODB_REPLICA_SET_KEY=replicasetkey123
       - MONGODB_REPLICA_SET_NAME=shard0
     volumes:
-      - 'shard0_data:/bitnami'
+      - './.data/shard0:/bitnami'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
 
@@ -144,7 +160,9 @@ services:
       - MONGODB_REPLICA_SET_KEY=replicasetkey123
       - MONGODB_REPLICA_SET_NAME=cfgreplicaset
     volumes:
-      - 'cfg_data:/bitnami'
+      - './.data/mongodb_cfg/:/bitnami'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
   ## aws services
@@ -159,32 +177,34 @@ services:
       - DEBUG=${DEBUG:-0}
       - PERSISTENCE=1
     volumes:
-      - './localstack_data:/var/lib/localstack'
+      - "./.data/localstack:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
       - development
 
-volumes:
-  postgresql_data:
-    driver: local
-    # name: postgresql_data
-  redis_data:
-    driver: local
-    # name: redis_data
-  rabbitmq_data:
-    driver: local
-    # name: rabbitmq_data
-  shard0_data:
-    driver: local
-    # name: shard0_data
-  cfg_data:
-    driver: local
-    # name: cfg_data
-  zookeeper_data:
-    driver: local
-    # name: zookeeper_data
-  kafka_data:
-    driver: local
-    # name: kafka_data
-  localstack_data:
-    driver: local
+# volumes:
+#   postgresql_data:
+#     driver: local
+#     # name: postgresql_data
+#   redis_data:
+#     driver: local
+#     # name: redis_data
+#   rabbitmq_data:
+#     driver: local
+#     # name: rabbitmq_data
+#   shard0_data:
+#     driver: local
+#     # name: shard0_data
+#   cfg_data:
+#     driver: local
+#     # name: cfg_data
+#   zookeeper_data:
+#     driver: local
+#     # name: zookeeper_data
+#   kafka_data:
+#     driver: local
+#     # name: kafka_data
+#   localstack_data:
+#     driver: local

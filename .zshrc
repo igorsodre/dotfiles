@@ -215,6 +215,4 @@ doupgrade() {
 
 # Docker
 alias docker-ps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
-alias up-containers="docker-compose up -d"
-alias stop-containers="docker-compose stop"
-alias remove-containers="docker-compose down"
+alias docker-stop='docker stop $(docker ps -a -q)'

@@ -103,3 +103,6 @@ git update-index --assume-unchanged relative/path/from/root/repo
 
 ## on Konsole
 # edit current profile -> keyboard -> "Return+shift" = \r\E[H\E\x7fa
+
+#### Show router ip
+ip route show | grep -i 'default via'| awk '{print $3 }'
