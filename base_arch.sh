@@ -226,6 +226,11 @@ cd /tmp; git clone https://github.com/vinceliuice/Fluent-gtk-theme.git ; cd Flue
 
 cd /tmp; git clone https://github.com/vinceliuice/Fluent-icon-theme.git ; cd Fluent-icon-theme; ./install.sh;
 
+## Klassy
+cd /tmp
+yay -S frameworkintegration gcc-libs glibc kcmutils kcolorscheme kconfig kcoreaddons kdecoration kguiaddons ki18n kiconthemes kirigami kwidgetsaddons kwindowsystem qt6-base qt6-declarative qt6-svg xdg-utils extra-cmake-modules kcmutils5 frameworkintegration5 kconfigwidgets5 kiconthemes5 kirigami2 kwindowsystem5
+git clone https://github.com/paulmcauley/klassy && cd klassy && git checkout 6.1.breeze6.0.3 && ./install.sh
+
 # kvantum themes
 # open the kvantum manager
 cd /tmp && git clone https://github.com/vinceliuice/Orchis-kde.git
@@ -239,3 +244,9 @@ cd /tmp && git clone https://github.com/L4ki/Magna-Plasma-Themes.git && cp -r  M
 # neofetch customization
 cd /tmp && git clone https://github.com/Chick2D/neofetch-themes/
 cat neofetch-themes/normal/acenoster.conf > ~/.config/neofetch/config.conf
+
+
+### Enable bluetooth
+sudo pacman -S --needed bluez bluez-utils pulseaudio-bluetooth
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
