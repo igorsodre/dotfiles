@@ -8,14 +8,18 @@ fi
 export PATH="$PATH:$HOME/.local/bin/"
 alias vim='nvim'
 
-if [ -f $HOME/.asdf/asdf.sh  ]; then
-  . $HOME/.asdf/asdf.sh
+export ASDF_DATA_DIR=$HOME/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
+# ASDF_DIR=/home/sodre/.asdf
+# ASDF_CONFIG_FILE=/home/sodre/.asdfrc
+# if [ -f $HOME/.asdf/asdf.sh  ]; then
+  # . $HOME/.asdf/asdf.sh
   # . "$HOME/.asdf/completions/asdf.bash"
-fi
+# fi
 
-if [ -f /opt/asdf-vm/asdf.sh  ]; then
-  . /opt/asdf-vm/asdf.sh
-fi
+# if [ -f /opt/asdf-vm/asdf.sh  ]; then
+  # . /opt/asdf-vm/asdf.sh
+# fi
 
 if [ -f ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh ]; then
   . ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
