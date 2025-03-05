@@ -19,7 +19,7 @@ Defaults:sodre timestamp_timeout=560
 
 
 # enable AUR on sofware center
-yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole kvantum spotify ranger gimp highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp --noconfirm
+yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole kvantum spotify ranger gimp highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp rate-mirrors --noconfirm
 
 # if needed
 yay -S kpackage5 qt5-tools

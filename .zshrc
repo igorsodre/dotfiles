@@ -180,6 +180,18 @@ if [ -d "$HOME/Android/Sdk" ] ; then
 fi
 
 # aliases
+# Update mirrors: Arch.
+alias update-mirrors="sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch --max-delay 43200 | sudo tee /etc/pacman.d/mirrorlist"
+
+# Update mirrors: EndeavourOS.
+## eos-rankmirrors (official tool EndeavourOS), but with parameter changes.
+alias eos-mirrors="eos-rankmirrors --sort rate --timeout 15"
+## rate-mirrors.
+alias update-mirrors-eos="sudo mv /etc/pacman.d/endeavouros-mirrorlist /etc/pacman.d/endeavouros-mirrorlist.`date +"%Y.%m.%d-%H.%M.%S"` && rate-mirrors endeavouros | sudo tee /etc/pacman.d/endeavouros-mirrorlist"
+
+# Update all mirrors, pacman- and aur packages.
+alias update-all-mirrors="update-mirrors && update-mirrors-eos && paru -Syyu"
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
