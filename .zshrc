@@ -220,6 +220,18 @@ alias openneovim='vim ~/.config/nvim/init.vim'
 alias openhere='xdg-open . &> /dev/null'
 alias update-global-node='n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
 alias update-keyring='sudo pacman -Sy archlinux-keyring && sudo pacman -Sy endeavouros-keyring && pacman -Su'
+alias erase-node-modules-and-dist="find . -type d \( -name \"node_modules\" -o -name \"dist\" \) -prune -exec rm -rf '{}' +"
+
+init-localstack(){
+  open-dot;
+  sudo mkdir -p .data/localstack/init
+  sudo mkdir -p .data/localstack/lambdas/code
+  sudo rm .data/localstack/init/*
+  sudo cp init-localstack.sh .data/localstack/init/
+  chmod +x .data/localstack/init/init-localstack.sh
+  sudo chown -R 1001:1001 .data
+  docker compose up -d localcloud
+}
 
 doupgrade() {
   if command -v apt >&2; then

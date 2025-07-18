@@ -42,7 +42,8 @@ services:
     image: docker.io/bitnami/redis:latest
     container_name: redis-development
     environment:
-      - REDIS_PASSWORD=uU23o#0TU#BtNycSFv
+      - ALLOW_EMPTY_PASSWORD=yes
+      # - REDIS_PASSWORD=uU23o#0TU#BtNycSFv
     ports:
       - '6379:6379'
     volumes:
@@ -166,19 +167,26 @@ services:
     networks:
       - development
   ## aws services
-  localstack:
+  localcloud:
     container_name: localstack-development
-    image: localstack/localstack
+    image: localstack/localstack:latest
     ports:
       - "127.0.0.1:4566:4566"            # LocalStack Gateway
-      - "127.0.0.1:4510-4559:4510-4559"  # external services port range
+      - "127.0.0.1:4510-4559:4510-4559"  # External service ports
     environment:
-      # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
-      - DEBUG=${DEBUG:-0}
+      - SERVICES=s3,lambda,logs,kms,opensearch,sqs,sns
+      - DEBUG=${DEBUG:-1}
       - PERSISTENCE=1
+      - DATA_DIR=/var/lib/localstack/data
+      - LAMBDA_EXECUTOR=docker-reuse
+      - LAMBDA_REMOTE_DOCKER=false
+      - LAMBDA_REMOVE_CONTAINERS=false
     volumes:
-      - "./.data/localstack:/var/lib/localstack"
+      - "./.data/localstack:/var/lib/localstack"                   # Persisted data
       - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./.data/localstack/lambdas/code:/opt/code"
+      - "./.data/localstack/init:/etc/localstack/init/ready.d"
+
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     networks:
