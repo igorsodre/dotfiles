@@ -141,3 +141,107 @@ I'll ask for new Zealand plan on the next prompt, so wait for it.
 ## New Zealand
 https://app.travellerdeclaration.govt.nz/#/
 Fill the form above 24 hours before entering New Zealand
+
+
+# Visto
+
+# Visto de Turismo para a Austrália (Brasileiros) – Visitor visa (subclass 600)
+
+## 📑 Documentos necessários
+
+### 1. Documentos obrigatórios
+
+* **Passaporte válido** (recomenda-se validade mínima de 6 meses).
+  *Como obter:* [Polícia Federal – Passaporte](https://www.gov.br/pt-br/servicos/obter-passaporte-para-brasileiros).
+* **Formulário online (ImmiAccount)** → criar conta, preencher aplicação e anexar documentos.
+* **Foto tipo passaporte** em formato digital (JPEG ou PDF).
+* **Traduções para inglês** de todos os documentos que não estiverem em inglês. (No Brasil, use tradução juramentada).
+
+> ⚠️ Não compre passagens antes do visto ser aprovado.
+
+---
+
+### 2. Provas financeiras e de plano de viagem
+
+* Extratos bancários recentes.
+* Declaração de Imposto de Renda (última).
+* Contracheques ou comprovantes de recebimento.
+* Reservas de hospedagem (de preferência canceláveis).
+* **Não é obrigatório ter passagem aérea emitida.**
+
+---
+
+### 3. Situação profissional (para contractors)
+
+* Contrato de prestação de serviços com a empresa dos EUA.
+* Notas Fiscais emitidas no Brasil + comprovantes de recebimento.
+* CNPJ da empresa (emitir no site da [Receita Federal](https://servicos.receita.fazenda.gov.br/servicos/certidao/CndCon/ConSituacaoCadastral.asp)).
+* Declaração simples explicando período de férias/pausa.
+* Se possível, carta da empresa-cliente confirmando vínculo.
+
+---
+
+### 4. Vínculos com o Brasil
+
+* Propriedade residencial: escritura ou certidão de matrícula (cartório de registro de imóveis).
+* Certidões de família (casamento, filhos).
+* Outros vínculos: contrato de aluguel, matrícula em curso, etc.
+
+---
+
+### 5. Seguro-saúde
+
+* Não é obrigatório, mas é **altamente recomendado** contratar seguro de viagem que cubra todo o período.
+
+---
+
+### 6. Documentos que podem ser solicitados depois
+
+* **Exame médico (HAP ID + clínica credenciada eMedical).**
+* **Certidão de antecedentes criminais (Polícia Federal).** [Emitir online aqui](https://www.gov.br/pf/pt-br/assuntos/certidoes/antecedentes-criminais).
+* **Biometria (digitais/foto):** só se solicitado pelo ImmiAccount.
+
+---
+
+## 🛠️ Passo a passo para solicitar
+
+1. Leia a [página oficial do visto Visitor 600 – Tourist stream](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-outside-australia).
+2. Reúna todos os documentos (PDF/JPEG) e traduções juramentadas.
+3. Crie um [ImmiAccount](https://online.immi.gov.au/) e inicie a aplicação **Visitor (subclass 600) – Tourist stream (outside Australia)**.
+4. Preencha o formulário e **anexe documentos** (há guia oficial de anexos).
+5. Pague a **taxa de visto** pelo sistema (valor varia, confira no [estimador de taxas](https://immi.homeaffairs.gov.au/visas/visa-pricing-estimator)).
+6. Acompanhe a aplicação pelo ImmiAccount:
+
+   * Se pedirem **saúde**, agende com clínica credenciada usando o HAP ID.
+   * Se pedirem **antecedentes**, emita a certidão da Polícia Federal.
+7. Após a decisão, consulte seu visto e condições no **VEVO**. Só então finalize compra de passagens.
+
+---
+
+## 📌 Dicas personalizadas para você
+
+* Envie **contrato de prestação de serviços**, **notas fiscais + extratos bancários**, **CNPJ da empresa** e **prova da sua casa no Brasil**.
+* Isso cobre os três pontos que o **case officer** avalia:
+
+  1. **Renda estável**,
+  2. **Ocupação/ligações profissionais**,
+  3. **Vínculo forte com o Brasil**.
+
+---
+
+## 🔗 Referências oficiais
+
+* [Visitor visa (subclass 600) – Tourist stream (fora da Austrália)](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-outside-australia)
+* [ImmiAccount – aplicar e gerenciar online](https://online.immi.gov.au/)
+* [Traduções de documentos – Home Affairs](https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/how-to-apply/translating-documents)
+* [Saúde – exames médicos e HAP ID](https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/health/who-needs-health-examinations)
+* [Seguro saúde recomendado](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600#Health)
+* [Biometria – informações oficiais](https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/biometrics)
+* [Alerta da Embaixada: não comprar passagens antes do visto](https://brazil.embassy.gov.au/)
+* [Passaporte brasileiro – Polícia Federal](https://www.gov.br/pt-br/servicos/obter-passaporte-para-brasileiros)
+* [CNPJ – Comprovante de Situação Cadastral](https://servicos.receita.fazenda.gov.br/servicos/certidao/CndCon/ConSituacaoCadastral.asp)
+* [Certidão de Antecedentes Criminais – Polícia Federal](https://www.gov.br/pf/pt-br/assuntos/certidoes/antecedentes-criminais)
+
+---
+
+👉 Quer que eu monte esse conteúdo em um **checklist em PDF com caixinhas de tique**, já na ordem certa de upload do ImmiAccount?
