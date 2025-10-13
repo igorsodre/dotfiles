@@ -201,7 +201,7 @@ alias LST='colorls --sd --gs --sf --tree=2'
 alias LL='colorls --sd --gs --sf -alf'
 alias LA='colorls --sd --gs --sf -A'
 alias LAT='colorls --sd --gs --sf -A --tree=2'
-alias lf='du -sh * | sort -h'
+alias lf='du -hs $(ls -A) | sort -h'
 alias top='htop'
 
 alias open-projects='cd ~/Documents/Projects'

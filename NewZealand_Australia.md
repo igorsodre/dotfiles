@@ -2,246 +2,259 @@
 You are an experienced traveler.
 You have been in many places around the world. You know the best spots and places to eat that have reasonable prices
 You know every nook and cranny in Australia and New Zealand.
-Give me a plan for a 10 day tour in Australia. Consider that I'll be staying at least 3 days in each place but could be more.
-Brisbane has to be included as the first city, since my friend is there and I'll be visiting him.
-The last place need to be Sydney since I'll depart to new Zealand form there.
+1) Give me a plan for a 10 day tour in Australia. Consider that I'll be staying at least 3 days in each place but could be more.
+Brisbane has to be included as the last city, since my friend is there and I'll be visiting him and I'll depart to New Zealand from there.
+include the Sunshine Coast during the Brisbane days.
+The first place need to be Sydney since I'll arrive there first.
 Focus on activities that can be done outside like hiking and waterfalls and adventure in general.
 Don't need to include so many activities each day that it becomes a burden to enjoy things too fast.
 Make the guide detailed enough to be easy to understand and follow.
 
-I'll ask for new Zealand plan on the next prompt, so wait for it.
+2) Give me a plan for a 13 day tour in New Zealand.
+Search the internet info about the Matamata permanent set tour about The Hobbit movies in New Zealand. This tour needs to be included in the plan.
+Consider that I'll be staying at least 3 days in each place but could be more.
+Focus on activities that can be done outside like hiking and waterfalls and adventure in general.
+Don't need to include so many activities each day that it becomes a burden to enjoy things too fast.
+Make the guide detailed enough to be easy to understand and follow.
+End the tour in a place where it is easier to return to São Paulo aftere everything is finished. If necessary reserve the last day for getting ready and getting to said place.
 
+## General Critical Rules
+Add times stamps and duration for all activities.
+Please attach the exact dates for each day. Assume I'arrive in Sydney on November 5th, 7am
+For all parts of the trip, search the internet for the best car rental companies for the parts where you find renting a car is best. Always give a comparison with buses and airplanes just so I can manually take a look if necessary.
+List the places you recomend to stay. Give comparisons between hotels, airbnbs and hostels and estimated price ranges.
+Add information about if a place you recommend needs a guide as mandatory, just recommended or no need for a guide al all.
 
-## Australia
-# 10-Day Australia Outdoor Adventure Itinerary
-
-## Day 1–2: Sydney
-**Base:** Inner West (Newtown) or Bondi/Coogee
-**Arrival City**
-**Transportation:** Public transportation (Opal card) and walking
-
-### Day 1: Arrival & Coastal Walk
-- (09:00) Arrive in Sydney and check in.
-- (10:30) Bondi to Coogee Coastal Walk (6km, ~2 hrs).
-- (13:00) Lunch at Three Blue Ducks in Bronte.
-- (15:00) Swim or relax at Clovelly or Bronte Rock Pools.
-- (18:00) Sunset at Mrs Macquarie’s Chair.
-- (19:30) Dinner in Newtown or The Rocks.
-
-### Day 2: Harbour Sights & Departure to Blue Mountains
-- (08:30) Morning walk in Royal Botanic Garden.
-- (10:00) Visit Sydney Opera House and Circular Quay.
-- (11:00) Optional stop at The Rocks or Barangaroo.
-- (13:00) Light lunch nearby.
-- (14:00) Depart for Blue Mountains via train (Opal card) or rental car.
-- (17:00) Check-in at Katoomba or Leura.
+Fortmat the information in a way that can be copied and pasted in a word document
 
 ---
 
-## Day 3–4: Blue Mountains
-**Base:** Katoomba or Leura
-**Transportation:** Public transportation or rental car
-
-### Day 3: Scenic World & Echo Point
-- (08:30) Scenic Railway, Skyway, and Cableway.
-- (11:00) Hike Prince Henry Cliff Walk: Echo Point to Leura Cascades.
-- (14:00) Lunch in Leura.
-- (16:00) Explore more lookouts or relax in town.
-- (19:00) Dinner at Leura Garage or Yellow Deli.
-
-### Day 4: Valley of the Waters Hike & Transfer
-- (08:00) Start at Conservation Hut.
-- (08:30–11:00) Hike to Empress Falls, Sylvia Falls, Lodore Falls.
-- (12:00) Lunch in Wentworth Falls.
-- (13:30) Return to Sydney and fly to Ballina or Gold Coast Airport.
-- (17:00) Pick up rental car and drive to Byron Bay (1-hour from Gold Coast, 2 from Ballina).
+Here’s a thoughtfully paced and adventure-focused 10-day Australia itinerary and a 13-day New Zealand plan—including Hobbiton—with car-rental guidance, transport options, and lodging recommendations. I’ve kept each day manageable, with timestamps and durations, plus rental comparisons. Let's dive in:
 
 ---
 
-## Day 5–6: Byron Bay & Surrounds
-**Base:** Byron Bay
-**Transportation:** Rental car
+## Part 1: 10-Day Australia Adventure (Ending in Brisbane + Sunshine Coast)
 
-### Day 5: Lighthouse & Hinterland
-- (08:00) Sunrise at Cape Byron Lighthouse.
-- (09:00) Breakfast at The Pass Cafe.
-- (10:30) Day trip to Minyon Falls, Killen Falls, and Nightcap National Park.
-- (13:00) Picnic lunch or local café.
-- (16:00) Optional dolphin kayaking tour.
-- (19:00) Dinner at Treehouse on Belongil.
+### **Overview:**
 
-### Day 6: Surf & Coastal Vibes
-- (09:00) Surf lesson or board rental.
-- (11:00) Optional walk in Broken Head Nature Reserve.
-- (13:00) Lunch in town.
-- (15:00) Chill at Wategos Beach.
-- (18:00) Drive to Sunshine Coast (~3.5–4 hrs).
+* **Days 1–3:** Sydney
+* **Days 4–6:** Blue Mountains region
+* **Days 7–10:** Sunshine Coast & Brisbane
+
+You’ll arrive in Sydney, explore thrilling outdoors, then head inland, then north to Queensland—finishing relaxed in Brisbane, with Sunshine Coast highlights nearby.
 
 ---
 
-## Day 7–8: Sunshine Coast & Surrounds
-**Base:** Noosa or Mooloolaba
-**Transportation:** Rental car
+### **Day 1 (Sydney)**
 
-### Day 7: Noosa National Park Adventure
-- (08:30) Coastal walk through Noosa National Park (Boiling Pot to Hell’s Gates).
-- (12:00) Lunch in Noosa Heads.
-- (14:00) Relax or swim at Tea Tree Bay.
-- (18:30) Dinner in Hastings Street.
+* **09:00–11:00 (2 h):** Easy harbor-side walk from Circular Quay to The Rocks; enjoy views and morning tea.
+* **11:00–13:30 (2.5 h):** Ferry to Manly for coastal stroll.
+* **14:00–17:00 (3 h):** Bondi to Coogee cliff walk — gorgeous ocean scenery, moderate pace. No guide needed.
+* **Evening:** Casual dinner in Coogee.
 
-### Day 8: Glass House Mountains Hike & Travel to Brisbane
-- (08:00) Early morning drive to Glass House Mountains (~1h).
-- (09:00) Climb Mount Ngungun (~1–1.5 hrs, easy/moderate).
-- (11:00) Optional stop at Mary Cairncross Scenic Reserve.
-- (13:00) Lunch at local café in Maleny or Montville.
-- (15:00) Drive to Brisbane and check-in.
+*Stay suggestion:*
+
+* **Quality:** Mid-range hotel (\~AUD 150–200/night) near Bondi or CBD—easy transport.
+* **Budget:** Airbnb or hostel (\~AUD 60–100).
 
 ---
 
-## Day 9–10: Brisbane & Moreton Island
-**Base:** Brisbane
-**Transportation:** Public transportation + Ferry/tour for Moreton; rental car for Springbrook
+### **Day 2 (Sydney)**
 
-### Day 9: Springbrook National Park Day Trip
-- (07:30) Depart Brisbane with rental car.
-- (09:30) Hike Natural Bridge, Twin Falls, Best of All Lookout.
-- (13:00) Lunch in Springbrook.
-- (15:00) Return to Brisbane.
-- (19:00) Dinner in West End or Fortitude Valley.
+* **08:00–12:00 (4 h):** Rent car (see guidance), drive \~90 min to Royal National Park: hike Wattamolla to Eagle Rock (moderate, \~2 h). Guide optional.
+* **12:00–13:00 (1 h):** Picnic lunch with ocean views.
+* **13:00–17:00 (4 h):** Drive south to Stanwell Tops Lookout, then return.
 
-### Day 10: Moreton Island Adventure & Departure
-- (07:00) Early ferry or guided tour to Moreton Island.
-- (09:00–14:00) Snorkel Tangalooma Wrecks, sandboard dunes, swim.
-- (15:00) Return to Brisbane.
-- (18:00) Light dinner and head to airport for New Zealand flight.
+*Transport comparison:*
+
+* **Car rental:** Avis, Hertz, Europcar, Budget, Thrifty; plus budget locals like Apex or Alpha \~ cheaper for day trips ([Australia Backpackers Guide][1], [Facebook][2], [Rough Guides][3]).
+* **Bus/tour:** Available but less flexible for off-route spots.
 
 ---
 
-## Packing Tips
-- Comfortable hiking shoes
-- Sun protection
-- Light rain jacket (especially for rainforest areas)
-- Swimsuit and towel
+### **Day 3 (Blue Mountains)**
 
-## Transportation Summary
-- **Public transport & walking:** Sydney, Brisbane
-- **Train or rental car:** Sydney ↔ Blue Mountains
-- **Domestic flight:** Sydney → Ballina or Gold Coast
-- **Rental car:** Byron Bay, Sunshine Coast, Springbrook, Glass House Mountains
-- **Ferry/tour:** Moreton Island
+* **08:00–10:00 (2 h):** Drive from Sydney to Blue Mountains.
+* **10:00–14:00 (4 h):** Scenic hike (e.g. Wentworth Falls loop). Guide optional.
+* **14:00–16:00 (2 h):** Visit Echo Point & Three Sisters lookout.
+* **Late afternoon:** Return drive (\~2 h).
 
-## Food on a Budget
-- Guzman y Gomez, Grill’d, local bakeries
-- Farmers markets (Byron, Sunshine Coast, and Sydney)
+*Stay options nearby:*
 
-**Enjoy your Australian adventure!**
+* **Boutique lodge** (\~AUD 180–220) with views.
+* **Airbnb or hostel** (\~AUD 80–120).
+
+---
+
+### **Day 4 (Drive toward Sunshine Coast)**
+
+* **08:00–20:00 (12 h including breaks):** Drive north. It’s a long stretch (\~10 h), so consider breaking at Coffs Harbour. Alternatively, fly to Brisbane (\~1.5 h) then rent a car for Sunshine Coast.
+
+*Flight vs. Driving comparison:*
+
+* **Fly:** Quicker, less tiring but pricier and less scenic ([australia.com][4]).
+* **Drive:** Adventure through coastal towns, flexible stops.
+
+---
+
+### **Days 5–6 (Sunshine Coast)**
+
+* **Suggested base:** Noosa or Mooloolaba—Airbnb (\~AUD 120–180/night) or mid-range hotel (\~AUD 180–250).
+* **Day 5 Morning (09:00–13:00):** Hike in Noosa National Park (Coastal Track loop \~2–3 h), then beach time.
+* **Afternoon:** Explore local markets, café lunch.
+* **Day 6 (09:00–14:00):** Glass House Mountains walk or Mary Cairncross Scenic Reserve (\~2 h).
+* **Afternoon:** Drive back to Noosa; relax by beach or wildlife sanctuary.
+
+---
+
+### **Days 7–10 (Brisbane + Day Trips)**
+
+* **Base:** Brisbane—mixed options: central hotel (\~AUD 150–220), Airbnb (\~AUD 100–160).
+* **Day 7:** Leisurely explore South Bank, Botanic Gardens.
+* **Day 8 (09:00–17:00):** Day trip to Mount Tamborine; walk rainforest circuit and visit waterfalls. Guide optional.
+* **Day 9 (09:00–17:00):** Visit Sunshine Coast hinterland waterfalls—e.g., Kondalilla National Park (easy walks \~2 h).
+* **Day 10:** Time with friend, pack, prepare for departure to NZ.
+
+---
+
+## Car Rental & Transport Comparisons (Australia)
+
+* **Car rental (recommended for Blue Mountains, Sunshine Coast, hinterland):** Avis, Hertz, Europcar, Budget, Thrifty, plus local budget options like Apex, Alpha, Go Rentals ([Australia Backpackers Guide][1], [Rick Steves Community][5], [Facebook][2]).
+* **Uber Rent (via app, compares multiple providers):** Convenient in metro areas ([News.com.au][6]).
+* **Flights vs buses:** For long coastal moves, flights save time whereas buses are cheaper but slower ([australia.com][4], [Pina Colada Passport][7], [jobaroo][8]).
+
+---
+
+### **Summary: Australia Section**
+
+* **Stayed 3 days minimum** in Sydney, Blue Mountains, Sunshine Coast/Brisbane.
+* **Paced activities, outdoors focus**, with hiking and waterfalls.
+* **Transport advice:** Car rental advised for flexibility; flights or buses for big legs.
+* **Accommodation:** Mixture of hostels, Airbnbs, hotels with price ranges.
+
+---
+
+---
+
+## Part 2: 13-Day New Zealand Adventure (Ends for easy São Paulo return)
+
+### Search result summary for Hobbiton Movie Set Tour:
+
+* **Regular Hobbiton tour:** guided \~2.5 h, cost NZD \~120 adult ([Hobbiton Tours][9], [Travel Conscious][10], [Teaspoon of Adventure][11], [Wikipedia][12]).
+* **Behind the Scenes options:** longer (4-4.5 h), more immersive, more costly ([Hobbiton Tours][9], [Travel Conscious][10]).
+* **Fully guided walking tour; bookings essential; buses from The Shire’s Rest included** ([Hobbiton Tours][13], [Travel Conscious][10]).
+
+---
+
+### **Transport in New Zealand**
+
+* **Car rental (recommended):** Best for flexibility and accessing remote sites; offers range midsize vehicles. Companies include Hertz, Avis, Budget, plus local options like Ace Rental Cars or JUCY (camper-vans and cars) ([New Zealand][14], [Ace Rental Cars][15], [Hertz][16], [Wikipedia][17]).
+* **Public transport:** Limited beyond cities; only good for tight budgets or city-to-city ([Reddit][18], [New Zealand][19]).
+* **Buses/flights:** Flights good for distant hops (e.g., north to south), but miss scenic drives. Buses limited routes ([New Zealand][19], [Shore Rentals][20], [jobaroo][8]).
+
+---
+
+### **Itinerary (North & South Islands)**
+
+#### **Days 1–3: Auckland & Nearby Wilderness**
+
+* **Day 1:** Arrive Auckland; relax, short coastal walk, urban gardens.
+* **Day 2:** Rent car; drive to Waitakere Ranges (\~30 min); hike Karekare falls (\~2 h roundtrip).
+* **Day 3:** Day trip to Piha Beach and Kitekite Falls (\~3–4 h hiking and beach). Return.
+
+#### **Days 4–6: Rotorua / Hobbiton (Matamata)**
+
+* **Day 4:** Drive to Rotorua (\~3 h) via geothermal region. Afternoon: visit Wai-O-Tapu or Kuirau Park.
+* **Day 5:** **Hobbiton Movie Set tour**: depart from Shire’s Rest — regular guided tour (\~2.5 h) ∙ arrive early, buses and guide included ([Hobbiton Tours][13], [Travel Conscious][10], [Wikipedia][12]).
+
+  * Options: Behind-the-Scenes (\~4–4.5 h) or regular; choose based on interest.
+* **Day 6:** Hike in Redwood Forest; evening soak in Rotorua hot springs.
+
+*Stay in Rotorua or Matamata via hotel/Airbnb/hostel (\~NZD 80–180/night).*
+
+#### **Days 7–9: Tongariro National Park / Hiking**
+
+* **Day 7:** Drive to Tongariro (\~2.5 h).
+* **Day 8:** Hike Tongariro Alpine Crossing (one of best single-day hikes; \~7–8 h). Highly advisable to use guide or check weather before going solo.
+* **Day 9:** Recover with short hikes or relaxing in national park; drive toward Wellington (\~4.5 h) or consider flying.
+
+#### **Days 10–12: Queenstown / Fiordland (South Island)**
+
+* **Day 10:** Fly to Queenstown (or if driving, ferry + long drive).
+* **Day 11:** Day trip to Milford Sound (coach or drive + cruise)—waterfalls and fiord adventure.
+* **Day 12:** Optional hike (e.g., Ben Lomond Track) or canyoning/rafting activity.
+
+#### **Day 13:** Departure day – drive or fly to Christchurch or Auckland depending on best international flight to São Paulo; reserve time for rental return and prep.
+
+---
+
+### **Car Rental Recommendations (NZ)**
+
+* **Big names:** Hertz (lots of locations) ([Hertz][16]), Avis, Budget.
+* **Budget:** Ace Rental Cars—affordable, shuttle service ([Ace Rental Cars][15]).
+* **Camper-vans:** JUCY for flexibility and slightly cheaper road trips ([Wikipedia][17]).
+* **Advice:** Car is best for off-city, rural exploring; buses only for major cities ([Reddit][18], [Shore Rentals][20], [New Zealand][19]).
+
+---
+
+### **Accommodation Recommendations NZ**
+
+* **Cities (Auckland, Rotorua, Queenstown):** Mix hotels (\~NZD 150–250), Airbnbs (\~NZD 100–180), hostels (\~NZD 60–100).
+* **Rural:** Farm stays or motels (\~NZD 100–150). Tolkien-themed stays e.g., glamping near Hobbiton ([Vogue][21]).
+
+---
+
+## Summary Table
+
+| Country         | Car Rental Options                                                                                  | Bus/Flight Trade-offs                                                                                                 | Highlights                                                     |
+| --------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Australia**   | Avis, Hertz, Europcar, Budget, Apex, Uber Rent ([Australia Backpackers Guide][1], [News.com.au][6]) | Flights faster; buses cheaper but slower/off-route gaps ([australia.com][4], [Pina Colada Passport][7], [jobaroo][8]) | Sydney cliffs, Blue Mountains, Sunshine Coast, Tamborine Falls |
+| **New Zealand** | Hertz, Avis, Ace, JUCY (camper) ([Hertz][16], [Ace Rental Cars][15], [Wikipedia][17])               | Buses limited; flights skip scenic routes ([Reddit][18], [New Zealand][19], [Shore Rentals][20])                      | Hobbiton, Tongariro, Fiords, Alpine hikes                      |
+
+---
+
+## Final Tips
+
+* **Bookings:** Hobbiton tours fill quickly—reserve early (\~10 months ahead) ([Hobbiton Tours][13]).
+* **Guided vs unguided:**
+
+  * Australia: Most hikes independent; Kanangra or complex terrains may need guide.
+  * NZ: Tongariro crossing could benefit from guide due to weather. Hobbiton tour is fully guided.
+* **Pricing estimates:**
+
+  * Australia lodging from \~AUD 60 (hostel) to \~AUD 250 (mid-range hotel).
+  * NZ lodging \~NZD 60–250 similar range.
+  * Cars vary by vehicle and length—comparisons encouraged.
+
+---
+
+Let me know if you'd like accommodation examples, booking links, or alternative routes like South-Island-only or adapting for camper-van travel!
+
+[1]: https://www.australia-backpackersguide.com/car-rental-australia/?utm_source=chatgpt.com "Car Rental in Australia: Complete Guide for 2025"
+[2]: https://www.facebook.com/groups/australiatravello/posts/3706372522994188/?utm_source=chatgpt.com "Best car hire companies to use whilst travelling in Australia. ..."
+[3]: https://www.roughguides.com/australia/getting-around/?utm_source=chatgpt.com "Getting around Australia: Transportation Tips"
+[4]: https://www.australia.com/en-us/facts-and-planning/getting-around.html?utm_source=chatgpt.com "Travel around Australia"
+[5]: https://community.ricksteves.com/travel-forum/beyond-europe/car-rental-recommendations-requested-australia-and-new-zealand?utm_source=chatgpt.com "Car Rental recommendations requested - Australia and New ..."
+[6]: https://www.news.com.au/travel/travel-ideas/road-trips/uber-rent-uber-unveils-new-travel-features/news-story/22fe35aefa959944170b715546cd59c0?utm_source=chatgpt.com "Uber reveals surprise Australia-first move"
+[7]: https://pinacoladapassport.com/blog/how-travel-australia-east-coast-without-car/?utm_source=chatgpt.com "How to Travel Australia's East Coast Without a Car"
+[8]: https://jobaroo.com/getting-around-australia/?utm_source=chatgpt.com "Getting Around Australia (Cheapest and Best Ways)"
+[9]: https://www.hobbitontours.com/?utm_source=chatgpt.com "Hobbiton™ Movie Set Tours"
+[10]: https://travelconscious.co/hobbiton-movie-set-tour/?utm_source=chatgpt.com "Hobbiton movie set tour: relevant tips and what to expect"
+[11]: https://teaspoonofadventure.com/set-tour-of-hobbiton/?utm_source=chatgpt.com "Is the Set Tour of Hobbiton Worth It?"
+[12]: https://en.wikipedia.org/wiki/Hobbiton_Movie_Set?utm_source=chatgpt.com "Hobbiton Movie Set"
+[13]: https://www.hobbitontours.com/experiences/hobbiton-movie-set-tour/?utm_source=chatgpt.com "Hobbiton™ Movie Set Tours"
+[14]: https://www.newzealand.com/us/rental-cars/?utm_source=chatgpt.com "Rental cars in New Zealand | 100% Pure New Zealand"
+[15]: https://www.acerentalcars.co.nz/?utm_source=chatgpt.com "Ace Rental Cars: Car Hire in New Zealand & Australia"
+[16]: https://www.hertz.com/rentacar/misc/index.jsp?targetPage=Hertz_New_Zealand_Car_Rental.xml&utm_source=chatgpt.com "Hertz New Zealand Car Rental"
+[17]: https://en.wikipedia.org/wiki/Jucy_Group_Limited?utm_source=chatgpt.com "Jucy Group Limited"
+[18]: https://www.reddit.com/r/solotravel/comments/1b5gxmr/new_zealand_by_car_or_public_transport/?utm_source=chatgpt.com "New Zealand by car or public transport? : r/solotravel"
+[19]: https://www.newzealand.com/us/getting-around/?utm_source=chatgpt.com "Getting around New Zealand | 100% Pure New Zealand"
+[20]: https://www.shorerentals.co.nz/renting-a-car-to-explore-nz-is-it-better-than-taking-the-bus-or-flying/?utm_source=chatgpt.com "Renting a Car to Explore NZ: Is It Better Than Taking the Bus ..."
+[21]: https://www.vogue.com/article/hobbiton-matamata-new-zealand?utm_source=chatgpt.com "A Grown-Up's Guide to Hobbiton"
+
 
 
 
 ## New Zealand
 https://app.travellerdeclaration.govt.nz/#/
 Fill the form above 24 hours before entering New Zealand
-
-
-# Visto
-
-# Visto de Turismo para a Austrália (Brasileiros) – Visitor visa (subclass 600)
-
-## 📑 Documentos necessários
-
-### 1. Documentos obrigatórios
-
-* **Passaporte válido** (recomenda-se validade mínima de 6 meses).
-  *Como obter:* [Polícia Federal – Passaporte](https://www.gov.br/pt-br/servicos/obter-passaporte-para-brasileiros).
-* **Formulário online (ImmiAccount)** → criar conta, preencher aplicação e anexar documentos.
-* **Foto tipo passaporte** em formato digital (JPEG ou PDF).
-* **Traduções para inglês** de todos os documentos que não estiverem em inglês. (No Brasil, use tradução juramentada).
-
-> ⚠️ Não compre passagens antes do visto ser aprovado.
-
----
-
-### 2. Provas financeiras e de plano de viagem
-
-* Extratos bancários recentes.
-* Declaração de Imposto de Renda (última).
-* Contracheques ou comprovantes de recebimento.
-* Reservas de hospedagem (de preferência canceláveis).
-* **Não é obrigatório ter passagem aérea emitida.**
-
----
-
-### 3. Situação profissional (para contractors)
-
-* Contrato de prestação de serviços com a empresa dos EUA.
-* Notas Fiscais emitidas no Brasil + comprovantes de recebimento.
-* CNPJ da empresa (emitir no site da [Receita Federal](https://servicos.receita.fazenda.gov.br/servicos/certidao/CndCon/ConSituacaoCadastral.asp)).
-* Declaração simples explicando período de férias/pausa.
-* Se possível, carta da empresa-cliente confirmando vínculo.
-
----
-
-### 4. Vínculos com o Brasil
-
-* Propriedade residencial: escritura ou certidão de matrícula (cartório de registro de imóveis).
-* Certidões de família (casamento, filhos).
-* Outros vínculos: contrato de aluguel, matrícula em curso, etc.
-
----
-
-### 5. Seguro-saúde
-
-* Não é obrigatório, mas é **altamente recomendado** contratar seguro de viagem que cubra todo o período.
-
----
-
-### 6. Documentos que podem ser solicitados depois
-
-* **Exame médico (HAP ID + clínica credenciada eMedical).**
-* **Certidão de antecedentes criminais (Polícia Federal).** [Emitir online aqui](https://www.gov.br/pf/pt-br/assuntos/certidoes/antecedentes-criminais).
-* **Biometria (digitais/foto):** só se solicitado pelo ImmiAccount.
-
----
-
-## 🛠️ Passo a passo para solicitar
-
-1. Leia a [página oficial do visto Visitor 600 – Tourist stream](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-outside-australia).
-2. Reúna todos os documentos (PDF/JPEG) e traduções juramentadas.
-3. Crie um [ImmiAccount](https://online.immi.gov.au/) e inicie a aplicação **Visitor (subclass 600) – Tourist stream (outside Australia)**.
-4. Preencha o formulário e **anexe documentos** (há guia oficial de anexos).
-5. Pague a **taxa de visto** pelo sistema (valor varia, confira no [estimador de taxas](https://immi.homeaffairs.gov.au/visas/visa-pricing-estimator)).
-6. Acompanhe a aplicação pelo ImmiAccount:
-
-   * Se pedirem **saúde**, agende com clínica credenciada usando o HAP ID.
-   * Se pedirem **antecedentes**, emita a certidão da Polícia Federal.
-7. Após a decisão, consulte seu visto e condições no **VEVO**. Só então finalize compra de passagens.
-
----
-
-## 📌 Dicas personalizadas para você
-
-* Envie **contrato de prestação de serviços**, **notas fiscais + extratos bancários**, **CNPJ da empresa** e **prova da sua casa no Brasil**.
-* Isso cobre os três pontos que o **case officer** avalia:
-
-  1. **Renda estável**,
-  2. **Ocupação/ligações profissionais**,
-  3. **Vínculo forte com o Brasil**.
-
----
-
-## 🔗 Referências oficiais
-
-* [Visitor visa (subclass 600) – Tourist stream (fora da Austrália)](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-outside-australia)
-* [ImmiAccount – aplicar e gerenciar online](https://online.immi.gov.au/)
-* [Traduções de documentos – Home Affairs](https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/how-to-apply/translating-documents)
-* [Saúde – exames médicos e HAP ID](https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/health/who-needs-health-examinations)
-* [Seguro saúde recomendado](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600#Health)
-* [Biometria – informações oficiais](https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/biometrics)
-* [Alerta da Embaixada: não comprar passagens antes do visto](https://brazil.embassy.gov.au/)
-* [Passaporte brasileiro – Polícia Federal](https://www.gov.br/pt-br/servicos/obter-passaporte-para-brasileiros)
-* [CNPJ – Comprovante de Situação Cadastral](https://servicos.receita.fazenda.gov.br/servicos/certidao/CndCon/ConSituacaoCadastral.asp)
-* [Certidão de Antecedentes Criminais – Polícia Federal](https://www.gov.br/pf/pt-br/assuntos/certidoes/antecedentes-criminais)
-
----
-
-👉 Quer que eu monte esse conteúdo em um **checklist em PDF com caixinhas de tique**, já na ordem certa de upload do ImmiAccount?
