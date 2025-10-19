@@ -33,174 +33,251 @@ Here’s a thoughtfully paced and adventure-focused 10-day Australia itinerary a
 
 ---
 
-## Part 1: 10-Day Australia Adventure (Ending in Brisbane + Sunshine Coast)
+## Australia – 10 Days Itinerary
 
-### **Overview:**
+*(November 5th – November 14th, 2025)*
 
-* **Days 1–3:** Sydney
-* **Days 4–6:** Blue Mountains region
-* **Days 7–10:** Sunshine Coast & Brisbane
+### Day 1 – Wednesday, November 5th, 2025 – Sydney
 
-You’ll arrive in Sydney, explore thrilling outdoors, then head inland, then north to Queensland—finishing relaxed in Brisbane, with Sunshine Coast highlights nearby.
+* 07:00 – Arrive in Sydney (Kingsford Smith Airport).
+* 09:00–11:00 (2 h): Transfer from airport to hotel via train/taxi into CBD, then walk around Circular Quay → The Rocks (harbour views, morning tea).
 
----
+  * **Transport:** Airport train/taxi to Sydney CBD.
+* 11:00–13:30 (2.5 h): Ferry from Circular Quay to Manly, then coastal stroll.
+* The Pacific House Hostel
 
-### **Day 1 (Sydney)**
+  * **Transport:** Sydney Ferry.
+* 14:00–17:00 (3 h): Return to Bondi and walk the Bondi → Coogee coastal path. No guide needed.
 
-* **09:00–11:00 (2 h):** Easy harbor-side walk from Circular Quay to The Rocks; enjoy views and morning tea.
-* **11:00–13:30 (2.5 h):** Ferry to Manly for coastal stroll.
-* **14:00–17:00 (3 h):** Bondi to Coogee cliff walk — gorgeous ocean scenery, moderate pace. No guide needed.
-* **Evening:** Casual dinner in Coogee.
+  * **Transport:** Bus or Uber from CBD to Bondi.
+* Evening: Dinner in Coogee, relax.
+* **Lodging:** Sydney CBD or Bondi (Hotel AUD 150–200 | Airbnb/Hostel AUD 60–100).
 
-*Stay suggestion:*
+### Day 2 – Thursday, November 6th, 2025 – Sydney / Royal National Park
 
-* **Quality:** Mid-range hotel (\~AUD 150–200/night) near Bondi or CBD—easy transport.
-* **Budget:** Airbnb or hostel (\~AUD 60–100).
+* 08:00–09:30 (1.5 h): Take train from Sydney CBD to Cronulla (Illawarra Line) then ferry to Bundeena in Royal National Park. ([Sydney][1])
 
----
+  * **Transport:** Train + ferry.
+* 09:30–12:00 (2.5 h): Hike from Bundeena to viewpoints such as Eagle Rock or along the coast.
+* 12:00–13:00 (1 h): Picnic lunch in the park.
+* 13:00–17:00 (4 h): Continue exploring—walk to Wattamolla Beach, lookouts, coastal tracks. ([Sydney][1])
+* Evening: Return via ferry + train to Sydney.
+* **Transport notes:** Public transport route works; Uber would be long for this leg.
+* **Agency (optional guide):** Private/ group tours offered by Sydney Nimble Tours – tailor-your-own day in Royal National Park. ([NSW National Parks][2])
+* **Lodging:** Same as Day 1.
 
-### **Day 2 (Sydney)**
+### Day 3 – Friday, November 7th, 2025 – Blue Mountains (via public transport)
 
-* **08:00–12:00 (4 h):** Rent car (see guidance), drive \~90 min to Royal National Park: hike Wattamolla to Eagle Rock (moderate, \~2 h). Guide optional.
-* **12:00–13:00 (1 h):** Picnic lunch with ocean views.
-* **13:00–17:00 (4 h):** Drive south to Stanwell Tops Lookout, then return.
+* 08:00–10:00 (2 h): Take train from Sydney CBD to Katoomba (Blue Mountains line).
+* 10:00–14:00 (4 h): Hike the Wentworth Falls loop (moderate).
+* 14:00–16:00 (2 h): Visit Echo Point / Three Sisters lookout via local bus in Katoomba.
+* 16:00–18:00 (2 h): Return by train to Sydney or stay overnight in Katoomba if preferred.
+* **Transport:** Train + local bus.
+* **Guide:** Optional; many trails are well-signed and independent.
+* **Lodging:** If staying in Blue Mountains: Boutique lodge (~AUD 180–220) or Airbnb/hostel (~AUD 80–120).
 
-*Transport comparison:*
+### Day 4 – Saturday, November 8th, 2025 – Travel to Sunshine Coast region
 
-* **Car rental:** Avis, Hertz, Europcar, Budget, Thrifty; plus budget locals like Apex or Alpha \~ cheaper for day trips ([Australia Backpackers Guide][1], [Facebook][2], [Rough Guides][3]).
-* **Bus/tour:** Available but less flexible for off-route spots.
+* Early morning: Check out and travel from Sydney to Brisbane or Sunshine Coast region via **flight** (Sydney → Brisbane ~1.5 h) as more practical than buses/trains for this large distance.
+* 12:55-13:25 (mudança de fuso aqui) Passagem comprada no Mytrip.com, com o email sodre.theorem@gmail.com /Numero do pedido: 1088-340-461 / airline reference number: JIWZ8V / email: igor.sodre1@travelfactstrip.com
+  * **Transport:** Flight recommended; then from Brisbane airport take train/bus or Uber up to Sunshine Coast (Noosa/Mooloolaba).
+* Afternoon/evening: Settle into accommodation at the Sunshine Coast.
+* **Lodging:** Noosa or Mooloolaba (Airbnb ~AUD 120–180 | Hotel ~AUD 180–250).
 
----
+### Day 5 – Sunday, November 9th, 2025 – Sunshine Coast (Noosa)
 
-### **Day 3 (Blue Mountains)**
+* 09:00–13:00 (4 h): Use local bus from Noosa centre to Noosa National Park. Hike the Coastal Track loop (moderate pace).
 
-* **08:00–10:00 (2 h):** Drive from Sydney to Blue Mountains.
-* **10:00–14:00 (4 h):** Scenic hike (e.g. Wentworth Falls loop). Guide optional.
-* **14:00–16:00 (2 h):** Visit Echo Point & Three Sisters lookout.
-* **Late afternoon:** Return drive (\~2 h).
+  * **Transport:** Sunshine Coast local bus.
+* 13:00–15:00 (2 h): Beach time at Noosa + café lunch.
+* 15:00–18:00 (3 h): Explore local markets / town stroll.
+* **Guide:** Not required; trail well-marked.
+* **Lodging:** Same as previous night.
 
-*Stay options nearby:*
+### Day 6 – Monday, November 10th, 2025 – Sunshine Coast Hinterland
 
-* **Boutique lodge** (\~AUD 180–220) with views.
-* **Airbnb or hostel** (\~AUD 80–120).
+* 09:00–13:00 (4 h): Bus from Noosa to hinterland region: for example to Mary Cairncross Scenic Reserve, then walk in the rainforest.
 
----
+  * **Transport:** Hinterland bus services (Sunshine Coast Region Transit). Example: Montville / Mary Cairncross. ([parks.qld.gov.au][3])
+* 13:00–15:00 (2 h): Lunch in Montville.
+* 15:00–17:00 (2 h): Visit Kondalilla National Park, walk to the waterfall (~1.5-2h). There is a bus stop near the entrance. ([expedia][4])
+* Evening: Return via bus to Noosa/Mooloolaba.
+* **Transport:** Bus; Uber only if short ride from bus stop to lodge if preferred.
+* **Agency (optional):** Coast to Hinterland Tours offers day tours with return transport including Montville & Kondalilla. ([Coast to Hinterland Tours][5])
+* **Lodging:** Same as previous.
 
-### **Day 4 (Drive toward Sunshine Coast)**
+### Day 7 – Tuesday, November 11th, 2025 – Travel to Brisbane
 
-* **08:00–20:00 (12 h including breaks):** Drive north. It’s a long stretch (\~10 h), so consider breaking at Coffs Harbour. Alternatively, fly to Brisbane (\~1.5 h) then rent a car for Sunshine Coast.
+* Morning: Check-out, take bus/train from Sunshine Coast to Brisbane CBD (e.g., NX-bus or Queensland Rail + local bus).
 
-*Flight vs. Driving comparison:*
+  * **Transport:** Public bus/train.
+* 09:00–12:00 (3 h): Arrive and explore South Bank Parklands + Brisbane Botanic Gardens.
+* Afternoon: Leisure time with friend in Brisbane.
+* **Lodging:** Brisbane CBD (Hotel AUD 150–220 | Airbnb AUD 100–160).
 
-* **Fly:** Quicker, less tiring but pricier and less scenic ([australia.com][4]).
-* **Drive:** Adventure through coastal towns, flexible stops.
+### Day 8 – Wednesday, November 12th, 2025 – Day Trip to Mount Tamborine
 
----
+* 09:00–12:00 (3 h): Take train from Brisbane to Logan / Eagleby then bus or Uber to Mt Tamborine. (Alternatively, join a day tour that picks you up.)
+* 12:00–14:00 (2 h): Lunch in the village.
+* 14:00–17:00 (3 h): Rainforest circuit walk and visit waterfalls/skywalk.
+* Evening: Return to Brisbane by bus/train or Uber.
+* **Transport:** Combination of train + bus / Uber.
+* **Agency (optional):** Many tour companies operate Mt Tamborine day trips from Brisbane (look up “Tamborine Mountain tours Brisbane”).
+* **Lodging:** Same as previous night.
 
-### **Days 5–6 (Sunshine Coast)**
+### Day 9 – Thursday, November 13th, 2025 – Sunshine Coast Waterfalls (Hinterland)
 
-* **Suggested base:** Noosa or Mooloolaba—Airbnb (\~AUD 120–180/night) or mid-range hotel (\~AUD 180–250).
-* **Day 5 Morning (09:00–13:00):** Hike in Noosa National Park (Coastal Track loop \~2–3 h), then beach time.
-* **Afternoon:** Explore local markets, café lunch.
-* **Day 6 (09:00–14:00):** Glass House Mountains walk or Mary Cairncross Scenic Reserve (\~2 h).
-* **Afternoon:** Drive back to Noosa; relax by beach or wildlife sanctuary.
+* 09:00–13:00 (4 h): From Brisbane take bus/train to Sunshine Coast hinterland region (Montville/Maleny). Then walk in Kondalilla Falls National Park (~2h). Bus stop is at Kondalilla Falls Road. ([expedia][4])
+* Afternoon: Explore Montville and Maleny villages; café lunch and scenic stroll.
+* Evening: Return to Brisbane via bus/train.
+* **Transport:** Long but possible via public transport; Uber for final short leg if needed.
+* **Lodging:** Same as previous.
 
----
+### Day 10 – Friday, November 14th, 2025 – Brisbane / Departure to NZ
 
-### **Days 7–10 (Brisbane + Day Trips)**
-
-* **Base:** Brisbane—mixed options: central hotel (\~AUD 150–220), Airbnb (\~AUD 100–160).
-* **Day 7:** Leisurely explore South Bank, Botanic Gardens.
-* **Day 8 (09:00–17:00):** Day trip to Mount Tamborine; walk rainforest circuit and visit waterfalls. Guide optional.
-* **Day 9 (09:00–17:00):** Visit Sunshine Coast hinterland waterfalls—e.g., Kondalilla National Park (easy walks \~2 h).
-* **Day 10:** Time with friend, pack, prepare for departure to NZ.
-
----
-
-## Car Rental & Transport Comparisons (Australia)
-
-* **Car rental (recommended for Blue Mountains, Sunshine Coast, hinterland):** Avis, Hertz, Europcar, Budget, Thrifty, plus local budget options like Apex, Alpha, Go Rentals ([Australia Backpackers Guide][1], [Rick Steves Community][5], [Facebook][2]).
-* **Uber Rent (via app, compares multiple providers):** Convenient in metro areas ([News.com.au][6]).
-* **Flights vs buses:** For long coastal moves, flights save time whereas buses are cheaper but slower ([australia.com][4], [Pina Colada Passport][7], [jobaroo][8]).
-
----
-
-### **Summary: Australia Section**
-
-* **Stayed 3 days minimum** in Sydney, Blue Mountains, Sunshine Coast/Brisbane.
-* **Paced activities, outdoors focus**, with hiking and waterfalls.
-* **Transport advice:** Car rental advised for flexibility; flights or buses for big legs.
-* **Accommodation:** Mixture of hostels, Airbnbs, hotels with price ranges.
-
----
-
----
-
-## Part 2: 13-Day New Zealand Adventure (Ends for easy São Paulo return)
-
-### Search result summary for Hobbiton Movie Set Tour:
-
-* **Regular Hobbiton tour:** guided \~2.5 h, cost NZD \~120 adult ([Hobbiton Tours][9], [Travel Conscious][10], [Teaspoon of Adventure][11], [Wikipedia][12]).
-* **Behind the Scenes options:** longer (4-4.5 h), more immersive, more costly ([Hobbiton Tours][9], [Travel Conscious][10]).
-* **Fully guided walking tour; bookings essential; buses from The Shire’s Rest included** ([Hobbiton Tours][13], [Travel Conscious][10]).
+* Morning: Relax with friend, last walk around city.
+* Afternoon/Evening: Transfer to Brisbane Airport via train/taxi and fly to Auckland.
+* **Transport:** Airport train or taxi from Brisbane CBD.
 
 ---
 
-### **Transport in New Zealand**
+## New Zealand – 13 Days Itinerary
 
-* **Car rental (recommended):** Best for flexibility and accessing remote sites; offers range midsize vehicles. Companies include Hertz, Avis, Budget, plus local options like Ace Rental Cars or JUCY (camper-vans and cars) ([New Zealand][14], [Ace Rental Cars][15], [Hertz][16], [Wikipedia][17]).
-* **Public transport:** Limited beyond cities; only good for tight budgets or city-to-city ([Reddit][18], [New Zealand][19]).
-* **Buses/flights:** Flights good for distant hops (e.g., north to south), but miss scenic drives. Buses limited routes ([New Zealand][19], [Shore Rentals][20], [jobaroo][8]).
+### Day 1 – Saturday, November 15th, 2025 – Auckland
 
----
-
-### **Itinerary (North & South Islands)**
-
-#### **Days 1–3: Auckland & Nearby Wilderness**
-
-* **Day 1:** Arrive Auckland; relax, short coastal walk, urban gardens.
-* **Day 2:** Rent car; drive to Waitakere Ranges (\~30 min); hike Karekare falls (\~2 h roundtrip).
-* **Day 3:** Day trip to Piha Beach and Kitekite Falls (\~3–4 h hiking and beach). Return.
-
-#### **Days 4–6: Rotorua / Hobbiton (Matamata)**
-
-* **Day 4:** Drive to Rotorua (\~3 h) via geothermal region. Afternoon: visit Wai-O-Tapu or Kuirau Park.
-* **Day 5:** **Hobbiton Movie Set tour**: depart from Shire’s Rest — regular guided tour (\~2.5 h) ∙ arrive early, buses and guide included ([Hobbiton Tours][13], [Travel Conscious][10], [Wikipedia][12]).
-
-  * Options: Behind-the-Scenes (\~4–4.5 h) or regular; choose based on interest.
-* **Day 6:** Hike in Redwood Forest; evening soak in Rotorua hot springs.
-
-*Stay in Rotorua or Matamata via hotel/Airbnb/hostel (\~NZD 80–180/night).*
-
-#### **Days 7–9: Tongariro National Park / Hiking**
-
-* **Day 7:** Drive to Tongariro (\~2.5 h).
-* **Day 8:** Hike Tongariro Alpine Crossing (one of best single-day hikes; \~7–8 h). Highly advisable to use guide or check weather before going solo.
-* **Day 9:** Recover with short hikes or relaxing in national park; drive toward Wellington (\~4.5 h) or consider flying.
-
-#### **Days 10–12: Queenstown / Fiordland (South Island)**
-
-* **Day 10:** Fly to Queenstown (or if driving, ferry + long drive).
-* **Day 11:** Day trip to Milford Sound (coach or drive + cruise)—waterfalls and fiord adventure.
-* **Day 12:** Optional hike (e.g., Ben Lomond Track) or canyoning/rafting activity.
-
-#### **Day 13:** Departure day – drive or fly to Christchurch or Auckland depending on best international flight to São Paulo; reserve time for rental return and prep.
+* ~19:30 – Arrive in Auckland and transfer to your accommodation via airport shuttle, bus or taxi.
+* Evening – Get settled, do a relaxed stroll around the waterfront or nearby city streets.
+* **Transport:** Airport shuttle or bus/train into city centre + taxi/Uber if preferred.
+* **Lodging:** Auckland CBD (Hotel NZD 150–250 | Airbnb NZD 100–180 | Hostel NZD 60–90).
 
 ---
 
-### **Car Rental Recommendations (NZ)**
+### Day 2 – Sunday, November 16th, 2025 – West Auckland & Waitākere Ranges
 
-* **Big names:** Hertz (lots of locations) ([Hertz][16]), Avis, Budget.
-* **Budget:** Ace Rental Cars—affordable, shuttle service ([Ace Rental Cars][15]).
-* **Camper-vans:** JUCY for flexibility and slightly cheaper road trips ([Wikipedia][17]).
-* **Advice:** Car is best for off-city, rural exploring; buses only for major cities ([Reddit][18], [Shore Rentals][20], [New Zealand][19]).
+* 09:00–11:00 (2h): Take city bus/train to Titirangi or Arataki Visitor Centre in the Waitākere Ranges.
+
+  * **Transport:** Auckland bus service to Titirangi, or Uber if short ride.
+* 11:00–15:00 (4h): Walk in the rainforest region; visit the Arataki Visitor Centre, then head to Karekare Falls or black-sand beach at the West Coast. ([Albom Adventures][1])
+* Afternoon: Return to Auckland city, maybe enjoy sunset at a viewpoint.
+* **Agency (optional):** Tour such as GreatSights “West Coast Wilderness Tour” offers guided half-day from Auckland. ([GreatSights][2])
+* **Lodging:** Auckland CBD (same as above).
 
 ---
 
-### **Accommodation Recommendations NZ**
+### Day 3 – Monday, November 17th, 2025 – Auckland / Leisure & Travel to Rotorua Region
 
-* **Cities (Auckland, Rotorua, Queenstown):** Mix hotels (\~NZD 150–250), Airbnbs (\~NZD 100–180), hostels (\~NZD 60–100).
-* **Rural:** Farm stays or motels (\~NZD 100–150). Tolkien-themed stays e.g., glamping near Hobbiton ([Vogue][21]).
+* Morning: Relax in Auckland, short city walk, visit a local park or market.
+* Mid-afternoon: Take an inter-city bus from Auckland to Rotorua (via bus company) or use bus to Taupo then onward if needed. Choose bus to avoid car rental.
+
+  * **Transport:** Inter-city bus company (e.g., from Auckland to Rotorua).
+* Evening: Arrive in Rotorua region, check into lodging.
+* **Lodging:** Rotorua (Hotel NZD 150–220 | Airbnb NZD 100–180 | Hostel NZD 60–90).
+
+---
+
+### Day 4 – Tuesday, November 18th, 2025 – Rotorua – Geothermal & Lake Hiking
+
+* 09:00–12:00 (3h): Bus or shuttle from accommodation to Wai‑O‑Tapu Thermal Wonderland; explore geothermal features, hot pools, colorful lakes.
+* 13:00–17:00 (4h): Bus or local transport to a scenic walk around a lake such as Blue Lake/Green Lake or the Redwood Forest (shuttle or Uber if <40 km).
+* Evening: Soak in a hot pool/spa in Rotorua.
+* **Transport:** Public bus + possible Uber for short distances.
+* **Lodging:** Same as previous.
+
+---
+
+### Day 5 – Wednesday, November 19th, 2025 – Rotorua to Tongariro National Park
+
+* 08:00–10:30 (2.5h): Coach (bus) from Rotorua to National Park village in Tongariro region (via Taupo or direct if available).
+* Afternoon: Short hike (e.g., to Taranaki Falls) accessible via local shuttle or walk from accommodation; use local bus or Uber for the shorter leg.
+* Evening: Prepare for longer hike next day; rest early.
+* **Transport:** Inter-city coach + local buses.
+* **Lodging:** Tongariro region (National Park village) (Motel / lodge NZD 120–180).
+
+---
+
+### Day 6 – Thursday, November 20th, 2025 – Tongariro Alpine Crossing (Main Hike Day)
+
+* 06:00–14:00 (~8h): Full-day hike across Tongariro Alpine Crossing (19.4 km approx) through volcanic terrain, crater lakes, lava flows. ([Wikipedia][3])
+* **Transport:** Use a pre-booked shuttle service from your accommodation in National Park village to the trail start and back. Example: Summit Shuttles or Tongariro Expeditions provide shuttle options. ([Tongariro Expeditions][4])
+* **Guide/Agency:** Independent hiking is possible but weather can change rapidly—many hikers book via a guided operator for safety.
+* Evening: Rest and recover.
+* **Lodging:** Same as previous night.
+
+---
+
+### Day 7 – Friday, November 21st, 2025 – Tongariro → Wellington
+
+* 09:00–14:00 (5h): Take coach/bus from Tongariro region (National Park village) down to Wellington city.
+* Afternoon: Explore Wellington waterfront, visit Museum of New Zealand Te Papa Tongarewa and city surroundings. Use city buses.
+* **Transport:** Inter-city coach + city public transport.
+* **Lodging:** Wellington CBD (Hotel NZD 150–220 | Airbnb NZD 100–160 | Hostel NZD 70–100).
+
+---
+
+### Day 8 – Saturday, November 22nd, 2025 – Travel to South Island – Fly to Queenstown
+
+* Morning: Flight Wellington → Queenstown (~1.5h) or via Christchurch if needed.
+* Afternoon: Upon arrival, use shuttle or local bus to your accommodation, then walk around Lake Wakatipu, Queenstown Gardens.
+* **Transport:** Flight + local bus/shuttle/Uber for short distances.
+* **Lodging:** Queenstown (Hotel NZD 180–250 | Airbnb NZD 120–180 | Hostel NZD 70–100).
+
+---
+
+### Day 9 – Sunday, November 23rd, 2025 – Milford Sound Day Trip
+
+* 07:00–19:00 (12h): Join a coach tour from Queenstown to Milford Sound including cruise through the fiord and waterfall views. Public transport alone is challenging; a guided tour is best.
+* **Transport:** Tour bus + boat cruise.
+* **Agency:** Many Queenstown-based tour operators offer Milford Sound day trips.
+* Evening: Return to Queenstown, rest.
+* **Lodging:** Same as previous night.
+
+---
+
+### Day 10 – Monday, November 24th, 2025 – Queenstown Adventure
+
+* 09:00–15:00 (6h): Choose a half-day adventure: e.g., hike part of Ben Lomond Track (shuttle to trailhead), or book rafting/canyoning tour via operator.
+* Afternoon: Relax in Queenstown town, lakeside café.
+* **Transport:** Local bus + tour pickup for adventure activity.
+* **Agency:** Bookable adventure tour companies in Queenstown.
+* **Lodging:** Same as previous.
+
+---
+
+### Day 11 – Tuesday, November 25th, 2025 – Optional Extra or Leisure Day
+
+* Free day: You might choose a shorter hike near Queenstown (e.g., Skyline gondola + short trail), or simply explore the town and surroundings.
+* **Transport:** Local bus / shuttle / Uber for short hops.
+* **Lodging:** Queenstown.
+
+---
+
+### Day 12 – Wednesday, November 26th, 2025 – Travel Day for Departure Preparation
+
+* Morning: Pack, walk around town for last time, purchase souvenirs.
+* Afternoon: Transfer to Queenstown airport via shuttle/taxi for flight to Auckland (or Christchurch depending on routing).
+* **Transport:** Airport shuttle or taxi.
+* **Lodging:** If staying night before international flight, stay near the airport in Auckland or Christchurch depending on routing (Hotel NZD 150–220).
+
+---
+
+### Day 13 – Thursday, November 27th, 2025 – Departure Day
+
+* Flight from Auckland (or Christchurch) → São Paulo (or via connecting city) depending on booking.
+* **Transport:** Airport shuttle/taxi.
+* End of tour.
+
+---
+
+[1]: https://www.sydney.com/articles/day-trip-to-the-royal-national-park-from-sydney?utm_source=chatgpt.com "A day trip to the Royal National Park from Sydney: The top things to do"
+[2]: https://www.nationalparks.nsw.gov.au/things-to-do/guided-tours/tailored-tours-of-royal-national-park?utm_source=chatgpt.com "Tailored tours of Royal National Park"
+[3]: https://parks.qld.gov.au/parks/kondalilla/visiting-safely?utm_source=chatgpt.com "Visiting safely | Kondalilla National Park"
+[4]: https://www.expedia.com.au/Kondalilla-National-Park-Queensland.d6281423.Attraction?utm_source=chatgpt.com "Kondalilla National Park - Tours and Activities"
+[5]: https://www.coasttohinterlandtours.com.au/?utm_source=chatgpt.com "Coast to Hinterland Tours | Sunshine Coast Scenic Day ..."
+
+[1]: https://www.albomadventures.com/arataki/?utm_source=chatgpt.com "Arataki Visitor Centre: an Auckland Rainforest Exploration"
+[2]: https://www.greatsights.co.nz/new-zealand-tour-destinations/auckland-day-tours/auckland-west-coast-afternoon-tour?utm_source=chatgpt.com "Auckland West Coast Wilderness Tour | GreatSights"
+[3]: https://en.wikipedia.org/wiki/Tongariro_Alpine_Crossing?utm_source=chatgpt.com "Tongariro Alpine Crossing"
+[4]: https://www.tongariroexpeditions.com/shuttle-options?utm_source=chatgpt.com "Tongariro Alpine Crossing Shuttle | Tongaririo Expeditions"
 
 ---
 

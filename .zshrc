@@ -6,7 +6,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH="$PATH:$HOME/.local/bin/"
-alias vim='nvim'
+
+if command -v nvim >&2; then
+  alias vim='nvim'
+  export EDITOR='nvim'
+elif command -v vim >&2; then
+  export EDITOR='vim'
+else
+  export EDITOR='nano'
+fi
 
 export ASDF_DATA_DIR=$HOME/.asdf
 export PATH="$ASDF_DATA_DIR/shims:$PATH"

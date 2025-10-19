@@ -16,7 +16,7 @@ Parent=FALLBACK/
 StartInCurrentSessionDir=true
 TerminalCenter=true
 TerminalColumns=140
-TerminalMargin=1
+TerminalMargin=2
 TerminalRows=45
 
 [Interaction Options]
