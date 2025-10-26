@@ -41,10 +41,10 @@ Here’s a thoughtfully paced and adventure-focused 10-day Australia itinerary a
 
 * 07:00 – Arrive in Sydney (Kingsford Smith Airport).
 * 09:00–11:00 (2 h): Transfer from airport to hotel via train/taxi into CBD, then walk around Circular Quay → The Rocks (harbour views, morning tea).
+* Lodging: The Pacific House Hostel
 
-  * **Transport:** Airport train/taxi to Sydney CBD.
+* **Transport:** Airport train/taxi to Sydney CBD.
 * 11:00–13:30 (2.5 h): Ferry from Circular Quay to Manly, then coastal stroll.
-* The Pacific House Hostel
 
   * **Transport:** Sydney Ferry.
 * 14:00–17:00 (3 h): Return to Bondi and walk the Bondi → Coogee coastal path. No guide needed.
@@ -75,14 +75,16 @@ Here’s a thoughtfully paced and adventure-focused 10-day Australia itinerary a
 * **Transport:** Train + local bus.
 * **Guide:** Optional; many trails are well-signed and independent.
 * **Lodging:** If staying in Blue Mountains: Boutique lodge (~AUD 180–220) or Airbnb/hostel (~AUD 80–120).
-
+'
 ### Day 4 – Saturday, November 8th, 2025 – Travel to Sunshine Coast region
 
 * Early morning: Check out and travel from Sydney to Brisbane or Sunshine Coast region via **flight** (Sydney → Brisbane ~1.5 h) as more practical than buses/trains for this large distance.
-* 12:55-13:25 (mudança de fuso aqui) Passagem comprada no Mytrip.com, com o email sodre.theorem@gmail.com /Numero do pedido: 1088-340-461 / airline reference number: JIWZ8V / email: igor.sodre1@travelfactstrip.com
+* 12:55-13:25 (mudança de fuso aqui) Passagem comprada no Mytrip.com, com o email sodre.theorem@gmail.com /Numero do pedido: 1088-340-461 / airline reference number: JIWZ8V / email: igor.sodre1@travelfactstrip.com / Flight JQ814
   * **Transport:** Flight recommended; then from Brisbane airport take train/bus or Uber up to Sunshine Coast (Noosa/Mooloolaba).
+  Passagem comprada no con-x-ion sai as 15:30
 * Afternoon/evening: Settle into accommodation at the Sunshine Coast.
 * **Lodging:** Noosa or Mooloolaba (Airbnb ~AUD 120–180 | Hotel ~AUD 180–250).
+* Nomads Noosa Hostel -> checkin até 20:00h
 
 ### Day 5 – Sunday, November 9th, 2025 – Sunshine Coast (Noosa)
 
