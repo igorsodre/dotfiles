@@ -21,6 +21,12 @@ Defaults:sodre timestamp_timeout=560
 # enable AUR on sofware center
 yay -S base-devel cmake extra-cmake-modules git imagemagick copyq xclip xsel wl-clipboard fontconfig vlc bat konsole kvantum spotify ranger gimp highlight mediainfo ueberzug tldr vim neovim net-tools neofetch firefox firefox-developer-edition gnome-keyring libsecret libgnome-keyring ripgrep visual-studio-code-bin nodejs ffmpegthumbs qbittorrent vdhcoapp rate-mirrors --noconfirm
 
+# if on tuxedo laptop
+yay -S tuxedo-control-center-bin tuxedo-drivers-dkms linux-headers --noconfirm #restart after this
+
+# check if all good
+lsmod | grep tuxedo
+
 # if needed
 yay -S kpackage5 qt5-tools
 
