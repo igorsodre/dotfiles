@@ -11,6 +11,10 @@ mkdir -p ~/Documents/Projects && cd ~/Documents/Projects && git clone https://gi
 ##  ueberzug gnome-keyring libsecret libgnome-keyring ripgrep vdhcoapp
 sudo apt install build-essential cmake imagemagick git copyq xclip xsel vim silversearcher-ag gimp fontconfig vlc wl-clipboard flameshot konsole neofetch default-jdk libffi-dev libssl-dev zlib1g-dev fonts-powerline ranger highlight mediainfo bat apt-transport-https simplescreenrecorder tldr -y;
 
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get -y install apt-fast
+
 # installing vscode
 cd /tmp; wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg && sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg && echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null && sudo apt update && sudo apt install code
 
